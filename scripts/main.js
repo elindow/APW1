@@ -5,8 +5,8 @@ var myImage = document.querySelector('img');                      // declare/def
 
 myImage.onclick = function() {                                    // this is a java script (js) function, runs on mouse click
 	var mySrc = myImage.getAttribute('src');                        // creates a variable to hold an image
-	if(mySrc === 'images/Trevor Logo.png') {                        // checks for the original image. note '===' for comparison operator
-      myImage.setAttribute ('src','images/bad error.PNG');        // if it is, fake error message
+	if(mySrc === 'images/Trevor Logo.PNG') {                        // checks for the original image. note '===' for comparison operator
+      myImage.setAttribute ('src','images/bad error.png');        // if it is, fake error message
 	} else {
 	  myImage.setAttribute ('src','images/Exploding_Computer.jpg'); // if not, burning laptop
 	}                                                               // note braces used to deliniate blocks
