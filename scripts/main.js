@@ -8,9 +8,9 @@ myImage.onclick = function() {                                    // this is a j
 	if(mySrc === 'images/Trevor Logo.PNG') {                        // checks for the original image. note '===' for comparison operator
       myImage.setAttribute ('src','images/bad error.png');        // if it is, fake error message
 	} else if(mySrc === 'images/bad error.png') {
-	  myImage.setAttribute ('src','images/Exploding_Computer.jpg'); // if not logo but is error message, burning laptop
+	    myImage.setAttribute ('src','images/Exploding_Computer.jpg'); // if not logo but is error message, burning laptop
 	} else {
-    myImage.setAttribute ('src','images/Trevor Logo.PNG');        // otherwise return to original logo
+      myImage.setAttribute ('src','images/Trevor Logo.PNG');        // otherwise return to original logo
   }                                                             // note braces used to deliniate blocks
 }
 
