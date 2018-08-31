@@ -10,7 +10,7 @@ myImage.onclick = function() {                                    // this is a j
 	} else if(mySrc === 'images/bad error.png') {
 	    myImage.setAttribute ('src','images/Exploding_Computer.jpg'); // if not logo but is error message, burning laptop
 	} else {
-      myImage.setAttribute ('src','images/Trevor Logo.PNG');        // otherwise return to original logo
+       myImage.setAttribute ('src','images/Trevor Logo.PNG');        // otherwise return to original logo
   }                                                             // note braces used to deliniate blocks
 }
 
