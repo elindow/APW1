@@ -10,16 +10,30 @@
 		<h1>Tips and Hints</h1>
 
 		<p><b>Setting up a new page on this site:</b></p>
-		<ol start='1'> <!-- changed to list in the tutorial -->
-      		<li>Create a new HTML file in the html directory, i.e. yourname.html</li>
-      		<li>Link to the page in index.html: <a href="https://elindow.github.io/APW1/html/lindow_page.html">Lindow's Page</a></li>
+		<ol start='1'> <!-- ordered numerical list -->
+      		<li>Create a new HTML file in the html directory, i.e. <i>yourname</i>.html</li>
+      		<li>Link to the page in index.html: "<a href=""https://elindow.github.io/APW1/html/lindow_page.html"">Lindow's Page</a>"</li>
       		<li>Add head and body elements to the page (copy head from main page, change title)</li>
       		<li>Put a link to your .js file just before the body closing tag (see source for this page for syntax)</li>
-      		<li>You can test if your .js file is loading by adding an alert line to it, i.e. alert("some text") If the .js is there the alert will fire on loading</li>
+      		<li>You can test if your .js file is loading by adding an alert line to it, i.e. <i>alert("some text")</i>. If the .js is loaded/working the alert will fire when the page loads</li>
       		<li>Add html to the .html page and javaScript to the .js page, add, commit and push to GitHub for testing your code</li>
     	</ol>
 
-	<script src="/APW1/scripts/lindow.js"></script>
+<p><b>Using JavaScript:</b></p>
+		<ol start='a'> <!-- ordered letter list -->
+      		<li>JavaScript is a scripting language designed for adding coding elements to web pages</li>
+      		<li>Thus it is nearly always used in conjunction with html and css</li>
+      		<li>All modern browsers have a builtin JavaScript engine, so no local instalation is required, just a web server to show your pages</li>
+      		<li>JavaScript syntax is similar to but not identical with Java:  <a href="https://en.wikipedia.org/wiki/JavaScript_syntax">Java Syntax Wiki</a></li>
+      		<li>Lines of code are terminated by semicolons (actually sometimes optional, but recommended for clarity), braces/curly brackets deliniate blocks of code</li>
+      		<li>Variables are not typed, declared with keyword var, initial assignment of value is not requried, scoping is similar to Java</li>
+      		<li>Typically code is event driven, i.e. responds to mouse clicks/key strokes, i.e. <i>myButton</i>.onclick = function() { 'do something' }</li>
+      		<li></li>
+    	</ol>
+
+    <a href="https://elindow.github.io/APW1/html/index.html">Home Page</a>
+
+	<script src="/APW1/scripts/lindow.js"></script>   <!-- loads js file from 'scrips' directory into this page -->
 
  	</body>
 </html>
