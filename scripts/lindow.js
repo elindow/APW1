@@ -6,7 +6,7 @@
 
 $(document).ready(function() {  										   // jQuery will wait until DOM is ready
     // all custom jQuery will go here
-    $(#"jQ demo").html("JQuery is working");
+    $("#jQ demo").html("JQuery is working");
 });
 
 	
