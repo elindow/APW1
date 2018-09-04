@@ -19,7 +19,7 @@
       		<li>Add html to the .html page and javaScript to the .js page, add, commit and push to GitHub for testing your code</li>
     	</ol>
 
-<p><b>Using JavaScript:</b></p>
+		<p><b>Using JavaScript:</b></p>
 		<ol type='I'> <!-- ordered letter list -->
       		<li>JavaScript is a scripting language originally designed for adding coding elements to web pages</li>
       		<li>It is mostly used in conjunction with html and css, though its use has expanded rapidly into other areas</li>
@@ -28,13 +28,26 @@
       		<li>Lines of code are terminated by semicolons (actually sometimes optional, but recommended for clarity), braces/curly brackets deliniate blocks of code</li>
       		<li>Variables are not typed, declared with keyword var, initial assignment of value is not requried, scoping is similar to Java</li>
       		<li>Typically code is event driven, i.e. responds to mouse clicks/key strokes, i.e. <i>myButton</i>.onclick = function() { 'do something' }</li>
-      		<li></li>
+      		<li>In order to interact with html elements, jS vars must be linked to the desired element(s)</li>
+      		<li>One way to do that is with a querySelector function, which you can see on the main.js page</li>
+      		<li>This can get cumbersome, especially in complex pages with many dynamic elements. The jQuery library was developed to simplify this process (see below).
     	</ol>
 
-      <button>Mystery Button</button>
+    	<p><b>Linking js variables to html objects using jQuery:</b></p>
+		<ol type='square'> <!-- ordered letter list -->
+			<li> </li>
+			<li></li>
+			<li></li>
+			<li></li>
+    	</ol>
 
-    <a href="https://elindow.github.io/APW1/index.html">Home Page</a>
+    	<p id="jQdemo"></p>
 
+        <p><button id='LButton1'>Mystery Button </button></p>
+
+    <p><a href="https://elindow.github.io/APW1/index.html">Home Page</a></p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>    <!-- loads jquery API library from Google Hosted Libraries CDN -->
 	<script src="/APW1/scripts/lindow.js"></script>   <!-- loads js file from 'scrips' directory into this page -->
 
  	</body>
