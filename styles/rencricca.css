@@ -1,0 +1,23 @@
+body {
+  padding: 20px;
+}
+
+
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: 2px solid blue;
+    box-sizing: border-box;
+    background-color: lightgrey;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: 2px solid blue;
+    box-sizing: border-box;
+    background-color: lightgrey;
+}
