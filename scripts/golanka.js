@@ -10,7 +10,7 @@ var dy=5;
   }
   function draw()
   {
-  	context.clearRect(0,0,300,300);
+  	context.clearRect(0,0,500,400);
     context.beginPath();
 	context.fillStyle="#0000ff";
 	// Draws a circle of radius 20 at the coordinates 100,100 on the canvas
@@ -18,8 +18,8 @@ var dy=5;
 	context.closePath();
 	context.fill();
 	// Boundary Logic
-	if( x<20 || x>280) dx=-dx; 
-	if( y<20 || y>280) dy=-dy; 
+	if( x<=20 || x>=480) dx=-dx; 
+	if( y<=20 || y>=380) dy=-dy; 
 	x+=dx;
 	y+=dy;
   }
