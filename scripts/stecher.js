@@ -12,7 +12,19 @@ $(document).ready(function() {  										   // jQuery will wait until DOM is re
 		alert("Lindow button clicked");
 		$("#LButton1").html("I was clicked");
 	});	
-							   												// assign click() function to button using button id
+	var slideIndex = 0;
+	showSlides();
+	function showSlides() {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		slideIndex++;
+		if (slideIndex > slides.length) {slideIndex = 1}
+			slides[slideIndex-1].style.display = "block";
+			setTimeout(showSlides, 2000); // Change image every 2 seconds
+			} 						   												// assign click() function to button using button id
 																			// note how much cleaner the code is compared to below
     //var LindowButton = document.querySelector('button'); 					//this code selects the first (and in this case only) button on the page
 	//LindowButton.onclick = function() {  
