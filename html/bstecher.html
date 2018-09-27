@@ -8,36 +8,33 @@
     	<meta name="viewport" content="width=device-width, initial-scale=1"> 
   	</head>
 	<body>
+	<div class="container">
+		<div class="carousel">
+			<input type="puppy1" id="carousel-1" name="carousel[]" checked>
+			<input type="puppy1" id="carousel-2" name="carousel[]"
+			<input type="puppy1" id="carousel-3" name="carousel[]"
+			<ul class="carousel__items">
+				<li class="carousel__item"><img src=""../images/puppy1.jpg" style="width:100%"></li>
+				<li class="carousel__item"><img src=""../images/puppy2.jpg" style="width:100%"></li>
+				<li class="carousel__item"><img src=""../images/puppy3.jpg" style="width:100%"></li>
 
-		<div class="container">
-  		<h2>Dogs</h2>  
- 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
- 			<ol class="carousel-indicators">
- 				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
- 				<li data-target="#myCarousel" data-slide-to="1"></li>
- 				<li data-target="#myCarousel" data-slide-to="2"></li>
- 			</ol>
-
- 	<div class="carousel-inner">
- 		<div class="item">
-			<div class="numbertext">1 / 3</div>
-			<img src="../images/puppy1.jpg" style="width:100%">
-			<div class="text">Maltese</div>
-		</div>
-
-		<div class="item">
-			<div class="numbertext">2 / 3</div>
-			<img src="../images/puppy2.jpg" style="width:100%">
-			<div class="text">Corgi</div>
-		</div>
-
-		<div class="item">
-    		<div class="numbertext">3 / 3</div>
-    		<img src="../images/puppy3.jpg" style="width:100%">
-    		<div class="text">Cavalier King Charles Spaniel</div>
-  	</div>
-
-
+  	<div class="carousel__prev">
+      <label for="carousel-1"></label>
+      <label for="carousel-2"></label>
+      <label for="carousel-3"></label>
+    </div>
+    
+    <div class="carousel__next">
+      <label for="carousel-1"></label>
+      <label for="carousel-2"></label>
+      <label for="carousel-3"></label>
+    </div>
+    
+    
+    <div class="carousel__nav">
+      <label for="carousel-1"></label>
+      <label for="carousel-2"></label>
+      <label for="carousel-3"></label>
 
 		<p id="jQdemo"></p>
 
