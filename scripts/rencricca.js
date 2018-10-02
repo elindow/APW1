@@ -9,8 +9,13 @@ function checkemail() {
 
 
 function submit_form() {
+  if (document.getElementById('name_id').value == '' || document.getElementById('date').value == '') {
+    alert("Enter required information!!");
+  }
+  else {
   alert("Hello "+document.getElementById('name_id').value+". Have a happy birthday on "+
-    document.getElementById('date').value)
+    document.getElementById('date').value+"!!");
+  }
 }
 
 
