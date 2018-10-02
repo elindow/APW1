@@ -10,14 +10,18 @@ function checkemail() {
 
 function showImage() {
   var pic_element = document.getElementById("new_img");
+
   if (pic_element == null) {
  	  var img=document.createElement("img");
-    img.id = 'new_img'
-    img.src='../images/puppy1.jpg';
-    img.width="164";
-    img.height="82";
+    img.setAttribute('id', 'new_img');
+    img.setAttribute('src', '../images/puppy1.jpg');
+    img.setAttribute('height', '82');
+    img.setAttribute('width', '164');
     var foo = document.getElementById("myPicture");
     foo.appendChild(img);
     }
+  else {
+    pic_element.parentNode.removeChild(pic_element);
+  }
 }
 
