@@ -13,9 +13,7 @@
         	<label>Name <input type='text' name = 'name' placeholder="First & Last Name"></label><br/>
     		<label>Email<input type='email' id="email1" placeholder="me@me.com" required></label><br/>
        		<label>Repeat Email<input type='email' id='email2' placeholder="me@me.com" required onchange="checkemail()"></label><br/>
-        	<label>Date<input type='text' name="date" id="date" placeholder="MM-DD-YYYY" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01]).(0[1-9]|1[012]).[0-9]{4}" </label><br/>
-        	<label>Zip code<input type ='text' name='zipcodeP' pattern="[0-9]{5}" ></label><br/>
-    		<input type = 'submit' value = "Click Here" onclick="return checkemail();">
+        	<label>Date<input type='text' name="date" id="date" placeholder="MM-DD-YYYY" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01]).(0[1-9]|1[012]).[0-9]{4}" </label><br/>    		<input type = 'submit' value = "Click Here" onclick="return checkemail();">
   		</fieldset>
 	</form> 
 
@@ -23,7 +21,7 @@
 <p></p>
 <button onclick="showImage()">Show Puppy</button>
 
-<div id="myPicture"></div>
+<div id="div_img"></div>
 
 
 </body>

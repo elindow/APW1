@@ -9,19 +9,20 @@ function checkemail() {
 
 
 function showImage() {
-  var pic_element = document.getElementById("new_img");
+  var img_element = document.getElementById("puppy_img");
 
-  if (pic_element == null) {
+  if (img_element == null) {
  	  var img=document.createElement("img");
-    img.setAttribute('id', 'new_img');
+    img.setAttribute('id', 'puppy_img');
     img.setAttribute('src', '../images/puppy1.jpg');
     img.setAttribute('height', '82');
     img.setAttribute('width', '164');
-    var foo = document.getElementById("myPicture");
-    foo.appendChild(img);
+    
+    var div_element = document.getElementById("div_img");
+    div_element.appendChild(img);
     }
   else {
-    pic_element.parentNode.removeChild(pic_element);
+    img_element.parentNode.removeChild(img_element);
   }
 }
 
