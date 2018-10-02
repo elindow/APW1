@@ -63,11 +63,13 @@ function setup() {                          // **change** void setup() to functi
 }
 
 function draw() {                           // **change** void draw() to function draw()
-  background(0);                            // background() is the same
+  background(0);  
+  if (mouseIsPressed) {                      // background() is the same
   drawSegment(0, mouseX, mouseY);           // functions calls, mouseX and mouseY are the same
   for(var i=0; i<x.length-1; i++) {         // **change** int i to var i
     drawSegment(i+1, x[i], y[i]);           // function calls are the same
   }
+}
 }
 
 function drawSegment(i, xin, yin) {         // **change** void drawSegment() to function drawSegment(), remove type declarations
