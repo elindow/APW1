@@ -1,0 +1,52 @@
+html {
+  font-size: 8px;
+  font-family: 'Open Sans', sans-serif;
+  color: firebrick;
+}
+
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
+  color: gray;
+}
+
+p, li {
+  font-size: 12px;  
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+
+html {
+  background-color: blue;
+}
+
+body {
+  width: auto;
+  margin: 40 auto;
+  background-color: lightblue;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px 0;  
+  color: darkred;
+  text-shadow: 3px 3px 1px black;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+a {
+  color: darkred;
+}
