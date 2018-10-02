@@ -8,6 +8,12 @@ function checkemail() {
 }
 
 
+function submit_form() {
+  alert("Hello "+document.getElementById('name_id').value+". Have a happy birthday on "+
+    document.getElementById('date').value)
+}
+
+
 function showImage() {
   var img_element = document.getElementById("puppy_img");
 
@@ -17,7 +23,7 @@ function showImage() {
     img.setAttribute('src', '../images/puppy1.jpg');
     img.setAttribute('height', '82');
     img.setAttribute('width', '164');
-    
+
     var div_element = document.getElementById("div_img");
     div_element.appendChild(img);
     }
