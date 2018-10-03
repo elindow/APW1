@@ -36,4 +36,3 @@ function showImage() {
     img_element.parentNode.removeChild(img_element);
   }
 }
-
