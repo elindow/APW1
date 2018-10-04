@@ -1,0 +1,51 @@
+body{
+    background-color:black;
+    text-align: center;
+    color: green;
+}
+
+h1{font-size: 40px;}
+
+p{font-size: 25px;}
+
+::placeholder{color: white;}
+
+#name{
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    background-color: black;
+    color: green;
+    border-color: black;
+    border-bottom-color: green;
+}
+#input{
+    width: 500px;
+    height: 60px;
+    text-align: center;
+    background-color: black;
+    border-color: black;
+    border-bottom-color: green;
+    font-size: 20px;
+    color: green;
+}
+
+#button{
+    font-size: 20px;
+}
+#submit{
+    background-color: black;
+    color: green;
+    border-radius: 13px;
+    font-size: 16px;
+    border-color: green;
+}
+#para{
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    margin-left: 22%;
+    color: green;
+    overflow: auto;
+}
+

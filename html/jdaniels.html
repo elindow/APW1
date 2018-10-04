@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+body {
+	background-color: #909090;
+}
+h1 {
+	background-color: #404040;
+	border:1px solid #FFFFFF;
+	text-align: center;
+	color: #FFFFFF;
+	font-family: "Century Gothic", sans-serif;
+	max-width: 1262px;
+	min-width: 1262px;
+}
+.button {
+    background-color: #FF3E2F;
+    border: none;
+    color: white;
+    padding: 105px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #E32011;
+}
+</style>
+</head>
+
+<body>
+<h1>theTIME™</h1>
+
+	<canvas id="myCanvas" width="1262" height="500"
+	style="border:1px solid #FFFFFF; background-color:#505050">
+	</canvas>
+
+	<script>
+
+	var canvas = document.getElementById("myCanvas");
+	var canv = canvas.getContext("2d");
+	var sec = 0;
+	var min = 0;
+	var hour = 0;
+
+	function updateTime() {
+		var date = new Date();
+		hour = date.getHours();
+		min = date.getMinutes();
+		sec = date.getSeconds();
+		setTimeout(updateTime, 100);
+
+		canv.beginPath();
+		canv.fillStyle = "#404040";
+	    canv.fillRect(0, 0, 1262, 500);
+	    canv.fill();
+
+	    var angleS = 2*Math.PI*sec/60 - Math.PI/2;
+	    var angleM = 2*Math.PI*min/60 - Math.PI/2 + sec/60*Math.PI/30;
+	    var angleH = 2*Math.PI*(hour%12)/12 - Math.PI/2 + min/60*Math.PI/6;
+		clock(250, 250, 225, angleS, angleM, angleH, "New York"); 
+		clock(637, 125, 100, angleS, angleM, angleH + 5*Math.PI/6, "London");
+		clock(887, 125, 100, angleS, angleM, angleH + 6*Math.PI/6, "Zagreb"); 
+		clock(1137, 125, 100, angleS, angleM, angleH - 3*Math.PI/6, "Seattle"); 
+		clock(637, 375, 100, angleS, angleM, angleH + 8*Math.PI/6, "Dubai"); 
+		clock(887, 375, 100, angleS, angleM, angleH + 1*Math.PI/6, "Tokyo"); 
+		clock(1137, 375, 100, angleS, angleM, angleH + 2*Math.PI/6, "Sydney"); 
+	}
+	updateTime();
+
+	function clock(x, y, radius, angleS, angleM, angleH, text) {
+
+		canv.beginPath();
+	    canv.arc(x, y, radius, 0, 2*Math.PI);
+	    canv.fillStyle = "#A5A5A5";
+	    canv.fill();
+
+	    canv.beginPath();
+	    canv.arc(x, y, radius*0.9, 0, 2*Math.PI);
+	    canv.fillStyle = "#606060";
+	    canv.fill();
+
+		canv.fillStyle = "#FFFFFF";
+		var fontSize = 15*Math.sqrt(radius/200);
+		String(fontSize);
+		canv.font=fontSize+"px Century Gothic";
+	    canv.fillText(text, x, y - radius*0.45);
+		canv.textAlign="center"; 
+
+		var i;
+		for (i = 0; i < 12; i++) { 
+		    canv.beginPath();
+		    canv.arc(x + radius*0.8*Math.cos(i*Math.PI/6), 
+			y + radius*0.8*Math.sin(i*Math.PI/6),
+			radius*0.03, 0, 2*Math.PI);
+		    canv.fillStyle = "#909090";
+		    canv.fill();
+		}
+
+		canv.beginPath();
+		canv.lineWidth = 6*Math.sqrt(radius/200);
+		canv.moveTo(x - radius*0.1*Math.cos(angleH), 
+			y - radius*0.1*Math.sin(angleH));
+		canv.lineTo(x + radius*0.4*Math.cos(angleH), 
+			y + radius*0.4*Math.sin(angleH));
+		canv.strokeStyle = "#FFFFFF";
+		canv.stroke();
+
+		canv.beginPath();
+		canv.lineWidth = 4*Math.sqrt(radius/200);
+		canv.moveTo(x - radius*0.1*Math.cos(angleM), 
+			y - radius*0.1*Math.sin(angleM));
+		canv.lineTo(x + radius*0.8*Math.cos(angleM), 
+			y + radius*0.8*Math.sin(angleM));
+		canv.strokeStyle = "#FFFFFF";
+		canv.stroke();
+
+		canv.beginPath();
+		canv.lineWidth = 2*Math.sqrt(radius/200);
+		canv.moveTo(x - radius*0.15*Math.cos(angleS), 
+			y - radius*0.15*Math.sin(angleS));
+		canv.lineTo(x + radius*0.6*Math.cos(angleS), 
+			y + radius*0.6*Math.sin(angleS));
+		canv.strokeStyle = "#FF0000";
+		canv.stroke();
+
+		canv.beginPath();
+	    canv.arc(x, y, radius*0.05, 0, 2*Math.PI);
+	    canv.fillStyle = "#D0D0D0";
+	    canv.fill();
+
+	    canv.beginPath();
+	    canv.arc(x, y, radius*0.03, 0, 2*Math.PI);
+	    canv.fillStyle = "#909090";
+	    canv.fill();
+
+	}
+
+	</script>
+</body>
+</html>
+
