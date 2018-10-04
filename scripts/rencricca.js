@@ -31,8 +31,11 @@ function showImage() {
 
     var div_element = document.getElementById("div_img");
     div_element.appendChild(img);
+
+    document.getElementById("pic_button").innerHTML="Hide Puppy";
     }
   else {
     img_element.parentNode.removeChild(img_element);
+      document.getElementById("pic_button").innerHTML="Show Puppy";
   }
 }
