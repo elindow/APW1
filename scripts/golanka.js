@@ -3,6 +3,9 @@ var x=100;
 var y=200;
 var dx=5;
 var dy=5;
+var myButton = document.querySelector('button');                  // creates button variable for js
+var myHeading = document.querySelector('h1');                     // creates var for h1 style header
+
   function init()
   {
   	context = myCanvas.getContext('2d');
@@ -23,3 +26,7 @@ var dy=5;
 	x+=dx;
 	y+=dy;
   }
+
+  myButton.onclick = function(){                                   // mouse click calls 'setUserName()' function
+  alert("Congrats! You clicked the button! That's all");
+}
