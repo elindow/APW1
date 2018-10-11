@@ -1,0 +1,15 @@
+body{
+    background-color:black;
+    text-align: center;
+    color: green;
+}
+h1{
+    font-size: 32px;    
+}
+p{
+    font-size: 16px;
+}
+#button{
+    display: flex;
+    align-items: 50%;
+}

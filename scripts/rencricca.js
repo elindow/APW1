@@ -6,3 +6,36 @@ function checkemail() {
     return false;
   }
 }
+
+
+function submit_form() {
+  if (document.getElementById('name_id').value == '' || document.getElementById('date').value == '') {
+    alert("Enter required information!!");
+  }
+  else {
+  alert("Hello "+document.getElementById('name_id').value+". Have a happy birthday on "+
+    document.getElementById('date').value+"!!");
+  }
+}
+
+
+function showImage() {
+  var img_element = document.getElementById("puppy_img");
+
+  if (img_element == null) {
+ 	  var img=document.createElement("img");
+    img.setAttribute('id', 'puppy_img');
+    img.setAttribute('src', '../images/puppy1.jpg');
+    img.setAttribute('height', '82');
+    img.setAttribute('width', '164');
+
+    var div_element = document.getElementById("div_img");
+    div_element.appendChild(img);
+
+    document.getElementById("pic_button").innerHTML="Hide Puppy";
+    }
+  else {
+    img_element.parentNode.removeChild(img_element);
+      document.getElementById("pic_button").innerHTML="Show Puppy";
+  }
+}
