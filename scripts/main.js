@@ -1,7 +1,11 @@
 // local JavaScript (js) code wrapped into website at runtime
 // Image switcher code
 
+window.scrollTo(0, 0);
+
 var myImage = document.querySelector('img');                      // declare/define variable 'myImage', note lines end with ;
+var x = "Total Width: " + window.innerWidth;
+document.getElementById("demo").innerHTML = x;
 
 myImage.onclick = function() {                                    // this is a java script (js) function, runs on mouse click
 	var mySrc = myImage.getAttribute('src');                        // creates a variable to hold an image
@@ -34,4 +38,31 @@ if(!localStorage.getItem('name')) {                               // checks for 
 
 myButton.onclick = function() {                                   // mouse click calls 'setUserName()' function
   setUserName();
+}
+
+
+//You can also add an event listener which fires when a change is detected:
+const mq = window.matchMedia("(min-width: 500px)");
+// media query event handler
+if (matchMedia) {
+
+mq.addListener(WidthChange);
+WidthChange(mq);
+}
+
+// media query change
+function WidthChange(mq) {
+if (mq.matches) {
+// window width is at least 500px
+  document.getElementById("demo").innerHTML = "Window width > 500 px";
+} else {
+// window width is less than 500px
+  document.getElementById("demo").innerHTML = "Window width< 500px";
+}
+}
+
+if (mq.matches) {
+// window width is at least 500px
+} else {
+// window width is less than 500px
 }
