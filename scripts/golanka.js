@@ -28,10 +28,11 @@ var myHeading = document.querySelector('h1');                     // creates var
   }
 
   myButton.onclick = function(){                                   // mouse click calls 'setUserName()' function
-  alert("Congrats! You clicked the button! That's all");
+  //alert("Congrats! You clicked the button! That's all");
+	  init1();
 }
   
-  /*
+  
   Catcher myCatcher;
 Drop[] drops;  
 Timer myTimer;
@@ -236,4 +237,4 @@ class Timer {
     }
   }
 }
-  */
+  
