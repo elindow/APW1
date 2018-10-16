@@ -28,16 +28,34 @@ var myHeading = document.querySelector('h1');                     // creates var
   }
 
   myButton.onclick = function(){                                   // mouse click calls 'setUserName()' function
+<<<<<<< HEAD
   alert("Congrats! You clicked the button! That's all");
 }
 
 /*
 Catcher myCatcher;
+=======
+  //alert("Congrats! You clicked the button! That's all");
+	  init1();
+}
+  
+  
+  Catcher myCatcher;
+>>>>>>> 302623feef573124b8f9349d7d7033de395d484b
 Drop[] drops;  
 Timer myTimer;
 var backgnd, score, hiScore;
 var lose, newHi;
 
+<<<<<<< HEAD
+=======
+function init1()
+  {
+  	context = rainCanvas.getContext('2d');
+  	setup();
+  }
+
+>>>>>>> 302623feef573124b8f9349d7d7033de395d484b
 function setup() {
   createCanvas(480, 480);
   score = 0;
@@ -53,9 +71,17 @@ function setup() {
     drops[i] = new Drop();
   }
   myTimer.startT(); //start the timer
+<<<<<<< HEAD
 }
 
 function draw() {
+=======
+  
+  setInterval(draw1,10);
+}
+
+function draw1() {
+>>>>>>> 302623feef573124b8f9349d7d7033de395d484b
   background(backgnd);
   myCatcher.setLocation(mouseX, mouseY);
   myCatcher.display();
@@ -228,4 +254,8 @@ class Timer {
     }
   }
 }
+<<<<<<< HEAD
 */
+=======
+  
+>>>>>>> 302623feef573124b8f9349d7d7033de395d484b
