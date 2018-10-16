@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="../scripts/bstecher.js"></script>
+    <link rel="stylesheet" href="../styles/bstecher.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+/* background */
+
+
+
+body {
+    background-image: url("../images/map.png");
+    background-position: center +150px;
+    background-repeat: no-repeat;
+    background-width: 100%
+    background-height: 100%;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    background-color: #AAC4E7
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+/* Style the close button */
+.topright {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+}
+</style>
+
+<body>
+
+<h1 align="center">Poetry in New York City Archive </h1>
+<p align="center">This is an archive that explores the beauty and geography of poetry written in and or about New York City. (to be continued).</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'About')">About</button>
+  <button class="tablinks" onclick="openCity(event, 'Dublin Core')">Dublin Core</button>
+  <button class="tablinks" onclick="openCity(event, 'Extra')">Extra</button>
+</div>
+
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <span onclick="this.parentElement.style.display='none'"
+  class="topright">&times</span>
+  <p>About is the capital city of England.</p>
+</div>
+
+<div id="Dublin Core" class="tabcontent">
+  <h3>Dublin Core</h3>
+  <span onclick="this.parentElement.style.display='none'"
+  class="topright">&times</span>
+  <p>Dublin Core is the capital of France.</p> 
+
+</div>
+
+<div id="Extra" class="tabcontent">
+  <h3>Extra</h3>
+  <span onclick="this.parentElement.style.display='none'"
+  class="topright">&times</span>
+  <p>Extra is the capital of Japan.</p>
+</div>
+
+
+
+<div class="container">
+                              
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Harlem
+
+    <span class="caret">
+</span></button>
+    <ul class="dropdown-menu">
+
+      <li class="dropdown-submenu">
+        <a class="test" tabindex="-1" href="#">Skating in Harlem, Christmas Day <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="#">
+          </a></li>
+          <li class="dropdown-submenu">
+            <a class="test" href="#">
+<br>To Mary Jo Salter
+<br>
+<br>Beyond the ice-bound stones and bucking trees,
+<br>past bewildered Mary, the Meer in snow,
+<br>two skating rinks and two black crooked paths
+<br>
+<br>are a battered pair of reading glasses
+<br>scratched by the skater’s multiplying math.
+<br>Beset, I play this game of tic-tac-toe.
+<br>
+<br>Divide, subtract. Who can tell if love surpasses?
+<br>Two naughts we’ve learned make one astonished 0—
+<br>a hectic night of goats and compasses.
+<br>
+<br>Folly tells the truth by what it’s not—
+<br>one X equals a fall I’d not forgo.
+<br>Are ice and fire the integers we’ve got?
+<br>
+<br>Skating backwards tells another story—
+<br>the risky star above the freezing town,
+<br>a way to walk on water and not drown. <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">3rd level dropdown</a></li>
+              <li><a href="#">3rd level dropdown</a></li>
+            </ul>
+          </li>
+        </ul>
+        <a class="test" tabindex="-1" href="#">Night Funeral in Harlem <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="#">
+          </a></li>
+          <li class="dropdown-submenu">
+            <a class="test" href="#">
+<br>Night funeral
+<br>In Harlem:
+<br>
+<br>Where did they get
+<br>Them two fine cars?
+<br>
+<br>Insurance man, he did not pay—
+<br>His insurance lapsed the other day—
+<br>Yet they got a satin box
+<br>for his head to lay.
+<br>
+<br>Night funeral
+<br>In Harlem:
+<br>
+<br>Who was it sent
+<br>That wreath of flowers?
+<br>
+<br>Them flowers came
+<br>from that poor boy’s friends—
+<br>They’ll want flowers, too,
+<br>When they meet their ends.
+<br>
+<br>Night funeral
+<br>in Harlem:
+<br>
+<br>Who preached that
+<br>Black boy to his grave?
+<br>
+<br>Old preacher man
+<br>Preached that boy away—
+<br>Charged Five Dollars
+<br>His girl friend had to pay.
+<br>
+<br>Night funeral
+<br>In Harlem:
+<br>
+<br>When it was all over
+<br>And the lid shut on his head
+<br>and the organ had done played
+<br>and the last prayers been said
+<br>and six pallbearers
+<br>Carried him out for dead
+<br>And off down Lenox Avenue
+<br>That long black hearse done sped,
+<br>The street light
+<br>At his corner
+<br>Shined just like a tear—
+<br>That boy that they was mournin’
+<br>Was so dear, so dear
+<br>To them folks that brought the flowers,
+<br>To that girl who paid the preacher man—
+<br>It was all their tears that made
+<br>That poor boy’s
+<br>Funeral grand.
+
+<br>Night funeral
+<br>In Harlem. 
+<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">
+                  <br> <h5> Dublin Core </h5>
+                  <br>Title&emsp;&emsp;Night Funeral in Harlem
+                  <br> Creator&emsp;&emsp;Langston Hughes
+                  <br> Source&emsp;&emsp;Poets.org
+                  <br> Format&emsp;&emsp;Poem
+                  <br> Language&emsp;&emsp;English
+              </a></li>
+            </ul>
+          </li>
+        </ul>
+        <a class="test" tabindex="-1" href="#">Harlem Shadows <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="#">
+          </a></li>
+          <li class="dropdown-submenu">
+            <a class="test" href="#">
+<br>I hear the halting footsteps of a lass
+<br>In Negro Harlem when the night lets fall
+<br>Its veil. I see the shapes of girls who pass
+<br>To bend and barter at desire’s call.
+<br>Ah, little dark girls who in slippered feet
+<br>Go prowling through the night from street to street!
+<br>
+<br>Through the long night until the silver break
+<br>Of day the little gray feet know no rest;
+<br>Through the lone night until the last snow-flake
+<br>Has dropped from heaven upon the earth’s white breast,
+<br>The dusky, half-clad girls of tired feet
+<br>Are trudging, thinly shod, from street to street.
+<br>
+<br>Ah, stern harsh world, that in the wretched way
+<br>Of poverty, dishonor and disgrace,
+<br>Has pushed the timid little feet of clay,
+<br>The sacred brown feet of my fallen race!
+<br>Ah, heart of me, the weary, weary feet
+<br>In Harlem wandering from street to street.
+
+             <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">3rd level dropdown</a></li>
+              <li><a href="#">3rd level dropdown</a></li>
+            </ul>
+          </li>
+        </ul>
+        <a class="test" tabindex="-1" href="#">The Weary Blues <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="#">
+          </a></li>
+          <li class="dropdown-submenu">
+            <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">3rd level dropdown</a></li>
+              <li><a href="#">3rd level dropdown</a></li>
+            </ul>
+          </li>
+        </ul>
+        <a class="test" tabindex="-1" href="#">poem <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="#">
+          </a></li>
+          <li class="dropdown-submenu">
+            <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">3rd level dropdown</a></li>
+              <li><a href="#">3rd level dropdown</a></li>
+            </ul>
+          </li>
+        </ul>
+        <a class="test" tabindex="-1" href="#">Theme for English B <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="#">
+          </a></li>
+          <li class="dropdown-submenu">
+            <a class="test" href="#">
+<br>The instructor said,
+<br>Go home and write
+<br>a page tonight.
+<br>And let that page come out of you—
+<br>Then, it will be true.
+<br>
+<br>I wonder if it’s that simple?
+<br>I am twenty-two, colored, born in Winston-Salem.
+<br>I went to school there, then Durham, then here
+<br>to this college on the hill above Harlem.
+<br>I am the only colored student in my class.
+<br>The steps from the hill lead down into Harlem,
+<br>through a park, then I cross St. Nicholas,
+<br>Eighth Avenue, Seventh, and I come to the Y,
+<br>the Harlem Branch Y, where I take the elevator
+<br>up to my room, sit down, and write this page:
+<br>
+<br>It’s not easy to know what is true for you or me
+<br>at twenty-two, my age. But I guess I’m what
+<br>I feel and see and hear, Harlem, I hear you:
+<br>hear you, hear me—we two—you, me, talk on this page.
+<br>(I hear New York, too.) Me—who?
+<br>Well, I like to eat, sleep, drink, and be in love.
+<br>I like to work, read, learn, and understand life.
+<br>I like a pipe for a Christmas present,
+<br>or records—Bessie, bop, or Bach.
+<br>I guess being colored doesn’t make me not like
+<br>the same things other folks like who are other races.
+<br>So will my page be colored that I write?
+<br>
+<br>Being me, it will not be white.
+<br>But it will be
+<br>a part of you, instructor.
+<br>You are white—
+<br>yet a part of me, as I am a part of you.
+<br>That’s American.
+<br>Sometimes perhaps you don’t want to be a part of me.
+<br>Nor do I often want to be a part of you.
+<br>But we are, that’s true!
+<br>As I learn from you,
+<br>I guess you learn from me—
+<br>although you’re older—and white—
+<br>and somewhat more free.
+
+This is my page for English B. <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">3rd level dropdown</a></li>
+              <li><a href="#">3rd level dropdown</a></li>
+            </ul>
+          </li>
+        </ul>
+        <a class="test" tabindex="-1" href="#">At Harlem Hospital across the street from the Schomburg the only thing to eat is a Big Mac <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a tabindex="-1" href="#">
+            <br>after Z. S.
+
+<br>Still, somehow we are
+<br>carousel. We spin bodies
+<br>to the wall and back.
+<br>
+<br>We are woman and
+<br>man and man. We
+<br>are surgeon and
+<br>
+<br>operation. We are
+<br>everybody we love.
+<br>We are inside them.
+<br>
+<br>We are inside and we
+<br>are laughing. We are
+<br>man and we will die too.
+<br>
+<br>We know that much.
+<br>We are our own
+<br>shadow. We are want
+<br>
+<br>of touch. We are woman
+<br>and man and man don’t look.
+<br>We are curvature—look!
+<br>
+<br>We are train.
+<br>We are star.
+<br>We are big
+<br>
+<br>tiny spiders. We are
+<br>crawling. We are biting.
+<br>We are hungry. We are
+<br>
+<br>a stopped carousel. We are
+<br>bodies dropped to the floor.
+<br>We are shaking. We are our own.
+<br>
+<br>Still, somehow, we are
+<br>laughter. We are the doorway out.
+<br>We are (again) the doorway in.
+              
+
+
+
+          </a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="bg"></div>
+<script>
+$(document).ready(function(){
+  $('.dropdown-submenu a.test').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+
+
+</body>
+
+</html>
