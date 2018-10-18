@@ -1,0 +1,57 @@
+body {
+  padding: 20px;
+}
+
+
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: 2px solid blue;
+    box-sizing: border-box;
+    background-color: lightgrey;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: 2px solid blue;
+    box-sizing: border-box;
+    background-color: lightgrey;
+}
+
+
+/* Container needed to position the button. Adjust the width as needed */
+.container {
+  position: relative;
+  height: 300px;
+  width: 300px;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
