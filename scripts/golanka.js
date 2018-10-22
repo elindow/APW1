@@ -3,12 +3,13 @@ var x=100;
 var y=200;
 var dx=5;
 var dy=5;
-var myButton = document.querySelector('button');                  // creates button variable for js
-var myHeading = document.querySelector('h1');                     // creates var for h1 style header
+//var myHeading = document.querySelector('h1');                     // creates var for h1 style header
 
   function init()
   {
   	context = myCanvas.getContext('2d');
+  	context.fillStyle = "red";
+    context.fillRect(0, 0, myCanvas.width, myCanvas.height);
   	setInterval(draw,10);
   }
   function draw()
@@ -26,13 +27,13 @@ var myHeading = document.querySelector('h1');                     // creates var
 	x+=dx;
 	y+=dy;
   }
-
+/*
   myButton.onclick = function(){                                   // mouse click calls 'setUserName()' function
-<<<<<<< HEAD
+
   alert("Congrats! You clicked the button! That's all");
 }
 
-/*
+
 Catcher myCatcher;
 =======
   //alert("Congrats! You clicked the button! That's all");
@@ -254,8 +255,4 @@ class Timer {
     }
   }
 }
-<<<<<<< HEAD
 */
-=======
-  
->>>>>>> 302623feef573124b8f9349d7d7033de395d484b
