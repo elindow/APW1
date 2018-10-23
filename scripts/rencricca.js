@@ -41,9 +41,17 @@ function showImage() {
 }
 
 
+function changeBackground() {
+  var a = Math.floor((Math.random() * 255));
+  var b = Math.floor((Math.random() * 255));
+  var c = Math.floor((Math.random() * 255));
+  document.body.style.backgroundColor = 'rgb(' + [a,b,c].join(',') + ')';
+}
 
 
-//var toggle = true;
+
+
+var toggle = true;
 
 var urls = ["http://cowlitzhumane.com/wp-content/uploads/2018/08/2018-08-19_5b78e4806922d_dog1.jpg",
             "https://www.what-dog.net/Images/faces2/scroll001.jpg",
@@ -56,6 +64,11 @@ var urls = ["http://cowlitzhumane.com/wp-content/uploads/2018/08/2018-08-19_5b78
 function changeImage() {
   index = Math.floor((Math.random() * urls.length));
   document.getElementById('puppy_image').src=urls[index];
+
+  if (toggle) {
+    setInterval(changeBackground, 1000);
+    toggle = false;
+  }
   
   //if (toggle) {
   //document.getElementById('puppy_image').src="http://cowlitzhumane.com/wp-content/uploads/2018/08/2018-08-19_5b78e4806922d_dog1.jpg";
