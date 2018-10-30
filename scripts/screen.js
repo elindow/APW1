@@ -5,17 +5,19 @@ let input = document.getElementById("input");
 let name = document.getElementById("name");
 let num;
 
+let randomGenerator = [name["John", "Charlie","Josh"],adjective["sthasf"],verb["aslkfd"]]
+
 button.addEventListener('click', onclick)
 function onclick(){
     name.value = "Charlie";
     noun.value = "food";
     adjective.value = "big";
-    verb.vlaue = "eat"
+    verb.value = "eat"
     submit();
     button.innerHTML = "Do you like it?"
     setTimeout(wait, 2000);
     function wait(){
-        button.innerHTML = "Press me for a surprise!"
+        button.innerHTML = "Auto fill"
     }
 }
 
@@ -35,7 +37,7 @@ function submit(){
         }else if(num == 1){
             textbox.innerHTML = `Pizza was invented by a ${adjective.value} chef named
             ${name.value}. To make a pizza, you need to take the lump of ${noun.value}, and make
-            a thin, round, ${adjective.value} sauce and cheese. Next you have to ${verb.value} it 
+            a thin and round with ${adjective.value} sauce and cheese. Next you have to ${verb.value} it 
             into a circle. And that is how you make pizza.`
         }else if(num == 2){
             textbox.innerHTML = `*A one-act play to be performed by two ${name.value}'s in this room*
