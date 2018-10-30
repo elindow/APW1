@@ -49,6 +49,8 @@ function draw(){
   //ellipse(x,y,50,50);
  
   noStroke();
+  ambientLight(50);
+  directionalLight(255, 0, 0, 0.25, 0.25, 0);
   pointLight(0,164,178,40,49,250);
   fill(r,g,b);
 
