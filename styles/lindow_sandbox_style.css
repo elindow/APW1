@@ -10,3 +10,11 @@ body {
 	background: blue; 
 	position: absolute; 
 } 
+
+#progress {
+ border-bottom: 
+ 2px solid blue; 
+ width: 0; 
+ position: fixed;   /* keeps an element in position and doesn't scroll */
+ top: 0; left: 0; 
+} 

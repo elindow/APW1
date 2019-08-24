@@ -171,7 +171,7 @@ window.addEventListener("click", event => {
 });
 
 let lastX; // Tracks the last observed mouse X position 
-let bar = document.querySelector("div");
+let bar = document.getElementById("pbar");
 bar.addEventListener("mousedown", event => { 
     if (event.button == 0) { 
 		lastX = event.clientX; 
@@ -190,5 +190,64 @@ function moved(event) {
 	 lastX = event.clientX;
 	 } 
 } 
+
+// Create some content 
+document.body.appendChild(document.createTextNode(
+ "supercalifragilisticexpialidocious ".repeat(2)));
+
+let sbar = document.querySelector("#progress");   // create a var for the progress bar
+window.addEventListener("scroll", () => {		  // add scroll listener
+ let max = document.body.scrollHeight - innerHeight;	// find max value for current window
+ sbar.style.width = `${(pageYOffset / max) * 100}%`;    // set width of bar to % of max
+}); 
+
+
+// Expanding/exploding balloon emoji
+balloon = document.getElementById("balloon")
+let pct = 100;
+window.addEventListener("keydown", balon); 
+
+function balon() {		// must name function so it can be removed
+	if (pct > 200) { 
+		balloon.innerHTML = "💥";
+		removeEventListener("keydown", balon);
+	}
+	if (event.key == "ArrowUp" ) {
+		pct += 10;
+		balloon.style.fontSize = `${pct}%`;
+		event.preventDefault();
+	} 
+	if (event.key == "ArrowDown") {
+		pct -= 10;
+		balloon.style.fontSize = `${pct}%`;
+		event.preventDefault();				// stop regular scrolling
+	}
+	
+};
+
+// mouse trails
+let dots = [];
+for (i=0;i<5;i++) { dots[i] = document.createElement("div");  }
+
+window.addEventListener("mousemove", event => {
+  let mtimer = setTimeout(mtrail(event),1000);
+  //mtimer(event);
+});
+
+
+
+function mtrail(event ) {
+ dots[4].className = "dot"; 
+ dots[4].style.left = (event.pageX - 4) + "px"; 
+ dots[4] .style.top = (event.pageY - 4) + "px"; 
+ document.body.appendChild(dots[4]); 
+ dots.shift();
+ dots[4] = dots[3];
+}
+
+//console.log(document.body);
+let circle = document.querySelector("circle"); 
+circle.setAttribute("fill", "cyan");
+
 
 });
