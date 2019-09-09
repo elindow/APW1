@@ -20,7 +20,7 @@ myImage.onclick = function() {                                    // this is a j
 
 // Personalized welcome message code
 
-var myButton = document.querySelector('button');                  // creates button variable for js
+var myButton = document.getElementById('input');                  // creates button variable for js
 var myHeading = document.querySelector('h1');                     // creates var for h1 style header
 
 function setUserName() {                                          // another js function, this one called internally later on
