@@ -1,0 +1,31 @@
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.p1 {
+  font-family: verdana;
+  font-size: 13px;
+  float: right;
+  width: 500px;
+  padding-right: 100px;
+  height: 200px;
+  overflow: scroll;
+
+
+}
+
+.p2 {
+  font-family: verdana;
+  font-size: 15px;
+  padding-left: 200px;
+  width: 500px;
+  padding-top: 10px;
+
+
+
+}
