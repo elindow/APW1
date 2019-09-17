@@ -7,8 +7,10 @@ html {
 
 #heading{
   background-color:firebrick;
-  margin-left: -1.54%;
-  margin-right: -1.54%
+  padding-bottom: 0px;
+  margin-left: -22px;
+  margin-right: -22px;
+  border: 2px solid black;
 }
 
 h1 {
@@ -73,17 +75,28 @@ a {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  color: firebrick;
+  background-color: white;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(255,0,0,0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
+  color: red;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+}
+
+#input{
+  margin-left:46%; 
+  background-color: firebrick;
+  color: white;
+  padding: 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 13px;
 }
 
 .dropdown-content a:hover {background-color: #ddd;}
