@@ -1,8 +1,7 @@
 html {
   font-size: 10px;
   font-family: 'Open Sans', sans-serif;
-  color: white;
-  
+  color: black;
 }
 
 #heading{
@@ -25,13 +24,12 @@ h2 {
 }
 
 p, li {
-  color: pink;
+  color: red;
   font-size: 16px;  
   line-height: 2;
   letter-spacing: 1px;
   color:black;
 }
-
 
 html {
   background-color: firebrick;
@@ -40,7 +38,7 @@ html {
 body {
   width: auto;
   margin: 40 auto;
-  background-color: black;
+  background-color: white;
   padding: 0 20px 20px 20px;
   border: 5px solid black;
 }
@@ -58,7 +56,7 @@ img {
 }
 
 a {
-  color: pink;
+  color: red;
 }
 .dropbtn {
   background-color: firebrick;
