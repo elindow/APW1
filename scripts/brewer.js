@@ -2,7 +2,7 @@
 //var myHeading = document.querySelector('h1');                     // creates var for h1 style header
 
 //var myImage = document.images["otter.gif"];
-var mySound;
+
 
 function showImage(){
 	x=document.getElementById("myImage");
@@ -11,14 +11,17 @@ function showImage(){
 
 }
 
-function clickButton(){
-	y=document.getElementById("mySound");
-	y.src = "../audio/kirby.mp3"
-	mySound = new sound("kirby.mp3");
-	mySound.play();
+var mySound = document.getElementById("mySound");
+function togglePlay() {
+  return mySound.paused ? mySound.play() : mySound.pause();
+};
 
-
-}
+//function clickButtonStop(){
+//	y=document.getElementById("mySound");
+//	y.src = "../audio/kirby.mp3"
+//	mySound = new sound("kirby.mp3");
+//	mySound.pause();
+//}
 
 
 //  
