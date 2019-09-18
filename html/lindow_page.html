@@ -23,11 +23,14 @@
 		<p><b>Setting up a new page on this site:</b></p>
 		<ol start='1'> <!-- ordered numerical list -->
       		<li>Create a new HTML file in the html directory, i.e. <i>yourname</i>.html</li>
-      		<li>Link to the page in index.html: "<a href=""https://elindow.github.io/APW1/html/lindow_page.html"">Lindow's Page</a>"</li>
+      		<li>We will create a link to the page in index.html: "<a href=""https://elindow.github.io/APW1/html/lindow_page.html"">Lindow's Page</a>"</li>
       		<li>Add head and body elements to the page (copy head from main page, change title)</li>
+          <li> You can put javaScript directly in your page, but best practice tends to be to put it in a separate file
+          <li> So, create a file with a .js extension and save it in the 'scripts' directory
       		<li>Put a link to your .js file just before the body closing tag (see source for this page for syntax)</li>
       		<li>You can test if your .js file is loading by adding an alert line to it, i.e. <i>alert("some text")</i>. If the .js is loaded/working the alert will fire when the page loads</li>
       		<li>Add html to the .html page and javaScript to the .js page, add, commit and push to GitHub for testing your code</li>
+          <li>If desired you can also add a css style page to the styles directory, this file should have a .css extension
     	</ol>
 
 		<p><b>Using JavaScript:</b></p>
@@ -37,7 +40,7 @@
       		<li>All modern browsers have a built-in JavaScript engine, so no local instalation is required, just a web server to show your pages</li>
       		<li>JavaScript syntax is similar to but not identical with Java:  <a href="https://en.wikipedia.org/wiki/JavaScript_syntax">Java Syntax Wiki</a></li>
       		<li>Lines of code are terminated by semicolons (actually sometimes optional, but recommended for clarity), braces/curly brackets deliniate blocks of code</li>
-      		<li>Variables are not typed, declared with keyword var, initial assignment of value is not requried, scoping is similar to Java</li>
+      		<li>Variables are not typed, can be declared with keyword var, initial assignment of value is not requried, scoping is similar to Java</li>
       		<li>Typically code is event driven, i.e. responds to mouse clicks/key strokes, i.e. <i>myButton</i>.onclick = function() { 'do something' }</li>
       		<li>In order to interact with html elements, jS vars must be linked to the desired element(s)</li>
       		<li>One way to do that is with a querySelector function, which you can see on the main.js page</li>
@@ -50,7 +53,7 @@
 			 <li style="margin-left: 10px;">For example: $("#myButton")</li>
 			 <li style="margin-left: 20px;">The preceeding '#' indicates an id supplied in the html code</li>
 			 <li>The identifier is followed by a period ('dot operator') and a function name and parameters:</li>
-       <li style="margin-left: 10px;">For example: $("#myButton").html('new button lable')</li>
+       <li style="margin-left: 10px;">For example: $("#myButton").html('new button label')</li>
        <li style="margin-left: 20px;">That's all you need to link the elements, though of course there are many ways to specify html objects</li>
        <li style="margin-left: 25px;">and many kinds and forms of functions that can be linked to.
     	</ul>
@@ -64,6 +67,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script> <!-- p5 Processing library -->
     <script src="../scripts/lindow.js"></script>   <!-- loads js file from 'scrips' directory into this page -->
     <p> P5 (Java Script Processing Code) Examples Below</p>
-
+    <!--The code for this is all in the .js file-->
   </body>
 </html>
