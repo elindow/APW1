@@ -1,31 +1,30 @@
 {
   "filters": {
-      "number_of_employees_range": {
-        "min": 0,
-        "max": 0
-      },
-      "form_types": {
-        "f990": true,
-        "f990pf": true,
-        "required_to_file_990t": true
-      },
-      "audits": {
-        "a_133_audit_performed": true
-      }
+    "number_of_employees_range": {
+      "min": 0,
+      "max": 0
     },
-    "financials": {
-      "total_revenue": {
-        "min": 0,
-        "max": 0
-      },
-      "total_expenses": {
-        "min": 0,
-        "max": 0
-      },
-      "total_assets": {
-        "min": 0,
-        "max": 0
-      }
+    "form_types": {
+      "f990": true,
+      "f990pf": true,
+      "required_to_file_990t": true
+    },
+    "audits": {
+      "a_133_audit_performed": true
+    }
+  },
+  "financials": {
+    "total_revenue": {
+      "min": 0,
+      "max": 0
+    },
+    "total_expenses": {
+      "min": 0,
+      "max": 0
+    },
+    "total_assets": {
+      "min": 0,
+      "max": 0
     }
   }
 }

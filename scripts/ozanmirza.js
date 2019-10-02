@@ -1,5 +1,22 @@
+CHARITY_PREFRENCES = undefined;
+
 document.body.onload = function() {
   document.getElementById('start').classList.add("fadeInAndMoveUp");
+
+  function setupData() {
+    var xobj = new XMLHttpRequest();
+    xobj.overrideMimeType("application/json");
+    xobj.open('GET', 'https://raw.githubusercontent.com/ozanmirza1/APW1/master/scripts/JSON/ozanmirza.json', true); // Replace 'my_data' with the path to your file
+    xobj.onreadystatechange = function () {
+      if (xobj.readyState == 4 && xobj.status == "200") {
+        // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+        CHARITY_PREFRENCES = JSON.parse(xobj.responseText);
+      }
+    };
+    xobj.send();
+  }
+
+  setupData();
 }
 
 document.getElementById('start').onclick = function() {
@@ -25,20 +42,12 @@ document.getElementById('next').onclick = function() {
 }
 
 document.getElementById('min_employees').oninput = function() {
-  
+
 }
 
 document.getElementById('max_employees').oninput = function() {
 
 }
-
-function setupData() {
-  $.getJSON("../scripts/JSON/ozanmirza.json", function(json) {
-    console.log(json); // this will show the info it in firebug console
-  });
-}
-
-setupData();
 
 function fetchData() {
     $.ajax({
