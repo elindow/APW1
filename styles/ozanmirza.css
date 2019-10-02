@@ -6,7 +6,7 @@ body {
 }
 
 * {
-  transition: opacity 1s, top 1s, left 1s;
+  transition: opacity 1s, top 1s, left 1s, bottom 1s;
 }
 
 .main_title {
@@ -114,4 +114,82 @@ body {
 
 a {
   color: darkGray;
+}
+
+.next {
+  position: absolute;
+  width: 250px;
+  height: 50px;
+  bottom: 0%;
+  left: 50%;
+  margin-left: -125px;
+  background-color: rgb(66, 244, 178);
+  background-image: url("../html/img/Next.png");
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  opacity: 0;
+}
+
+.presentNext {
+  bottom: 5%;
+  opacity: 1;
+}
+
+.setter_section_title {
+  position: absolute;
+  top: 20px;
+  left: 0%;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  color: black;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 75px;
+}
+
+.employees_range_field {
+  position: absolute;
+  top: 50%;
+  width: 200px;
+  height: 200px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  background-color: lightGray;
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 125px;
+  color: white;
+  margin-left: -100px;
+}
+
+.employees_title {
+  position: absolute;
+  top: 30%;
+  width: 200px;
+  height: 25px;
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 45px;
+  margin-left: -100px;
+}
+
+.setter_section {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.present_section {
+  left: 0%;
+  opacity: 1;
+}
+
+.dismiss_section {
+  left: -50%;
+  opacity: 0;
 }
