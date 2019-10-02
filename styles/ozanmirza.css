@@ -5,15 +5,17 @@ body {
   background-size: 100%, 100%;
 }
 
+* {
+  transition: opacity 1s, top 1s, left 1s;
+}
+
 .main_title {
   position: absolute;
   width: 100%;
-  height: 125px;
+  height: 20%;
   top: 0%;
   left: 0%;
-  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
-  -webkit-background-clip: text;
-  color: transparent;
+  color: white;
   font-size: 100px;
   text-align: center;
   font-family: 'Varela Round', sans-serif;
@@ -31,4 +33,85 @@ body {
   font-size: 35px;
   text-align: center;
   font-family: 'Varela Round', sans-serif;
+}
+
+.start {
+  position: absolute;
+  width: 350px;
+  height: 75px;
+  top: 55%;
+  left: 50%;
+  opacity: 0;
+  margin: -75px -175px;
+  background-color: rgba(66, 244, 178, 1);
+  text-align: center;
+  vertical-align: center;
+  font-size: 30px;
+  font-family: 'Varela Round', sans-serif;
+  border-radius: 15px;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.fadeInAndMoveUp {
+  top: 50%;
+  opacity: 1;
+}
+
+.disappear {
+  top: -200px;
+  opacity: 0;
+}
+
+.main_list {
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  width: 80%;
+  height: 85%;
+  background-color: white;
+  border-radius: 25px;
+  border-color: lightGray;
+  border-width: 10px;
+  opacity: 0;
+}
+
+.presentList {
+  top: 7.5%;
+  opacity: 1;
+}
+
+.back {
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  background-image: url("../html/img/Back.png");
+  outline: none;
+  border: none;
+  opacity: 0;
+}
+
+.presentBack {
+  left: 25px;
+  opacity: 1;
+}
+
+.credits {
+  position: absolute;
+  width: 150px;
+  height: 14px;
+  font-size: 14px;
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+}
+
+a {
+  color: darkGray;
 }
