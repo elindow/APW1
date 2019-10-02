@@ -25,7 +25,7 @@ document.getElementById('next').onclick = function() {
 }
 
 document.getElementById('min_employees').oninput = function() {
-
+  
 }
 
 document.getElementById('max_employees').oninput = function() {
