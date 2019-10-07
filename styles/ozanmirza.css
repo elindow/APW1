@@ -39,7 +39,7 @@ body {
   position: absolute;
   width: 350px;
   height: 75px;
-  top: 55%;
+  top: 65%;
   left: 50%;
   opacity: 0;
   margin: -75px -175px;
@@ -55,7 +55,7 @@ body {
 }
 
 .fadeInAndMoveUp {
-  top: 50%;
+  top: 400px;
   opacity: 1;
 }
 
@@ -145,7 +145,7 @@ a {
   text-align: center;
   color: black;
   font-family: 'Varela Round', sans-serif;
-  font-size: 75px;
+  font-size: 45px;
 }
 
 .employees_range_field {
@@ -160,7 +160,7 @@ a {
   text-align: center;
   font-family: 'Varela Round', sans-serif;
   font-size: 125px;
-  color: white;
+  color: darkGray;
   margin-left: -100px;
 }
 
@@ -178,7 +178,7 @@ a {
 .setter_section {
   position: absolute;
   top: 0%;
-  left: 50%;
+  left: 100%;
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -190,6 +190,39 @@ a {
 }
 
 .dismiss_section {
-  left: -50%;
+  left: -100%;
+  opacity: 0;
+}
+
+.list_forms {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  width: 80%;
+  height: 60%;
+  border-radius: 20px;
+  background-color: lightGray;
+}
+
+.prefrences_back {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  background-image: url("../html/img/Back-Section.png");
+  outline: none;
+  border: none;
+  opacity: 0;
+}
+
+.prefrences_back_true {
+  left: 20px;
+  opacity: 1;
+}
+
+.prefrences_back_false {
+  left: 0px;
   opacity: 0;
 }
