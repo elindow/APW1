@@ -10,21 +10,75 @@
   </head>
   <body>
     <p id="credits" class="credits">Powered by <b><a href="https://www.guidestar.org/" target="blank">GuideStar</a></b></p>
+    <img id="loading" class="loading" src="img/loading.gif"></img>
     <button  type="button" id="start" class="start">Start</button>
     <button  type="button" id="back" class="back"></button>
     <div id="main_list" class="main_list">
-      <div id="employees_range" class="setter_section present_section">
+      <div id="section_0" class="setter_section present_section">
         <p id="employees_title" class="setter_section_title">Number of Employees Range</p>
-        <input type="number" id="min_employees" class="employees_range_field" style="left: 35%;" value="0"></input>
-        <input type="number" id="max_employees" class="employees_range_field" style="left: 65%;" value="0"></input>
-        <p id="min_exployees_title" class="employees_title" style="left: 35%;">Min</p>
-        <p id="max_exployees_title" class="employees_title" style="left: 65%;">Max</p>
+        <input type="number" min="0" id="min_employees" class="range_field" style="left: 35%;" value="0"></input>
+        <input type="number" min="0" id="max_employees" class="range_field" style="left: 65%;" value="0"></input>
+        <p id="min_exployees_title" class="range_title" style="left: 35%;">Min</p>
+        <p id="max_exployees_title" class="range_title" style="left: 65%;">Max</p>
       </div>
-      <div id="form_types" class="setter_section">
-        <p id="form_types_title" class="setter_section_title">Form Types</p>
+      <div id="section_1" class="setter_section">
+        <p id="form_types_title" class="setter_section_title">Which IRS Forms should the company have filed?</p>
         <div id="form_types_list" class="list_forms">
-
+          <div id="form_section_1" class="form_section">
+            <p id="forms_title_0" class="forms_title">f990</p>
+            <label>
+              <input id="checkbox0" type="checkbox" checked>
+              <span class="check"></span>
+            </label>
+            <input type="button" id="forms_help_0" class="forms_help" value="?"></button>
+          </div>
+          <div id="form_section_2" class="form_section">
+            <p id="forms_title_1" class="forms_title">f990pf</p>
+            <label>
+              <input id="checkbox1" type="checkbox" checked>
+              <span class="check"></span>
+            </label>
+            <input type="button" id="forms_help_1" class="forms_help" value="?"></button>
+          </div>
+          <div id="form_section_3" class="form_section">
+            <p id="forms_title_2" class="forms_title">Required To File 990t</p>
+            <label>
+              <input id="checkbox2" type="checkbox" checked>
+              <span class="check"></span>
+            </label>
+            <input type="button" id="forms_help_2" class="forms_help" value="?"></button>
+          </div>
+          <div id="form_section_4" class="form_section">
+            <p id="forms_title_3" class="forms_title">A-133 Audit Performed</p>
+            <label>
+              <input id="checkbox3" type="checkbox" checked>
+              <span class="check"></span>
+            </label>
+            <input type="button" id="forms_help_3" class="forms_help" value="?"></button>
+          </div>
         </div>
+      </div>
+      <div id="section_2" class="setter_section">
+        <p id="revenue_title" class="setter_section_title">Total Revenue (USD)</p>
+        <input type="number" min="0" id="min_revenue" class="range_field" style="left: 35%;" value="0"></input>
+        <input type="number" min="0" id="max_revenue" class="range_field" style="left: 65%;" value="0"></input>
+        <p id="min_revenue_title" class="range_title" style="left: 35%;">Min</p>
+        <p id="max_revenue_title" class="range_title" style="left: 65%;">Max</p>
+      </div>
+      <div id="section_3" class="setter_section">
+        <p id="expenses_title" class="setter_section_title">Total Expenses (USD)</p>
+        <input type="number" min="0" id="min_expenses" class="range_field" style="left: 35%;" value="0"></input>
+        <input type="number" min="0" id="max_expenses" class="range_field" style="left: 65%;" value="0"></input>
+        <p id="min_expenses_title" class="range_title" style="left: 35%;">Min</p>
+        <p id="max_expenses_title" class="range_title" style="left: 65%;">Max</p>
+      </div>
+      <div id="section_4" class="setter_section">
+        <p id="assets_title" class="setter_section_title">Total Assests </p>
+        <input type="button" id="forms_help_4" class="forms_help" value="?"></button>
+        <input type="number" min="0" id="min_assets" class="range_field" style="left: 35%;" value="0"></input>
+        <input type="number" min="0" id="max_assets" class="range_field" style="left: 65%;" value="0"></input>
+        <p id="min_assets_title" class="range_title" style="left: 35%;">Min</p>
+        <p id="max_assets_title" class="range_title" style="left: 65%;">Max</p>
       </div>
       <button type="button" id="prefences_back" class="prefrences_back"></button>
     </div>
