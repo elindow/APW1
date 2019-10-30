@@ -166,6 +166,7 @@ function fetchData() {
         xhrObj.setRequestHeader("Subscription-Key","075274b7222b4483a72ddecd38b2a09e");
     },
     type: "GET",
+    dataType: "jsonp",
     // Request body
     data: JSON.stringify(CHARITY_PREFRENCES),
   })
