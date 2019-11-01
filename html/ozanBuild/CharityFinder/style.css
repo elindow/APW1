@@ -5,8 +5,7 @@ html {
 }
 
 body {
-  background-image: url("../html/img/CharityBG.jpeg");
-  background-size: 100%, 100%;
+  background-image: url("img/CharityBG.jpg");
 }
 
 * {
@@ -88,7 +87,6 @@ label {
   transition-delay: 0s;
   top: -200px;
   opacity: 0;
-  display: none;
 }
 
 .main_list {
@@ -116,7 +114,7 @@ label {
   width: 50px;
   height: 50px;
   background-color: transparent;
-  background-image: url("../html/img/Back.png");
+  background-image: url("img/Back.png");
   outline: none;
   border: none;
   opacity: 0;
@@ -151,7 +149,7 @@ a {
   left: 50%;
   margin-left: -125px;
   background-color: rgb(66, 244, 178);
-  background-image: url("../html/img/Next.png");
+  background-image: url("img/Next.png");
   border-radius: 25px;
   border: none;
   outline: none;
@@ -238,7 +236,7 @@ a {
   width: 35px;
   height: 35px;
   background-color: transparent;
-  background-image: url("../html/img/Back-Section.png");
+  background-image: url("img/Back-Section.png");
   outline: none;
   border: none;
   opacity: 0;
@@ -391,4 +389,33 @@ input:checked[type="checkbox"] ~ .check:after {
   left: 65%;
   background-color: #092c3e;
   color: white;
+}
+
+.error_popup {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 350px;
+  height: 150px;
+  transform: translate(-50%);
+  background-color: #092c3e;
+  border-radius: 20px;
+  opacity: 0;
+}
+
+.error_title {
+  position: absolute;
+  top: 0%;
+  left: 10px;
+  width: 330px;
+  height: 100%;
+  text-align: center;
+  color: white;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 25px;
+}
+
+.present_error {
+  top: 35%;
+  opacity: 1;
 }
