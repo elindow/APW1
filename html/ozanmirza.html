@@ -1,88 +1,99 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Charity Finder</title>
-    <h1 id="main_title" class="main_title">Charity Finder</h1>
-    <p id="sub_title" class="sub_title">By: Ozan Mirza</p>
-    <link rel="stylesheet" href="../styles/ozanmirza.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-  </head>
-  <body>
-    <p id="credits" class="credits">Powered by <b><a href="https://www.guidestar.org/" target="blank">GuideStar</a></b></p>
-    <img id="loading" class="loading" src="img/loading.gif"></img>
-    <button  type="button" id="start" class="start">Start</button>
-    <button  type="button" id="back" class="back"></button>
-    <div id="main_list" class="main_list">
-      <div id="section_0" class="setter_section present_section">
-        <p id="employees_title" class="setter_section_title">Number of Employees Range</p>
-        <input type="number" min="0" id="min_employees" class="range_field" style="left: 35%;" value="0"></input>
-        <input type="number" min="0" id="max_employees" class="range_field" style="left: 65%;" value="0"></input>
-        <p id="min_exployees_title" class="range_title" style="left: 35%;">Min</p>
-        <p id="max_exployees_title" class="range_title" style="left: 65%;">Max</p>
-      </div>
-      <div id="section_1" class="setter_section">
-        <p id="form_types_title" class="setter_section_title">Which IRS Forms should the company have filed?</p>
-        <div id="form_types_list" class="list_forms">
-          <div id="form_section_1" class="form_section">
-            <p id="forms_title_0" class="forms_title">f990</p>
-            <label>
-              <input id="checkbox0" type="checkbox" checked>
-              <span class="check"></span>
-            </label>
-            <input type="button" id="forms_help_0" class="forms_help" value="?"></button>
-          </div>
-          <div id="form_section_2" class="form_section">
-            <p id="forms_title_1" class="forms_title">f990pf</p>
-            <label>
-              <input id="checkbox1" type="checkbox" checked>
-              <span class="check"></span>
-            </label>
-            <input type="button" id="forms_help_1" class="forms_help" value="?"></button>
-          </div>
-          <div id="form_section_3" class="form_section">
-            <p id="forms_title_2" class="forms_title">Required To File 990t</p>
-            <label>
-              <input id="checkbox2" type="checkbox" checked>
-              <span class="check"></span>
-            </label>
-            <input type="button" id="forms_help_2" class="forms_help" value="?"></button>
-          </div>
-          <div id="form_section_4" class="form_section">
-            <p id="forms_title_3" class="forms_title">A-133 Audit Performed</p>
-            <label>
-              <input id="checkbox3" type="checkbox" checked>
-              <span class="check"></span>
-            </label>
-            <input type="button" id="forms_help_3" class="forms_help" value="?"></button>
-          </div>
-        </div>
-      </div>
-      <div id="section_2" class="setter_section">
-        <p id="revenue_title" class="setter_section_title">Total Revenue (USD)</p>
-        <input type="number" min="0" id="min_revenue" class="range_field" style="left: 35%;" value="0"></input>
-        <input type="number" min="0" id="max_revenue" class="range_field" style="left: 65%;" value="0"></input>
-        <p id="min_revenue_title" class="range_title" style="left: 35%;">Min</p>
-        <p id="max_revenue_title" class="range_title" style="left: 65%;">Max</p>
-      </div>
-      <div id="section_3" class="setter_section">
-        <p id="expenses_title" class="setter_section_title">Total Expenses (USD)</p>
-        <input type="number" min="0" id="min_expenses" class="range_field" style="left: 35%;" value="0"></input>
-        <input type="number" min="0" id="max_expenses" class="range_field" style="left: 65%;" value="0"></input>
-        <p id="min_expenses_title" class="range_title" style="left: 35%;">Min</p>
-        <p id="max_expenses_title" class="range_title" style="left: 65%;">Max</p>
-      </div>
-      <div id="section_4" class="setter_section">
-        <p id="assets_title" class="setter_section_title">Total Assests </p>
-        <input type="button" id="forms_help_4" class="forms_help" value="?"></button>
-        <input type="number" min="0" id="min_assets" class="range_field" style="left: 35%;" value="0"></input>
-        <input type="number" min="0" id="max_assets" class="range_field" style="left: 65%;" value="0"></input>
-        <p id="min_assets_title" class="range_title" style="left: 35%;">Min</p>
-        <p id="max_assets_title" class="range_title" style="left: 65%;">Max</p>
-      </div>
-      <button type="button" id="prefences_back" class="prefrences_back"></button>
-    </div>
-    <button type="button" id="next" class="next" disabled></button>
-    <script type="text/javascript" src="../scripts/ozanmirza.js"></script>
-  </body>
+	<head>
+		<title>Ozan Mirza</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="ozanBuild/Main%20Website/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="ozanBuild/Main%20Website/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>Ozan</strong> <span>Mirza</span></a>
+					</header>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/pic07.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Ozan Mirza</h1>
+							</header>
+							<div class="content">
+								<p>This website has a list of my projects built<br />
+								 in the Advanced Programmer's Workshop.</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>About Me</h2>
+									</header>
+									<p>I'm a 10th grader at Trevor Day School and I am taking both the Advanced Programmer's Workshop and I'm also a TA in an Intermediate Computer Programming Class. I've been teaching myself programming ever since the age of 11. I know HTML, CSS, Javascript, Python, Java, Objective-C, Swift, and C#. I also have 5 apps on the iOS AppStore, 2 apps on the Mac OS X AppStore, and 2 apps on the Google Play Store.</p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+									<a href="generic.html" class="image">
+										<img src="ozanBuild/Main%20Website/images/CharityFinder.png" alt="" data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Charity Finder</h3>
+											</header>
+											<p>This is a website that lets the user search for a Charity through it's finances. The way it works is where the user fills out a series of prefrences presented to them, and then the website sends that data to the GuideStar data center, which returns a list of matching charities, and provides a whole profile of the charity aswell. The agreement between the service and the website ceased, so now the data is not available anymore.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">Learn more</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="generic.html" class="image">
+										<img src="ozanBuild/Main%20Website/images/Objective-C%20Teachback.png" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Objective-C Teachback</h3>
+											</header>
+											<p>This is the second project of the first semester where each student spends a class period presenting and teaching a programming concept to the other students. I chose mine to be the Objectivce-C language. It starts off with a presentation of the history of Objective-C and what it's used for, and then moves on into a website I create the let's the user learn the basic syntax of Objective-C.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">Learn more</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+							</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="ozanBuild/Main%20Website/assets/js/jquery.min.js"></script>
+			<script src="ozanBuild/Main%20Website/assets/js/jquery.scrolly.min.js"></script>
+			<script src="ozanBuild/Main%20Website/assets/js/jquery.scrollex.min.js"></script>
+			<script src="ozanBuild/Main%20Website/assets/js/browser.min.js"></script>
+			<script src="ozanBuild/Main%20Website/assets/js/breakpoints.min.js"></script>
+			<script src="ozanBuild/Main%20Website/assets/js/util.js"></script>
+			<script src="ozanBuild/Main%20Website/assets/js/main.js"></script>
+
+	</body>
 </html>

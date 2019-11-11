@@ -26,6 +26,7 @@ document.body.onload = function() {
     document.getElementById('main_list').classList.remove("presentList");
     document.getElementById('back').classList.remove("presentBack");
     document.getElementById('next').classList.remove("presentNext");
+    document.getElementById('error_popup').classList.remove("present_error");
   }
 
   document.getElementById('next').onclick = function() {
@@ -114,6 +115,35 @@ document.body.onload = function() {
   setupData();
 }
 
+function manageSections(type) {
+  if(PREFRENCES_SECTION.current < PREFRENCES_SECTION.max) {
+    document.getElementById('prefences_back').classList.add("prefrences_back_" + (PREFRENCES_SECTION.current != PREFRENCES_SECTION.min));
+    document.getElementById('section_' + PREFRENCES_SECTION.current).classList.remove("dismiss_section");
+    document.getElementById('section_' + PREFRENCES_SECTION.current).classList.add("present_section");
+    if(type == CHARITY_PREFRENCES_TYPES.proceed) {
+      document.getElementById('section_' + (PREFRENCES_SECTION.current - 1)).classList.remove("present_section");
+      document.getElementById('section_' + (PREFRENCES_SECTION.current - 1)).classList.add("dismiss_section");
+    } else {
+      document.getElementById('section_' + (PREFRENCES_SECTION.current + 1)).classList.remove("present_section");
+      document.getElementById('section_' + (PREFRENCES_SECTION.current + 1)).classList.add("dismiss_section");
+    }
+  } else {
+    document.getElementById('section_' + (PREFRENCES_SECTION.current - 1)).classList.remove("present_section");
+    document.getElementById('section_' + (PREFRENCES_SECTION.current - 1)).classList.add("dismiss_section");
+    document.getElementById('main_list').classList.remove("presentList");
+    document.getElementById('main_list').classList.add("disappear");
+    document.getElementById('next').classList.remove("presentNext");
+    document.getElementById('next').classList.add("disappear");
+    document.getElementById('error_popup').classList.add("present_error");
+    fetchData();
+  }
+}
+
+function manageNextButton(min, max) {
+  document.getElementById('next').disabled = parseInt(min) > parseInt(max);
+  document.getElementById('next').disabled = min == "" || max == "";
+}
+
 function setupData() {
   var xobj = new XMLHttpRequest();
   xobj.overrideMimeType("application/json");
@@ -130,29 +160,6 @@ function setupData() {
   xobj.send();
 }
 
-function manageSections(type) {
-  if(PREFRENCES_SECTION.current < PREFRENCES_SECTION.max) {
-    document.getElementById('prefences_back').classList.add("prefrences_back_" + (PREFRENCES_SECTION.current != PREFRENCES_SECTION.min));
-    document.getElementById('section_' + PREFRENCES_SECTION.current).classList.remove("dismiss_section");
-    document.getElementById('section_' + PREFRENCES_SECTION.current).classList.add("present_section");
-    if(type == CHARITY_PREFRENCES_TYPES.proceed) {
-      document.getElementById('section_' + (PREFRENCES_SECTION.current - 1)).classList.remove("present_section");
-      document.getElementById('section_' + (PREFRENCES_SECTION.current - 1)).classList.add("dismiss_section");
-    } else {
-      document.getElementById('section_' + (PREFRENCES_SECTION.current + 1)).classList.remove("present_section");
-      document.getElementById('section_' + (PREFRENCES_SECTION.current + 1)).classList.add("dismiss_section");
-    }
-  } else {
-  fetchData();
-      document.getElementById('main_list').classList.add("disappear");
-  }
-}
-
-function manageNextButton(min, max) {
-  document.getElementById('next').disabled = parseInt(min) > parseInt(max);
-  document.getElementById('next').disabled = min == "" || max == "";
-}
-
 function fetchData() {
   var params = {
     // Request parameters
@@ -166,6 +173,7 @@ function fetchData() {
         xhrObj.setRequestHeader("Subscription-Key","075274b7222b4483a72ddecd38b2a09e");
     },
     type: "GET",
+    dataType: "jsonp",
     // Request body
     data: JSON.stringify(CHARITY_PREFRENCES),
   })
@@ -174,6 +182,9 @@ function fetchData() {
     console.log(data);
   })
   .fail(function() {
-    alert("error");
+    document.getElementById('error_popup').classList.add("present_error");
+  })
+  .error(function() {
+    document.getElementById('error_popup').classList.add("present_error");
   });
 }
