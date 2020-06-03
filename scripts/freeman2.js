@@ -1,54 +1,40 @@
-alert("i am programming")
-var x = new []; 
-var y = new []; 
-var gameover=false;
-var w=30, h=30, bs=20, dir=2, ax=12, ay=10; 
-var []dx={0,0,1,-1},dy={1,-1.0.0};
-
-function setup(){
-	creatCanvas(600,600);
-	x.add(5);
-	y.add(5);
+var colors = "52489c-4062bb-59c3c3-ebebeb-f45b69".split("-").map(a=>"#"+a)
+function setup() {
+  createCanvas(800, 800);
+  background(200);
+  fill(30)
+  rect(0,0,width,height)
+  noStroke()
+  
+  drawingContext.shadowColor = color(0, 0, 0,30);
+  drawingContext.shadowBlur =20;
+  drawingContext.shadowOffsetX = 5;
+  drawingContext.shadowOffsetY = -5;
 }
 
-function draw(){
-	for(int i=0; i<w; i++){
-		line(i*bs,0,i*bs,height);
-	}
-	for(int i=0; i<h; i++){
-		line(0,i*bs,width,i*bs);
-	}
-	fill(0,255,0);
-	for (int i=0; i<x.size(); i++){
-		rect(x.get(i)*bs, y.get(i)*bs, bs, bs);
-	}
-  if (!gameover) {  
-  	fill(255, 0, 0); 
-  rect(ax*bs, ay*bs, bs, bs);
-  if (frameCount%5==0) {
-      x.add(0, x.get(0) + dx[dir]); 
-      y.add(0, y.get(0) + dy[dir]);
-      if(x.get(0) < 0 || y.get(0) < 0 || x.get(0) >= w || y.get(0) >= h)
-      gameover = true;
-      for(int i=1;i<x.size();i++) 
-      if(x.get(0)==x.get(i)&&y.get(0)==y.get(i)) 
-      gameover=true;
-      if (x.get(0)==ax && y.get(0)==ay) { 
-      ax = (int)random(0, w); ay = (int)random(0, h);
-    }
-      else { x.remove(x.size()-1); y.remove(y.size()-1); }
-    }
+function draw() {
+  translate(width/2,height/2)
+  let cSpan = 100
+  let c1 = (int(frameCount/cSpan))% 5
+  let c2 = (int(frameCount/cSpan)+1) % 5
+  let ratio = (frameCount/cSpan-int(frameCount/cSpan))
+  strokeWeight(2)
+  // fill(255,50)
+  for(var i=0;i<50;i++){
+    push()
+    // noFill()
+    fill(lerpColor( color(colors[c1]),color(colors[c2]), ratio ))
+    rotate(frameCount/(50+10*log(frameCount))+i/20)
+    let dd = frameCount/(5+i)+frameCount/5+sin(i)*50
+    translate( random(dd/2,dd),0)
     
-  }else {
-    fill(0); textSize(30); 
-    textAlign(CENTER); 
-    text("GAME OVER. Press space",width/2,height/2);
-    if(keyPressed&&key==' ') { 
-    	x.clear(); y.clear(); x.add(5);  y.add(5); gameover = false; 
-    }
+    let x = noise(frameCount/50+i/50,5000)*80 + random(50)
+    let y = noise(frameCount/50+i/50,10000)*80 + random(50)
+    // scale(noise(x,y,i)*2)
+    
+    let rr =random(1,8-log(frameCount)/10)
+    ellipse(x,y,rr,rr)
+    pop()
   }
+  // ellipse(mouseX, mouseY, 20, 20);
 }
-function keyPressed() { int nd=key=='s'? 0:(key=='w'?1:(key=='d'?2:(key=='a'?3:-1)));
-  if (nd!=-1&&(x.size()<=1||!(x.get(1)==x.get(0)+dx[nd]&&y.get(1)==y.get(0)+dy[nd]))) dir=nd;
-}
-	
