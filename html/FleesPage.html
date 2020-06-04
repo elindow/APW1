@@ -54,6 +54,41 @@ hacking and have made a lot of progress from the beginning where I knew practica
 have something to show for all that I’ve learned.</p>
 
 
+<h2>Update: 5/20/2020</h2>
+
+<p>I've been working at this for awhile now, and made some more progress. Unsuprisingly, I've also hit a new
+roadblock. I tried searching directly for the hex value of a letter instead of using a table search tool like
+Monkey-Moore or Madedit. This worked, and I found a string of letters I knew were in the game. Perfect! Now
+I just have to run and it see what it looks like in game, right? Nope. For some reason, the game won't run again
+if it's decompressed. If I extract the files from the .iso and try to run them, the game never starts. Same thing
+happens even if I repack them into an iso again. It isn't the edits I made either, if I unpack the game and then
+repack it again without editing it, the same error occurs. I also tried using a program that can edit iso files
+without decompressing them, but again I had the same issue. It seems if the file is tampered with at all, it won't
+run. This could be some sort of copy protection, but I'm not sure. I'm also not sure how the person who hacked this
+rom before me got it to work. I have a few ideas. First, someone has made a successful translation hack of another
+game from the same company (Atlus) as this game. If I can see what they did in their hack, maybe I can fix it. I... 
+Wait I think I just figured it out I'll be right back.</p>
+
+<p>Okay fix I thought of I just misremembered but I'm gonna try a few things be right back.</p>
+
+<h2>Update: 6/04/2020</h2>
+
+I did it. It works. For Real. What I did, is instead of extracting the iso file, editing it, and then putting it back into an iso, I edited the unextracted
+iso file. Since everything in the extracted file is techincally in the hex for the iso file, all the data was still in there, just not seperated. To test this, I simply
+changed every instance of the letters "DDS" in the game to "AAS". Since the word "DDS" shows up very early in the game, and it in english letters, it was a quick and easy test.
+This time, it worked, and the game ran.
+
+<p><span title="As you can see, DDS is now AAS. Hey, is that Mr. Golanka?"><img src="../images/AAS.png" style="width: 40vw; min-width: 330px;"></span></p>
+
+<p>After this, I translated a whole line of dialogue</p>
+
+<p><span title="I mean I forgot a space and it's in all caps, but it's English!"><img src="../images/Translated.png" style="width: 40vw; min-width: 330px;"></span></p>
+
+<p>I translated that line by going in a manually editing the text of each letter with a table to tell me what hex is what letter. This is very tedious and slow,
+and translating the whole game like this would take me a very very long time. The next step, if I continue, would be a text extraction program like cartographer to extract the
+text. I could then edit the text file without having to worry about the hex, and then use the same program to insert the hex back in, without having to manually edit
+each letter myself. But, I finally got English text to display! Horray! It took a long time, but I sure learned a lot about hex editing and files and download SO many
+useless programs. I had a great time on this project, and hopefully I'll find the time to continue it on my own :).</p>
 
 
 
