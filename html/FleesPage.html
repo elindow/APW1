@@ -2,9 +2,94 @@
 <head>
 </head>
 <body>
-<h1>Hey yall</h1>
+<h1>Rom Hacking SMT: Devil Summoner</h1>
 
-<p><button type="button">Fun times yay!</button></p>
 
-<p><img src="https://greenblender.com/smoothies/wp-content/uploads/2016/05/does-grapefruit-help-you-lose-weight-by-greenblender-fruit.jpg" width="100" height="400"></p>
+<p>	For my advanced coding project I have been attempting to translate the game Shin 
+Megami Tensei Devil Summoner for the PSP using a completely translated script and a ROM (basically a rip) of the game. 
+While some people had translated the game completely, they had no hacking experience to actually 
+implement their translation into the game proper. This is what I have been trying to do since the start of the school year. </p>
+
+<p> The basic idea of ROM hacking is taking a file of a game and editing the hex in order to change the game. Editing the hex is necessary since 
+the hackers do not have the source code of the game, just the finished product. The easiest form of ROM hacking is text editing. By simply 
+replacing the hex to change each letter, the text in a game can be changed. This is also the most useful kind of 
+hacking, since it can be used to translate games that remain untranslated by their developers. 
+A famous example is Mother 3. This famous sequel to earthbound for the GBA was never released outside of Japan, 
+despite the popularity of the series. Fans took it upon themselves to translate this game, and through ROM hacking, 
+have made a version as good as any official translated release. </p>
+
+<p><span title="Mother 3"><img src="https://legendsoflocalization.com/media/mother-3/chapter1-2/mother2-tessie.png"></span></p>
+
+<p>Through a bit of research, I figured out the first step of ROM hacking for a translation is to make a table file. 
+The basic idea of this is that each letter in a ROM has a value. For example, in plain text, A = 1, then after A 
+comes B, so B = 2. The only problem is, A usually isn’t 1. A might be 28. But, the order is the same. If A = 28, 
+B must equal 29. To make a table for a ROM hack, the hacker would first find the file in which the text of the game 
+is stored. Then use relative search to find a word they know is in the game. Take the word “cat”. C(3) A(1) T(20). 
+In terms of numbers, the second number must be 2 less than the first, and the third 19 more than the second number. 
+If you put “cat” into a relative search program, it would recognize 15 13 32 as “cat”. 13 is 2 less than 15, and 32 = 13 + 19. 
+The longer sting you use, the more likely the match you would find it correct. After you find out the value of one letter, 
+you know the values of the rest of the alphabet. For example, if C is 15 than D must be 16. If you make a table file listing 
+all the letters and their equivalents, you can put that into a program and it can interpret the hex into readable text. </p>
+
+<p><span title="An Example of a Japenese Table File"><img src="data:image/png;base64,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"></span></p>
+
+<p>This is for english, but for Japanese it’s similar, since their phonetic characters also have a set order or “alphabet”. 
+There are some outliers with the non-phonetic characters called “Kanji”, but those can be added to the table as well. 
+My main problem is, I cannot find which file in the game contains the text. The game is relatively advanced compared to older games.
+An NES game, for example, is one 1 file. My game, however is hundreds of files, and I cannot seem to find which file the text 
+is stored in. After some digging, I found out that someone actually has. I am not the first person to attempt to hack this game.
+They gave up, however, because of the translated script being poorly formatted (it only lists the english, and not the Japanese
+counterpart). I have found their table file and a dump of the text of the game they made, but I still cannot file which file
+they used to make this. I have also had some problems using a relative search tool called Monkey Moore, but I did manage to
+get it to work with an English NES file, so I think the problem was either I was looking in the wrong files, or I was
+formatting my Japenese test stings incorrectly. It’s hard to tell. Even with the table file, I cannot for the life of me
+figure out where the text is stored. If I did, however, I would use some sort of hex editor or injector program to replace
+the Japanese text with English text. I could use the ingame English font, but it’s quite large and only has uppercase letters.
+Ideally I would hack into a new font, but I would have to research how to do that (though it has been done on the same 
+type of ROM I’m hacking, specifically Steins Gate before is was officially translated). I know hacking english into this 
+game is possible, the person who worked on it before me uploaded some screenshots contained hacked in English text 
+(albeit with the built in English font). My biggest hurdle right now is just finding where the text actually is. If I can 
+actually do that I can finally start actually making some real tangible progress. To be fair, I have learned a lot about ROM 
+hacking and have made a lot of progress from the beginning where I knew practically nothing. My real goal now is to actually 
+have something to show for all that I’ve learned.</p>
+
+
+<h2>Update: 5/20/2020</h2>
+
+<p>I've been working at this for awhile now, and made some more progress. Unsuprisingly, I've also hit a new
+roadblock. I tried searching directly for the hex value of a letter instead of using a table search tool like
+Monkey-Moore or Madedit. This worked, and I found a string of letters I knew were in the game. Perfect! Now
+I just have to run and it see what it looks like in game, right? Nope. For some reason, the game won't run again
+if it's decompressed. If I extract the files from the .iso and try to run them, the game never starts. Same thing
+happens even if I repack them into an iso again. It isn't the edits I made either, if I unpack the game and then
+repack it again without editing it, the same error occurs. I also tried using a program that can edit iso files
+without decompressing them, but again I had the same issue. It seems if the file is tampered with at all, it won't
+run. This could be some sort of copy protection, but I'm not sure. I'm also not sure how the person who hacked this
+rom before me got it to work. I have a few ideas. First, someone has made a successful translation hack of another
+game from the same company (Atlus) as this game. If I can see what they did in their hack, maybe I can fix it. I... 
+Wait I think I just figured it out I'll be right back.</p>
+
+<p>Okay fix I thought of I just misremembered but I'm gonna try a few things be right back.</p>
+
+<h2>Update: 6/04/2020</h2>
+
+I did it. It works. For Real. What I did, is instead of extracting the iso file, editing it, and then putting it back into an iso, I edited the unextracted
+iso file. Since everything in the extracted file is techincally in the hex for the iso file, all the data was still in there, just not seperated. To test this, I simply
+changed every instance of the letters "DDS" in the game to "AAS". Since the word "DDS" shows up very early in the game, and it in english letters, it was a quick and easy test.
+This time, it worked, and the game ran.
+
+<p><span title="As you can see, DDS is now AAS. Hey, is that Mr. Golanka?"><img src="../images/AAS.png" style="width: 40vw; min-width: 330px;"></span></p>
+
+<p>After this, I translated a whole line of dialogue</p>
+
+<p><span title="I mean I forgot a space and it's in all caps, but it's English!"><img src="../images/Translated.png" style="width: 40vw; min-width: 330px;"></span></p>
+
+<p>I translated that line by going in a manually editing the text of each letter with a table to tell me what hex is what letter. This is very tedious and slow,
+and translating the whole game like this would take me a very very long time. The next step, if I continue, would be a text extraction program like cartographer to extract the
+text. I could then edit the text file without having to worry about the hex, and then use the same program to insert the hex back in, without having to manually edit
+each letter myself. But, I finally got English text to display! Horray! It took a long time, but I sure learned a lot about hex editing and files and download SO many
+useless programs. I had a great time on this project, and hopefully I'll find the time to continue it on my own :).</p>
+
+
+
 </body>
