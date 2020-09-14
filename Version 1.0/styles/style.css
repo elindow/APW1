@@ -1,0 +1,105 @@
+html {
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+}
+
+#heading{
+  background-color:firebrick;
+  padding-bottom: 0px;
+  margin-left: -22px;
+  margin-right: -22px;
+  border: 2px solid black;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+}
+
+p, li {
+  color: red;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+  color:black;
+}
+
+html {
+  background-color: firebrick;
+}
+
+body {
+  width: auto;
+  margin: 40 auto;
+  background-color: white;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: darkred;
+  text-shadow: 3px 3px 1px black;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+a {
+  color: red;
+}
+.dropbtn {
+  background-color: firebrick;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  color: firebrick;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(255,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: red;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#input{
+  margin-left:46%;
+  background-color: firebrick;
+  color: white;
+  padding: 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 13px;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: red;}
