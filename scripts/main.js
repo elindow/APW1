@@ -66,6 +66,19 @@ class Project {
 
 const PROJECT_DATA = [
 	new Project(
+		"Older Versions",
+		"Previous Versions",
+		"This site is also managed and maintained every year by the senior Advanced Programmers. Whenever this site has a complete update, we make sure to archive the previous versions.",
+		[
+			new Area(
+				"",
+				[
+					new Website("Version 1.0", "./Version 1.0/index.html"),
+				]
+			),
+		]
+	),
+	new Project(
 		"Teachers",
 		"The Teachers",
 		"The students look towards the teachers for for both help and knowledge that could be helpful for their projects.",
