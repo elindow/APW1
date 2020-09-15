@@ -220,6 +220,7 @@ div.bio p {
 div.footer p {
   position: absolute;
   bottom: 15px;
+  right: 10px;
   color: white;
   font-size: 15px;
 }
