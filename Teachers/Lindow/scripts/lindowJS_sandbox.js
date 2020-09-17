@@ -259,10 +259,10 @@ function balon() {		// must name function so it can be removed
 let dots = [];
 for (i=0;i<5;i++) { dots[i] = document.createElement("div");  }
 
-window.addEventListener("mousemove", event => {
-  let mtimer = setTimeout(mtrail(event),1000);
+//window.addEventListener("mousemove", event => {
+  //let mtimer = setTimeout(mtrail(event),1000);
   //mtimer(event);
-});
+//});
 
 
 
