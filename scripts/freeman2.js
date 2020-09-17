@@ -1,6 +1,6 @@
 var colors = "52489c-4062bb-59c3c3-ebebeb-f45b69".split("-").map(a=>"#"+a)
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(500, 500);
   background(200);
   fill(30)
   rect(0,0,width,height)
