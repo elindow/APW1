@@ -1,4 +1,22 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8 />
+    <title>Work in Progress</title>
+    <link rel="stylesheet" href="http://www.jacklmoore.com/colorbox/example1/colorbox.css" />
+  </head>
+  <body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://www.jacklmoore.com/colorbox/jquery.colorbox.js"></script>
+    <script>
+      function openColorBox(){
+        $.colorbox({iframe:true, width:"40%", height:"40%", href: "./weatherstation2.html"});
+      }
+      
+      setTimeout(openColorBox, 500);
+    </script>
+  </body>
+</html>
 <head>
 	<h1 style="background-color:DodgerBlue;">Weather Station</h1>
 </head>
