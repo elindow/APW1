@@ -1,0 +1,35 @@
+.hover-animation{
+	position:relative;
+	height:400px;
+	width:400px;
+	margin:10% auto 0;
+	color: #fff;
+}
+
+.hover-animation img{
+	position:absolute;
+	left:0;
+	width:400px;
+	height:400px;
+	transition: opacity ls ease-in-out;
+}
+
+.hover-animation img.img-front:hover{
+	opacity:0;
+	cursor:pointer;
+}
+
+h1{
+	color:blue;
+	text-align:center;
+}
+
+h2{
+	color:green;
+	text-align:center;
+}
+
+h3{
+	color:yellow;
+	text-align:center;
+}
