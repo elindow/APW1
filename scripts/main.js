@@ -193,50 +193,11 @@ window.onload = () => {
 			});
 		});
 
-		// let containers = [];
-		//
-		// section.websites.forEach((website) => {
-		// 	if (website.name == undefined || website.link == undefined) {
-		// 		let container = document.createElement("div");
-		// 		container.style.float = containers.length == 0 ? "left" : "right";
-		// 		content.appendChild(container);
-		// 		containers.push(container)
-		// 	}
-		// });
-		//
-		// if (containers.length == 0) {
-		// 	section.websites.forEach((website) => {
-		// 		let link = document.createElement("a");
-		// 		link.innerHTML = website.name;
-		// 		link.href = website.link;
-		// 		link.target = "_blank";
-		// 		content.appendChild(link);
-		// 	});
-		// } else {
-		// 	var buffer = 0;
-		// 	section.websites.forEach((website) => {
-		// 		if (website.name == undefined || website.link == undefined) {
-		// 			let subtitle = document.createElement("h4");
-		// 			subtitle.innerHTML = website;
-		// 			containers[buffer].appendChild(subtitle);
-		// 			if (section.websites.indexOf(website) > 0 ) {
-		// 				buffer++;
-		// 			}
-		// 		} else {
-		// 			let link = document.createElement("a");
-		// 			link.innerHTML = website.name;
-		// 			link.href = website.link;
-		// 			link.target = "_blank";
-		// 			containers[buffer].appendChild(link);
-		// 		}
-		// 	});
-		// }
-
 		document.getElementById("menu").appendChild(dropdown);
 	});
 }
 
-let examplebox = document.getElementById("examplebox")
-examplebox.addEventListener('click', () => {
-	examplebox.style.backgroundColor = "rgb(" + (Math.random() * 255) + ", " + (Math.random() * 255) + ", " + (Math.random() * 255) + ")";
-});
+//let examplebox = document.getElementById("examplebox")
+//examplebox.addEventListener('click', () => {
+	//examplebox.style.backgroundColor = "rgb(" + (Math.random() * 255) + ", " + (Math.random() * 255) + ", " + (Math.random() * 255) + ")";
+//});
