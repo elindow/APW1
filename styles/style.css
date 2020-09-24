@@ -132,6 +132,7 @@ h3.subtitle {
   font-family: 'Ubuntu', sans-serif;
   font-size: 3.5vw;
   padding-left: 30px;
+  text-align: center;
 }
 
 div.heading {
@@ -206,7 +207,7 @@ div.bio p {
   width: 75%;
   margin: auto;
   text-align: center;
-  font-size: 2vw;
+  font-size: 1vw;
   padding-top: 2vw;
   padding-bottom: 2vw;
   padding-left: 5vw;
@@ -218,8 +219,9 @@ div.bio p {
 }
 
 div.footer p {
-  position: absolute;
-  bottom: 15px;
+  position: relative;
+  bottom: 0px;
+  right: 0px;
   color: white;
   font-size: 15px;
 }
