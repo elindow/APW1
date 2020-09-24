@@ -1,20 +1,5 @@
 html {
-  font-size: 10px;
   font-family: 'Open Sans', sans-serif;
-  color: black;
-}
-
-#heading{
-  background-color:firebrick;
-  padding-bottom: 0px;
-  margin-left: -22px;
-  margin-right: -22px;
-  border: 2px solid black;
-}
-
-h1 {
-  font-size: 40px;
-  text-align: center;
 }
 
 h2 {
@@ -23,62 +8,76 @@ h2 {
   color: white;
 }
 
-p, li {
+li {
   color: red;
-  font-size: 16px;  
+  font-size: 16px;
   line-height: 2;
   letter-spacing: 1px;
   color:black;
 }
 
-html {
-  background-color: firebrick;
-}
-
-body {
-  width: auto;
-  margin: 40 auto;
-  background-color: white;
-  padding: 0 20px 20px 20px;
-  border: 5px solid black;
-}
-
-h1 {
-  margin: 0;
-  padding: 20px 0;  
-  color: darkred;
-  text-shadow: 3px 3px 1px black;
-}
-
-img {
-  display: block;
-  margin: 0 auto;
-}
-
 a {
   color: red;
 }
+
 .dropbtn {
-  background-color: firebrick;
+  background-image:linear-gradient(to bottom right, rgba(255, 255, 255, 0.2) 49.5%, transparent 50%);
+  background-size: 200% 200%;
+  background-position:bottom right;
+  background-color: transparent;
+  transition: 0.25s;
   color: white;
-  padding: 16px;
   font-size: 16px;
   border: none;
+  height: 100%;
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
+  margin-left:auto;
+  left:0;
 }
 
 .dropdown-content {
-  display: none;
   position: absolute;
-  color: firebrick;
-  background-color: white;
-  min-width: 160px;
+  top: 100%;
+  right: 0px;
+  background: linear-gradient(#0F2027, #203A43, #2C5364);
+  min-width: 400px;
   box-shadow: 0px 8px 16px 0px rgba(255,0,0,0.2);
   z-index: 1;
+  transition: transform 0.3s;
+  transform: scaleY(0);
+  transform-origin: top;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  max-height: 500px;
+  overflow: auto;
+  margin: auto;
+}
+
+.dropdown-title {
+  color: white;
+  padding: 0px 20px 0px 20px;
+  font-size: 22px;
+}
+
+.dropdown-description {
+  color: white;
+  padding: 0px 20px 10px 20px;
+  width: 75%;
+  font-size: 12.5px;
+  border-bottom-color: red;
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-bottom-left-radius: 2.5px;
+}
+
+.dropdown-content div {
+  float: left;
+  padding-left: 20px;
 }
 
 .dropdown-content a {
@@ -86,20 +85,190 @@ a {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)) no-repeat, transparent;
+  background-size: 0% 0%;
+  background-position:center;
+  transition: 0.25s;
 }
 
-#input{
-  margin-left:46%; 
-  background-color: firebrick;
+.dropdown-content h4 {
   color: white;
-  padding: 12px;
-  font-size: 14px;
-  border: none;
-  border-radius: 13px;
+  padding: 4px 8px;
+  display: block;
+  border-bottom-color: firebrick;
+  border-bottom-style: solid;
+  border-bottom-width: 10px;
+  font-size: 25px;
+  font-weight: bold;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-size: 100% 100%;
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  transform: scaleY(1);
+}
 
-.dropdown:hover .dropbtn {background-color: red;}
+.dropdown:hover .dropbtn {
+  background-position:top left;
+}
+
+h1.title {
+  color: white;
+  font-size: 6.5vw;
+  width: 70%;
+  padding-top: 100px;
+  padding-left: 75px;
+  font-family: 'Muli', sans-serif;
+  animation-name: displaytitle;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  overflow: hidden;
+}
+
+h3.subtitle {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3.5vw;
+  padding-left: 30px;
+  text-align: center;
+}
+
+div.heading {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 0px;
+  left: 5%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+div.menu {
+  position: absolute;
+  top: 5%;
+  right: 0%;
+  width: 30%;
+  height: 50px;
+  border-bottom-color: rgb(235, 217, 216);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-right-radius: 1px;
+  border-bottom-left-radius: 1px;
+  display: inline-flex;
+  animation-name: displaymenu;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  overflow: hidden;
+}
+
+div.main {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 100%;
+  background-color: white;
+}
+
+div.examplebox {
+  width: 16vw;
+  height: 16vw;
+  position: absolute;
+  left: 75%;
+  bottom: 50%;
+  border-width: 5px;
+  border-color: firebrick;
+  border-style: solid;
+  color: white;
+  background-color: firebrick;
+}
+
+div.examplebox p {
+  padding-top: 0.2vw;
+  padding-left: 0.4vw;
+  font-size: 0.8vw;
+}
+
+div.examplebox h1 {
+  text-align: center;
+  font-size: 0.8vw;
+  padding-top: 5vw;
+}
+
+div.bio {
+  position: sticky;
+  padding-left: 2vw;
+  font-size: 1vw;
+}
+
+div.bio p {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  font-size: 1vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  font-weight: bold;
+  border-width: 5px;
+  border-color: firebrick;
+  border-style: solid;
+}
+
+div.footer p {
+  position: relative;
+  bottom: 0px;
+  right: 0px;
+  color: white;
+  font-size: 15px;
+}
+
+img.backdrop {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+}
+
+img.logo {
+  width: 250px;
+  padding: 45px 0px 0px 45px;
+}
+
+img.gym {
+  position: absolute;
+  width: 100%;
+}
+
+img.divider {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+@keyframes displaytitle {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes displaymenu {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+  to {
+    width: 30%;
+    opacity: 1;
+    overflow: visible;
+  }
+}
