@@ -134,18 +134,31 @@ const PROJECT_DATA = [
 				"Section 1",
 				[
 					new Website("Andres's Page", "./html/AndresPage.html"),
-					new Website("Percy's Page", "./html/FleesPage.html"),
 					new Website("Ozan's Page", "./html/ozanmirza/portfolio/index.html"),
 					new Website("Robert's Page", "./html/Robert.html"),
 					new Website("Jake's Page", "./html/jakehtml.html"),
+					new Website("Daniel's Page", ""),
+					new Website("Ella's Page", ""),
 				],
 			),
 			new Area(
 				"Section 2",
 				[
 					new Website("Justin's Page", "./html/RomanowPage.html"),
+					new Website("Percy's Page", "./html/FleesPage.html"),
+					new Website("Goodness's Page", ""),
+					new Website("Archie's Page", "./html/silverstein.html"),
+					new Website("Leila's Page", ""),
 				],
 			),
+			new Area(
+				"Section 3",
+				[
+					new Website("Ethan's Page", "./html/Melwani.html"),
+					new Website("Jacob's Page", ""),
+					new Website("Mikey's Page", ".html/michael.html"),
+				]
+			)
 		],
 	),
 ];
@@ -196,8 +209,3 @@ window.onload = () => {
 		document.getElementById("menu").appendChild(dropdown);
 	});
 }
-
-//let examplebox = document.getElementById("examplebox")
-//examplebox.addEventListener('click', () => {
-	//examplebox.style.backgroundColor = "rgb(" + (Math.random() * 255) + ", " + (Math.random() * 255) + ", " + (Math.random() * 255) + ")";
-//});
