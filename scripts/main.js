@@ -250,7 +250,7 @@ window.onload = () => {
 			buffer++;
 		});
 
-		content.style.width = (300 + (125 * buffer)) + "px";
+		content.style.width = (300 + ((100 + (17.5 * buffer)) * buffer)) + "px";
 
 		document.getElementById("menu").appendChild(dropdown);
 	});
