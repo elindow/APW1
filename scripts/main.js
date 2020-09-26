@@ -5,39 +5,56 @@
 
 Welcome to the Javascript part of the main website!
 
-Your probably here either to make improvements (which is amazing, hack away!), or to link your profile website on here.
+Your probably here either to make improvements (which is amazing, hack away!), to link your profile website on here, or to add an example project to the site.
 
-If your here because of the second reason and are a beginer to JS, read this to understand how this code works!
+If your here because of the second or third reason and are a beginer to JS, read this to understand how this code works!
 
-The first two sections of code that you will notice are classes.
-Obviously you know what they are but in this context we are using them to organize the information.
-So basically, it's very abstract, you don't need to worry about them.
+The first bunch of sections of code that you will notice are classes.
+Obviously you know what they are if you made it to this class but in this context we are using them to organize the information.
+It's very abstract, you don't need to worry about them.
 
-Under that we have this huge chunk called PROJECT_DATA.
-That is the part where you will add your name and (relative) link.
-There are three "Project" sections in the array.
-Find the one that you are a part of.
-Great! Now copy and paste the following line of code after the last "Website" object...
-➡️ new Website("", ""),
-After that, write inside the first quotations the follow string...
-➡️ [your name]'s Page
-Then, write inside the second quotations the link to your HTML page...
-➡️ "./html/[you name]Build/[your name].html"
+To link profile website:
+	Under that we have this huge chunk called MENU_BAR_SETTINGS.
+	That is the part where you will add your name and (relative) link.
+	There are, so far, four "Project" sections in the array.
+	Find the one that you are a part of.
+	Great! Now copy and paste the following line of code after the last "Website" object...
+	➡️ new Website("", ""),
+	After that, write inside the first quotations the follow string...
+	➡️ [your name]'s Page
+	Then, write inside the second quotations the link to your HTML page...
+	➡️ "./html/[you name]Build/[your name].html"
+
+To add example project:
+	Under the MENU_BAR_SETTINGS, there is another const: STUDENT_EXAMPLES_SETTINGS.
+	This array is not as complex as the one above it.
+	Copy the following line of code an add it to the end of the array:
+	➡️ new Example(
+			"",
+			"",
+			"",
+		),
+	Inside the first quotations insert your name.
+	Inside the second quotations insert a description of this example.
+	Inside the last quotations insert the relative link to the html page.
 
 Alright, your job is done now, but if your curious what the last huge chunk of code is...
-Javascript lets coders create elements in an object-oriented way, the same way you can in HTML.
-By doing it this way we can automate the process making it more efficient for everyone.
-We begin by looping through the array, going through each project.
-Inside each loop we extract the name, header, and description of that section and stick it in the proper element.
-We also link it to the CSS code that hopefully makes it look better.
-Inside each loop we also loop through the different websites that are under it's section.
-Here we do the same thing as above and apply the different links for the student projects.
+Javascript lets coders create elements in an object-oriented way.
+Which ends up doing the same thing you do in HTML, except in a cooler way.
+By doing it this way we can automate the process, making it more efficient for everyone.
+
+The logic for the menu bar links:
+	We begin by looping through the array, going through each project.
+	Inside each loop we extract the name, header, and description of that section and stick it in the proper element.
+	We also link each element to the proper CSS code that hopefully makes it look better.
+	Inside each loop we also loop through the different websites that are under it's section.
+	Here we do the same thing as above and apply the different links for the student projects.
+
+The logic for the example projects:
+
 
 Ta-da! ✨ So that's how this code works.
 Now go make some cool stuff. 👋
-
-P.S.
-That tiny code at the very end changes the box's color.
 
 */
 
@@ -64,7 +81,15 @@ class Project {
 	}
 }
 
-const PROJECT_DATA = [
+class Example {
+	constructor(creator, description, src) {
+		this.creator = creator;
+		this.description = description;
+		this.src = src;
+	}
+}
+
+const MENU_BAR_SETTINGS = [
 	new Project(
 		"Older Versions",
 		"Previous Versions",
@@ -89,6 +114,7 @@ const PROJECT_DATA = [
 					new Website("Mr. Golanka's Page", "./Teachers/Golanka/golanka_page.html"),
 					new Website("Mr. Lindow's Page", "./Teachers/Lindow/lindow_page.html"),
 					new Website("Mr. Rencricca's Page", "./Teachers/Rencricca/drencricca.html"),
+					new Website("Mr. O'Malley's Page", "./Teachers/O'Malley/omalley.html"),
 				],
 			),
 		],
@@ -101,26 +127,26 @@ const PROJECT_DATA = [
 			new Area(
 				"2018",
 				[
-					new Website("Sophie's Page", "./html/archives/2019/KofskyPage.html"),
-					new Website("Bryn's Page", "./html/archives/2019/bstecher.html"),
-					new Website("Josh R's Page", "./html/archives/2019/Ross.html"),
-					new Website("Phoebe's Page", "./html/archives/2019/brewer.html"),
-					new Website("Jason's Page", "./html/archives/2019/jdaniels.html"),
-					new Website("Sabrina's Page", "./html/archives/2019/sabrinacode.html"),
-					new Website("Will's Page", "./html/archives/2019/will_page.html"),
-					new Website("Tyler's Page", "./html/archives/2019/tyler.html"),
-					new Website("Kadhir's Page", "./html/archives/2019/kadhir_page.html"),
-					new Website("Beck's Page", "./html/archives/2019/beckpage.html"),
+					new Website("Sophie's Page", "./html/archives/2019/sophieKofsky/KofskyPage.html"),
+					new Website("Bryn's Page", "./html/archives/2019/brynStecher/bstecher.html"),
+					new Website("Josh R's Page", "./html/archives/2019/joshRoss/Ross.html"),
+					new Website("Phoebe's Page", "./html/archives/2019/phoebeBrewer/brewer.html"),
+					new Website("Jason's Page", "./html/archives/2019/jasonDaniels/jdaniels.html"),
+					new Website("Sabrina's Page", "./html/archives/2019/sabrinaAlessi/sabrinacode.html"),
+					new Website("Will's Page", "./html/archives/2019/willBrooks/will_page.html"),
+					new Website("Tyler's Page", "./html/archives/2019/tylerMelwani/tyler.html"),
+					new Website("Kadhir's Page", "./html/archives/2019/kadhirPillai/kadhir_page.html"),
+					new Website("Beck's Page", "./html/archives/2019/beckSonstein/beckpage.html"),
 				],
 			),
 			new Area(
 				"2019",
 				[
-					new Website("Owen's Page", "./html/Archives/owen_page.html"),
-					new Website("Max's Page", "./html/Archives/maxbremner/maxBremner.html"),
-					new Website("Josh S's Page", "./html/screen_page.html"),
-					new Website("Becky's Page", "./html/hershkowitz_page.html"),
-					new Website("Danny's Page", "./html/fisher.html"),
+					new Website("Owen's Page", "./html/Archives/2020/owenWiese/owen_page.html"),
+					new Website("Max's Page", "./html/Archives/2020/maxbremner/maxBremner.html"),
+					new Website("Josh S's Page", "./html/Archives/2020/joshScreen/screen_page.html"),
+					new Website("Becky's Page", "./html/Archives/2020/beckyHershkowitz/hershkowitz_page.html"),
+					new Website("Danny's Page", "./html/Archives/2020/dannyFisher/danny_project/new.html"),
 				],
 			),
 		],
@@ -157,14 +183,27 @@ const PROJECT_DATA = [
 					new Website("Ethan's Page", "./html/Melwani.html"),
 					new Website("Jacob's Page", ""),
 					new Website("Mikey's Page", ".html/michael.html"),
-				]
-			)
+				],
+			),
 		],
 	),
 ];
 
+const STUDENT_EXAMPLES_SETTINGS = [
+	new Example(
+		"Jake's Swirly Dirly",
+		"This is a really cool animation that Jake made in the P5.JS rendering library with a simple algorithim that computes color and location in a circular manner.",
+		"./html/jakehtml.html",
+	),
+	new Example(
+		"Mr. Lindow's Magic Snake",
+		"This is another really cool animation that Mr. Lindow made in the P5.JS rendering library with a bunch of complex math.",
+		"./Teachers/Lindow/html/lindowP5_page.html",
+	),
+];
+
 window.onload = () => {
-	PROJECT_DATA.forEach((section) => {
+	MENU_BAR_SETTINGS.forEach((section) => {
 		let dropdown = document.createElement("div");
 		dropdown.classList.add("dropdown");
 
@@ -187,8 +226,11 @@ window.onload = () => {
 		description.innerHTML = section.description;
 		content.appendChild(description);
 
+		let buffer = 0;
+
 		section.areas.forEach((area) => {
 			let container = document.createElement("div");
+			container.style.padding.left = (200 * buffer) + (20 * (buffer + 1)) + "px";
 			content.appendChild(container);
 
 			if (area.title != "") {
@@ -204,8 +246,30 @@ window.onload = () => {
 				link.target = "_blank";
 				container.appendChild(link);
 			});
+
+			buffer++;
 		});
 
+		content.style.width = (300 + (125 * buffer)) + "px";
+
 		document.getElementById("menu").appendChild(dropdown);
+	});
+
+	STUDENT_EXAMPLES_SETTINGS.forEach((example) => {
+		let container = document.createElement("div");
+		container.classList.add("example");
+		document.getElementById("examples").appendChild(container);
+
+		let title = document.createElement("h1");
+		title.innerHTML = example.creator;
+		container.appendChild(title);
+
+		let content = document.createElement("iframe");
+		content.src = example.src;
+		container.appendChild(content);
+
+		let description = document.createElement("p");
+		description.innerHTML = example.description;
+		container.appendChild(description);
 	});
 }
