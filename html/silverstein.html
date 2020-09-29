@@ -5,7 +5,7 @@
 		<link rel="stylesheet" href="silverstein.css">
 		<style>
 			button{
-				margin:20px;
+				margin:auto;
 				width:200px;
 				height:50px;
 				font-size:16px;
@@ -15,6 +15,13 @@
 				background-color:cyan;
 				border-radius:100px;
 			}
+			#container{
+				text-align:center;
+				padding:20px;
+			}
+			#btnReturn{
+				margin:auto;
+			}
 		
 		</style>
 	</head>
@@ -23,14 +30,17 @@
 		<h2>This is my first webpage using HTML, super pumped to learn how it works!</h2>
 		<h3>Please scan the QR Code for a surprise</h3>
 
+
+
 		<div class="hover-animation">
 			<img src="../images/Sunglass.png" alt="" class="img-back">
 			<img src="../images/GreatDay.png" alt="" class="img-front">
 		</div>
 
-		<a href="https://elindow.github.io/APW1/"><button>Click To Go Back To The Main Page</button></a>
-
-
+		<div id="container">
+			<a href="https://elindow.github.io/APW1/html/CreatrPageSilverstein.html"><button>My Project Page</button></a>
+			<a href="https://elindow.github.io/APW1"><button id="btnReturn">Main Page</button></a>
+		</div>
 
 	</body>
 </html>
