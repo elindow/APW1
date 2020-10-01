@@ -184,6 +184,9 @@ const MENU_BAR_SETTINGS = [
 					new Website("Ethan's Page", "./html/Melwani.html"),
 					new Website("Jacob's Page", ""),
 					new Website("Mikey's Page", ".html/michael.html"),
+					new Website("Hayden's Page", ""),
+					new Website("Charlotte's Page", ""),
+					new Website("Nathaniel's Page", "")
 				],
 			),
 		],
