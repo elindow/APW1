@@ -163,8 +163,9 @@ const MENU_BAR_SETTINGS = [
 					new Website("Ozan's Page", "./html/ozanmirza/portfolio/index.html"),
 					new Website("Robert's Page", "./html/Robert.html"),
 					new Website("Jake's Page", "./html/jakehtml.html"),
-					new Website("Daniel's Page", ""),
-					new Website("Ella's Page", ""),
+					new Website("Daniel's Page", "./html/DanielLEwis.html"),
+					new Website("Ella's Page", "./html/Ella_page.html"),
+					new Website("Gina's Page", ""),
 				],
 			),
 			new Area(
@@ -172,9 +173,9 @@ const MENU_BAR_SETTINGS = [
 				[
 					new Website("Justin's Page", "./html/RomanowPage.html"),
 					new Website("Percy's Page", "./html/FleesPage.html"),
-					new Website("Goodness's Page", ""),
+					new Website("Goodnews's Page", "./html/goodnews/html"),
 					new Website("Archie's Page", "./html/silverstein.html"),
-					new Website("Leila's Page", ""),
+					new Website("Leila's Page", "./html/leila.html"),
 				],
 			),
 			new Area(
