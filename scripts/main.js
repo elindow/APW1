@@ -169,12 +169,12 @@ const MENU_BAR_SETTINGS = [
 			new Area(
 				"Section 3",
 				[
-					new Website("Ethan's Page", "./html/Melwani.html"),
-					new Website("Jacob's Page", ""),
 					new Website("Mikey's Page", ".html/michael.html"),
-					new Website("Hayden's Page", ""),
-					new Website("Charlotte's Page", ""),
-					new Website("Nathaniel's Page", "")
+					new Website("Hayden's Page", ".html/Hayden.html/"),
+					new Website("Nathaniel's Page", ".html/McNutt.html/"),
+					new Website("Ethan's Page", ".html/Melwani.html"),
+					new Website("Charlotte's Page", ".html/charlotte.html/"),
+					new Website("Jacob's Page", ".html/jacobweingard.html"),
 				],
 			),
 		],
