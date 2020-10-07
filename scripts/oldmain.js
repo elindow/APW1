@@ -163,8 +163,9 @@ const MENU_BAR_SETTINGS = [
 					new Website("Ozan's Page", "./html/ozanmirza/portfolio/index.html"),
 					new Website("Robert's Page", "./html/Robert.html"),
 					new Website("Jake's Page", "./html/jakehtml.html"),
-					new Website("Daniel's Page", ""),
-					new Website("Ella's Page", ""),
+					new Website("Daniel's Page", "./html/DanielLEwis.html"),
+					new Website("Ella's Page", "./html/Ella_page.html"),
+					new Website("Gina's Page", ""),
 				],
 			),
 			new Area(
@@ -172,20 +173,26 @@ const MENU_BAR_SETTINGS = [
 				[
 					new Website("Justin's Page", "./html/RomanowPage.html"),
 					new Website("Percy's Page", "./html/FleesPage.html"),
-					new Website("Goodness's Page", ""),
+					new Website("Goodnews's Page", "./html/goodnews/html"),
 					new Website("Archie's Page", "./html/silverstein.html"),
-					new Website("Leila's Page", ""),
+					new Website("Leila's Page", "./html/leila.html"),
 				],
 			),
 			new Area(
 				"Section 3",
 				[
 					new Website("Mikey's Page", ".html/michael.html"),
+<<<<<<< HEAD
 					new Website("Hayden's Page", "Hayden.html/"),
 					new Website("Nathaniel's Page", "McNutt.html/"),
 					new Website("Ethan's Page", "./html/Melwani.html"),
 					new Website("Charlotte's Page", "charlotte.html/"),
 					new Website("Jacob's Page", ".html/jacobweingard.html"),
+=======
+					new Website("Hayden's Page", ""),
+					new Website("Charlotte's Page", ""),
+					new Website("Nathaniel's Page", "")
+>>>>>>> d61b3d8a1da9210c8f6b214d45410dfb234ecf25
 				],
 			),
 		],
