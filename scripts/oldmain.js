@@ -2,12 +2,17 @@
 // Image switcher code
 
 /*
+
 Welcome to the Javascript part of the main website!
+
 Your probably here either to make improvements (which is amazing, hack away!), to link your profile website on here, or to add an example project to the site.
+
 If your here because of the second or third reason and are a beginer to JS, read this to understand how this code works!
+
 The first bunch of sections of code that you will notice are classes.
 Obviously you know what they are if you made it to this class but in this context we are using them to organize the information.
 It's very abstract, you don't need to worry about them.
+
 To link profile website:
 	Under that we have this huge chunk called MENU_BAR_SETTINGS.
 	That is the part where you will add your name and (relative) link.
@@ -19,6 +24,7 @@ To link profile website:
 	➡️ [your name]'s Page
 	Then, write inside the second quotations the link to your HTML page...
 	➡️ "./html/[you name]Build/[your name].html"
+
 To add example project:
 	Under the MENU_BAR_SETTINGS, there is another const: STUDENT_EXAMPLES_SETTINGS.
 	This array is not as complex as the one above it.
@@ -31,19 +37,25 @@ To add example project:
 	Inside the first quotations insert your name.
 	Inside the second quotations insert a description of this example.
 	Inside the last quotations insert the relative link to the html page.
+
 Alright, your job is done now, but if your curious what the last huge chunk of code is...
 Javascript lets coders create elements in an object-oriented way.
 Which ends up doing the same thing you do in HTML, except in a cooler way.
 By doing it this way we can automate the process, making it more efficient for everyone.
+
 The logic for the menu bar links:
 	We begin by looping through the array, going through each project.
 	Inside each loop we extract the name, header, and description of that section and stick it in the proper element.
 	We also link each element to the proper CSS code that hopefully makes it look better.
 	Inside each loop we also loop through the different websites that are under it's section.
 	Here we do the same thing as above and apply the different links for the student projects.
+
 The logic for the example projects:
+
+
 Ta-da! ✨ So that's how this code works.
 Now go make some cool stuff. 👋
+
 */
 
 class Area {
@@ -161,7 +173,7 @@ const MENU_BAR_SETTINGS = [
 				[
 					new Website("Justin's Page", "./html/RomanowPage.html"),
 					new Website("Percy's Page", "./html/FleesPage.html"),
-					new Website("Goodnews's Page", "./html/goodnews.html"),
+					new Website("Goodnews's Page", "./html/goodnews/html"),
 					new Website("Archie's Page", "./html/silverstein.html"),
 					new Website("Leila's Page", "./html/leila.html"),
 				],
@@ -170,11 +182,17 @@ const MENU_BAR_SETTINGS = [
 				"Section 3",
 				[
 					new Website("Mikey's Page", ".html/michael.html"),
-					new Website("Hayden's Page", ".html/Hayden.html/"),
-					new Website("Nathaniel's Page", ".html/McNutt.html/"),
-					new Website("Ethan's Page", ".html/Melwani.html"),
-					new Website("Charlotte's Page", ".html/charlotte.html/"),
+<<<<<<< HEAD
+					new Website("Hayden's Page", "Hayden.html/"),
+					new Website("Nathaniel's Page", "McNutt.html/"),
+					new Website("Ethan's Page", "./html/Melwani.html"),
+					new Website("Charlotte's Page", "charlotte.html/"),
 					new Website("Jacob's Page", ".html/jacobweingard.html"),
+=======
+					new Website("Hayden's Page", ""),
+					new Website("Charlotte's Page", ""),
+					new Website("Nathaniel's Page", "")
+>>>>>>> d61b3d8a1da9210c8f6b214d45410dfb234ecf25
 				],
 			),
 		],
