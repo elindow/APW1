@@ -170,7 +170,7 @@ const MENU_BAR_SETTINGS = [
 				"Section 3",
 				[
 					new Website("Mikey's Page", "./html/michael.html"),
-					new Website("Hayden's Page", "./html/Hayden.html"),
+					new Website("Hayden's Page", "./html/hayden.html"),
 					new Website("Nathaniel's Page", "./html/McNutt.html"),
 					new Website("Ethan's Page", "./html/Melwani.html"),
 					new Website("Charlotte's Page", "./html/charlotte.html"),
