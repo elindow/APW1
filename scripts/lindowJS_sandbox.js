@@ -132,36 +132,6 @@ requestAnimationFrame(animate);
     {name: "Mont Blanc", height: 4808, place: "Italy/France"}
   ];
 
-//function needed to sort array of objects (added by sgolanka)
-  function compareValues(key, order='asc') {
-  return function(a, b) {
-    if(!a.hasOwnProperty(key) || 
-       !b.hasOwnProperty(key)) {
-      return 0; 
-    }
-    
-    const varA = (typeof a[key] === 'string') ? 
-      a[key].toUpperCase() : a[key];
-    const varB = (typeof b[key] === 'string') ? 
-      b[key].toUpperCase() : b[key];
-      
-    let comparison = 0;
-    if (varA > varB) {
-      comparison = 1;
-    } else if (varA < varB) {
-      comparison = -1;
-    }
-    return (
-      (order == 'desc') ? 
-      (comparison * -1) : comparison
-    );
-  };
-}
-
-
-MOUNTAINS.sort(compareValues('name', 'height'));
- 
-
  let table = document.getElementById("mountains");
  	table.style.textAlign = "right";
  	head = table.createTHead();
