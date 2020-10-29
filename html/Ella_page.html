@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html>
   	<head>
-		<meta charset="utf-8">
-    <script src="../scripts/golanka.js"></script>
+    <style type="text/css">
+    .button_css{
+      background-color: rgb(55,91,205);
+      color: white;
+      width: 150px;
+      height: 40px;
+    }
+    .butterfly {
+      background-image: url("../images/caterpillar.jpg") no-repeat;
+      width: 500px;
+      height:500px;
+    }
+    .butterfly:hover {
+      background-image: url("../images/butterfly.jpg") no-repeat; 
+    }
+    </style>
+    <meta charset="utf-8">
     	<title>Ella's Page</title>
-    	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-    	<link href="styles/style.css" rel="stylesheet" type="text/css">
-      <img src="../images/butterfly.jpg" alt="butterfly">
+      <div class="butterfly"></div>
   	</head>
-	<body onLoad = "init()">
-		<h1>Ella's Page</h1>
-    <button type="button">Click here!</button>
-
- 	</body>
+	<body>
+    <h1 style="background-color:rgb(255,51,206);">Ella's Page<h1>
+    <button type="button" class="button_css" onclick="alert('For my programming project Charlotte and I will be creating a Mod for minecraft!')">Click here to learn about my programming project</button>
+  </body>
 
 </html>
 
