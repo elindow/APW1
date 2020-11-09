@@ -79,6 +79,19 @@ class Example {
 
 const MENU_BAR_SETTINGS = [
 	new Project(
+		"Quick Info",
+		"How to get out of Vim",
+		"ESC:wq",
+		[
+			new Area(
+				"",
+				[
+					//new Website("Version 1.0", "./Version 1.0/index.html"),
+				]
+			),
+		]
+	),
+	new Project(
 		"Older Versions",
 		"Previous Versions",
 		"This site is also managed and maintained every year by the senior Advanced Programmers. Whenever this site has a complete update, we make sure to archive the previous versions.",
