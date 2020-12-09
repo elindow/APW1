@@ -78,7 +78,7 @@ class Example {
 }
 
 const MENU_BAR_SETTINGS = [
-	new Project(
+	new Project( // Very useful! 😂
 		"Quick Info",
 		"How to get out of Vim",
 		"ESC:wq",
