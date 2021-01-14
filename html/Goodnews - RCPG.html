@@ -5,16 +5,48 @@
 
 <title> Random Color Palette Generator </title>
 
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 </head>
   
 <h1> Random Color Palette Generator </h1>
 
-<input name="Color Picker" type="color"/>
+<div id="chooseColor" style="width:450px;height:100px;background-color:#D7BDE2"></div>
 
-<canvas id="colorCanvas" class="color-canvas" width="250" height="250"></canvas>
+<div id="chooseColorTwo" style="width:450px;height:100px;background-color:#D7BDE2"></div>
+
+<div id="chooseColorThree" style="width:450px;height:100px;background-color:#D7BDE2"></div>
+
+<div id="chooseColorFour" style="width:450px;height:100px;background-color:#D7BDE2"></div>
+
+<div id="chooseColorFive" style="width:450px;height:100px;background-color:#D7BDE2"></div>
+
+<button onclick="pickRandomColor()">Click this button to receive a random color palette.</button>
+
+<script type="text/javascript">
+	
+function getColorCode() {
+      var makeColorCode = '0123456789ABCDEF';
+      var code = '#';
+      for (var count = 0; count < 6; count++) {
+         code =code+ makeColorCode[Math.floor(Math.random() * 16)];
+      }
+      return code;
+   }
+   //Function call on button click.
+   function pickRandomColor() {
+      $("#chooseColor").css("background-color", getColorCode());
+      $("#chooseColorTwo").css("background-color", getColorCode());
+      $("#chooseColorThree").css("background-color", getColorCode());
+      $("#chooseColorFour").css("background-color", getColorCode());
+      $("#chooseColorFive").css("background-color", getColorCode());
+
+   }
+
+</script>
 
 </body>
-
-<div style="background-color: #cff ; padding: 10px; border: 1px solid green;"> 
 
 </html>
