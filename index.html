@@ -1,47 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Trevor Day School Advanced Programmer's Workshop</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-<!-- <img src="images/firefox-icon.png" alt="The Firefox logo: a flaming fox surrounding the Earth.">-->
-    <p></p>
-    <p></p>
-    <img src="images/Trevor Logo.PNG" alt ="The multi colored Trevor Logo">  <!-- no ../ ref as index is in root -->
-    <H2><B>Trevor Day School Advanced Programmer's Workshop</B></H2>
-<!--<p><a href="https://elindow.github.io/APW1/html/lindow_page.html">Lindow's Page</a></p>   hard coded link to other page- works locally but wont push -->
-    <p><a href="../APW1/html/golanka_page.html">Golanka's Page</a> - - <a href="../APW1/html/lindow_page.html">Lindow's Page</a> - 
-     - <a href="../APW1/html/drencricca.html">Rencricca's Page</a></p>  <!-- relational link to new page, should always work -->
-    
-     <p></p>  <!-- relational link to new page, should always work -->
-     
-    <p><a href="../APW1/html/KofskyPage.html">Sophie's Page</a> -- <a href="../APW1/html/bstecher.html">Bryn's Page</a> -- <a href="../APW1/html/Ross.html">Josh R's Page</a> -- <a href="../APW1/html/owen_page.html">Owen's Page</a> -- <a href="../APW1/html/brewer.html">Phoebe's Page</a> -- <a href="../APW1/html/maxBremner.html">Max's Page</a>
-     -- <a href="../APW1/html/jdaniels.html">Jason's Page</a> -- <a href="../APW1/html/screen_page.html">Josh S's Page</a></p>  
-     <p><a href="../APW1/html/sabrinacode.html">Sabrina's Page</a> -- <a href="../APW1/html/hershkowitz_page.html">Becky's Page</a> -- <a href="../APW1/html/kadhir_page.html">Kadhir's Page</a></p>
-     <!-- relational link to new page, should always work -->
-     
-    <h1>Coding is cool</h1>
-    <button>Click This Button</button>
-    
-    <p>At Trevor, we’re striving to be global citzens of the world!</p>
 
-    <ul> <!-- changed to list in the tutorial -->
-      <li>programmers</li>
-      <li>coders</li>
-      <li>builders</li>
-    </ul>
+<head>
+  <meta charset="utf-8">
 
-    <p>working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future. Read the <a href="https://www.trevor.org/page/about-us/mission">Trevor Misson</a> to learn even more about the values and principles that guide the pursuit of our mission.</p>
+  <title>Trevor Day School Programmer's Hub</title>
 
-    <p id="demo"></p>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="https://pbs.twimg.com/profile_images/511580980918771712/byNktxM6_400x400.jpeg">
+</head>
 
-    <p>APW site veraion 1.000  </p>
+<body>
+  <img class="backdrop" src="./images/TrevorGym.jpg" alt="Trevor Gym"></div>
+  <h1 class="title"><b>Trevor Day School Advanced Programmer's Workshop</b></h1>
 
-    <script src="scripts/main.js"></script>         <!-- this loads JavaScript code into the web page source, note scripts stored in separate folder  -->
-    <!-- <script src="scripts/lindow.js"></script>      multiple scripts are loaded in sequence --> 
- 
-  </body>
+  <div class="heading">
+    <a href="https://www.trevor.org" target="_blank"><img class="logo" src="https://bbk12e1-cdn.myschoolcdn.com/ftpimages/376/logo/trevor-logo.png" alt="Trevor Logo"></a>
+
+    <div class="menu" id="menu">
+      <!--Here is where the multiple dynamic menus and their links get inserted by the JS-->
+    </div>
+  </div>
+
+  <div id="footer">
+    <p id="sign">APW Site Version 2.0</p>
+    <img class="divider" src="https://bbk12e1-cdn.myschoolcdn.com/ftpimages/376/site/1330/images/top-line.jpg" alt="Footer Background">
+  </div>
+
+  <div class="main">
+    <h3 class="subtitle"><b>Welcome to the TDS Programmer's Hub!</b></h3>
+
+    <div class="bio">
+      <p>The Trevor Day School Computer Science Department seeks to promote students’ self-development of computational thinking skills that remain useful in a constantly changing environment. Students will develop a foundation of computer science knowledge and learn myriad approaches to problem solving using multiple languages and platforms. By applying computational thinking as a tool for learning and expression in a variety of disciplines and interests, students will actively participate as digital citizens in a world that is increasingly influenced by technology.<br><a href="https://www.trevor.org/page/about-us/mission" target="_blank">Click to go to the Trevor Misson</a></p>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div id="footer">
+      <img class="divider" src="https://bbk12e1-cdn.myschoolcdn.com/ftpimages/376/site/1330/images/top-line.jpg" alt="Footer Background">
+    </div>
+  </div>
+
+  <div class="examples" id="examples">
+    <h3>Some Examples of our Awesomeness</h3>
+    <!--Here is where the multiple dynamic example scripts and their information get inserted by the JS -->
+  </div>
+  <script type="text/javascript" src="scripts/main.js"></script>
+  <script type="text/javascript" src="scripts/p5.js"></script>
+</body>
 </html>

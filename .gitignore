@@ -1,1 +1,6 @@
+<<<<<<< HEAD
+# Ignore Mac DS_Store files
+=======
+>>>>>>> ac34f796f025fe21bce2c07eba4f172bceecfd96
 .DS_Store
+debug.log
