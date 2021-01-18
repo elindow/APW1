@@ -30,12 +30,17 @@
 function getColorCode() {
       var makeColorCode = '0123456789ABCDEF';
       var code = '#';
+      //the math for generating random hex colors
       for (var count = 0; count < 6; count++) {
          code =code+ makeColorCode[Math.floor(Math.random() * 16)];
       }
+      
+      //to show the hex code as it's generated
+      return document.write(code);
       return code;
    }
-   //Function call on button click.
+
+   //function calls for 5 random colors
    function pickRandomColor() {
       $("#chooseColor").css("background-color", getColorCode());
       $("#chooseColorTwo").css("background-color", getColorCode());
