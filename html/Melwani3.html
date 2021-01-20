@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Lets play Madlibs!</title>
+</head>
+<body>
+<body bgcolor="blue">
+<font color="white">
+
+<script type="text/javascript">
+	
+	function addWords() {
+		var adj1 = document.getElementById("adj1").value;
+		var adj2 = document.getElementById("adj2").value;
+		var animal = document.getElementById("animal").value;
+		var room = document.getElementById("room").value;
+		document.getElementById("a1").innerHTML = adj1
+		document.getElementById("a2").innerHTML = adj2
+		document.getElementById("ani").innerHTML = animal
+		document.getElementById("r").innerHTML = room
+		document.getElementById("p1").style.color = "white"
+	}
+
+</script>
+
+<h2>Lets play Madlibs!</h2>
+  <label for="adj1">Adjective:</label>
+  <input type="text" id="adj1" name="adj1"><br><br>
+  <label for="adj2">Adjective:</label>
+  <input type="text" id="adj2" name="adj2"><br><br>
+  <label for="animal">Animal:</label>
+  <input type="text" id="animal" name="animal">
+  <label for="room">Room:</label>
+  <input type="text" id="room" name="room">
+  <button type="button" onclick="addWords()">Madlibify</button>
+
+  <p id="p1" style="color: blue">It was a <span id="a1"></span>, cold November day. I woke up to the 
+  	 <span id="a2"></span> smell of <span id="ani"></span> roasting in the <span id="r"></span> downstairs.
+  </p>
+
+</body>
+</html>
