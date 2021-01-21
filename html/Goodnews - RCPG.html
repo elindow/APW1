@@ -25,6 +25,8 @@
 
 <button onclick="pickRandomColor()">Click this button to receive a random color palette.</button>
 
+<div> </div>
+
 <script type="text/javascript">
 	
 function getColorCode() {
@@ -34,11 +36,10 @@ function getColorCode() {
       for (var count = 0; count < 6; count++) {
          code =code+ makeColorCode[Math.floor(Math.random() * 16)];
       }
-      
-      //to show the hex code as it's generated
-      return document.write(code);
-      return code;
+      return code; 
    }
+
+   object.onclick = document.write(code);
 
    //function calls for 5 random colors
    function pickRandomColor() {
@@ -47,7 +48,6 @@ function getColorCode() {
       $("#chooseColorThree").css("background-color", getColorCode());
       $("#chooseColorFour").css("background-color", getColorCode());
       $("#chooseColorFive").css("background-color", getColorCode());
-
    }
 
 </script>
