@@ -12,6 +12,7 @@ h3 {
   font-family: 'Ubuntu', sans-serif;
   font-size: 2.5vw;
   padding-left: 30px;
+  padding-bottom: 20px;
   text-align: left;
 }
 
@@ -209,17 +210,18 @@ div.example p {
 }
 
 div.bio {
-  position: absolute;
+  /* position: absolute; */
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  /*changed the transform from -50, -50 to this*/
+  transform: translate(-30%, -20%); 
   padding-left: 2vw;
   padding-top: 5vw;
   font-size: 0.6vw;
 }
 
 div.bio p {
-  width: 75%;
+  width: 25%;
   margin: auto;
   text-align: center;
   font-size: 1vw;
@@ -267,11 +269,18 @@ img.gym {
   width: 100%;
 }
 
+img.picture {
+  float: right;
+  transform: translate(-10%, -100%); 
+  width: 45%;
+  padding: 3px;
+}
+
 img.divider {
   width: 100%;
-  position: absolute;
+  position: relative;
   left: 0px;
-  bottom: 0px;
+  bottom: -5px;
 }
 
 @keyframes displaytitle {
