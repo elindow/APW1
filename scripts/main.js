@@ -115,7 +115,7 @@ const MENU_BAR_SETTINGS = [
 					new Website("Mr. Golanka's Page", "./Teachers/Golanka/golanka_page.html"),
 					new Website("Mr. Lindow's Page", "./Teachers/Lindow/lindow_page.html"),
 					new Website("Mr. Rencricca's Page", "./Teachers/Rencricca/drencricca.html"),
-					new Website("Mr. O'Malley's Page", "./Teachers/O'Malley/omalley.html"),
+					//new Website("Mr. O'Malley's Page", "./Teachers/O'Malley/omalley.html"),
 				],
 			),
 		],
