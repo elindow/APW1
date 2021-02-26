@@ -115,7 +115,7 @@ const MENU_BAR_SETTINGS = [
 					new Website("Mr. Golanka's Page", "./Teachers/Golanka/golanka_page.html"),
 					new Website("Mr. Lindow's Page", "./Teachers/Lindow/lindow_page.html"),
 					new Website("Mr. Rencricca's Page", "./Teachers/Rencricca/drencricca.html"),
-					new Website("Mr. O'Malley's Page", "./Teachers/O'Malley/omalley.html"),
+					//new Website("Mr. O'Malley's Page", "./Teachers/O'Malley/omalley.html"),
 				],
 			),
 		],
@@ -166,7 +166,7 @@ const MENU_BAR_SETTINGS = [
 					new Website("Jake's Page", "./html/jakehtml.html"),
 					new Website("Daniel's Page", "./html/DanielLEwis.html"),
 					new Website("Ella's Page", "./html/Ella_page.html"),
-					new Website("Gina's Page", ""),
+					new Website("Gina's Page", "./html/gina_index.html"),
 				],
 			),
 			new Area(
