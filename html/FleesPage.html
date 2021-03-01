@@ -104,6 +104,17 @@ in a mesh and automatically generates the weights. I also need to fix the lookin
 look around too fast. I'm going to try to fix it, and might end up using an open source looking script for unity. Ideally I'd like to
 code my own, however. I'm probably going to fix the looking first, and then focus on adding animations.</p>
 
+<h1>Project Update: 2/26/2021</h1>
+
+<p> Project going well. I fixed the looking, my problem was I was also rotating the hitbox, which has collision and therefore
+weight. Because I was rotating a heavy object quickly, it's no wonder that that would give the player rotational momentum.
+I fixed it by rotating the camera and the player model, but not the player hitbox. I also switched to using eulerangles to rotate
+the camera since I did a little research and that's apparently better for mouse look. It works really well now! The game feels
+pretty good to play, and the basics are down (except kicking, but I know how to make it work, I just have to actually code it). 
+Next I'm going to finish modeling the main character, since I realized that I actually need to model a whole person and not just the
+arms, becuase the player will see it if they look around when they look while grabbing (probably? maybe not. Either way it's better
+to model the whole body). So i'm going to focus on finishing that, and then adding the grab animations.</p>
+
 <h1>Rom Hacking SMT: Devil Summoner</h1>
 
 
