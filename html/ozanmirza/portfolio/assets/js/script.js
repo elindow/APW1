@@ -1,5 +1,6 @@
 class Semester {
   constructor(select, projects) {
+    this.index = select
     this.title = "Semester " + select;
     this.projects = projects;
   }
@@ -17,7 +18,7 @@ class Project {
 
 const scaffold = [
   new Semester(
-    "1",
+    1,
     [
       new Project(
         1,
@@ -42,6 +43,32 @@ const scaffold = [
       ),
     ],
   ),
+  new Semester(
+    2,
+    [
+      new Project(
+        1,
+        "Coursera College Courses",
+        "Almost like brilliant.org but in a different way, I will be expanding my education through the resources that this service offers.",
+        "coursera.png",
+        "coursera.html",
+      ),
+      new Project(
+        2,
+        "Cooper Hewitt Design Competition",
+        "The Cooper Hewitt hosts an annual national design competition and I submitted Dr. Foodie to it.",
+        "cw-competition.png",
+        "cooper-hewitt-competition.html",
+      ),
+      new Project(
+        3,
+        "UPCOMING",
+        "Let's see what else will happen this semester.",
+        "upcoming2.png",
+        "",
+      ),
+    ],
+  ),
 ];
 
 window.onload = () => {
@@ -58,6 +85,7 @@ window.onload = () => {
 
     let slider = document.createElement("ul");
     slider.classList.add("slider");
+    slider.id = "slider-" + _section.index;
 
     _section.projects.forEach((_project) => {
       let project = document.createElement("li");
@@ -112,22 +140,23 @@ window.onload = () => {
     </div>
     `;
 
-    document.getElementById("works").appendChild(section);
+    document.getElementById("works-" + _section.index).appendChild(section);
 
     $('.slider--prev, .slider--next').click(function() {
 
       var $this = $(this),
-          curLeft = $('.slider').find('.slider--item-left'),
-          curLeftPos = $('.slider').children().index(curLeft),
-          curCenter = $('.slider').find('.slider--item-center'),
-          curCenterPos = $('.slider').children().index(curCenter),
-          curRight = $('.slider').find('.slider--item-right'),
-          curRightPos = $('.slider').children().index(curRight),
-          totalWorks = $('.slider').children().length,
-          $left = $('.slider--item-left'),
-          $center = $('.slider--item-center'),
-          $right = $('.slider--item-right'),
-          $item = $('.slider--item');
+          $slider = $('#slider-' + _section.index),
+          curLeft = $slider.find('.slider--item-left'),
+          curLeftPos = $slider.children().index(curLeft),
+          curCenter = $slider.find('.slider--item-center'),
+          curCenterPos = $slider.children().index(curCenter),
+          curRight = $slider.find('.slider--item-right'),
+          curRightPos = $slider.children().index(curRight),
+          totalWorks = $slider.children().length,
+          $left = $slider.find('.slider--item-left'),
+          $center = $slider.find('.slider--item-center'),
+          $right = $slider.find('.slider--item-right'),
+          $item = $slider.find('.slider--item');
 
       $('.slider').animate({ opacity : 0 }, 400);
 
@@ -191,12 +220,13 @@ window.onload = () => {
 }
 
 let autoScroll = () => {
+  const currentSemester = "2";
   const section = "section--is-active";
   const nav = "is-active";
   document.getElementById("about").classList.remove(section);
-  document.getElementById("works").classList.add(section);
+  document.getElementById("works-" + currentSemester).classList.add(section);
   document.getElementById("about-nav").classList.remove(nav);
-  document.getElementById("works-nav").classList.add(nav);
+  document.getElementById("works-" + currentSemester + "-nav").classList.add(nav);
   document.getElementById("about-side-nav").classList.remove(nav);
-  document.getElementById("works-side-nav").classList.add(nav);
+  document.getElementById("works-" + currentSemester + "-side-nav").classList.add(nav);
 }
