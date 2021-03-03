@@ -55,10 +55,10 @@ const scaffold = [
       ),
       new Project(
         2,
-        "UPCOMING",
-        "Let's see what else will happen this semester.",
-        "upcoming.png",
-        "",
+        "Cooper Hewitt Design Competition",
+        "The Cooper Hewitt hosts an annual national design competition and I submitted Dr. Foodie to it.",
+        "cw-competition.png",
+        "cooper-hewitt-competition.html",
       ),
       new Project(
         3,
