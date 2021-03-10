@@ -43,11 +43,12 @@
       transform: translateY(4px);
       }
    </style>
-         <center>                     
-            <p style="text-align: center; font-size: 25px;"><span style="color: #00ffff;"><strong>Current Project (and semester update (click icon)):</strong></span></p>
+         <center>
+         	<div class="animated_rainbow_2">Current Project (and semester update (click icon)):</div>                     
             <img onclick="window.open('https://www.syntale.net/kevinchangelog')" src="../images/synt.png" alt='syntale.net'>
             <p style="text-align: center; font-size: 30px;">&nbsp;</p>
          </center>
+
    <center>
       <button onclick="openColorBox()" class="button">Click me for free cookies</button>
    </center>
@@ -80,4 +81,25 @@
       </script>
    </body>
 </html>
+<style>
+.animated_rainbow_2 {
+    font-size: 25px;
+    font-family: Arial Black, Gadget, sans-serif;
+    -webkit-animation: animatedBackground_b 5s linear infinite alternate;
+}
+
+@keyframes animatedBackground_b{
+    0% {color: #ff8b00}
+    10% {color: #e8ff00}
+    20% {color: #5dff00}
+    30% {color: #00ff2e}
+    40% {color: #00ffb9}
+    50% {color: #00b9ff}
+    60% {color: #002eff}
+    70% {color: #5d00ff}
+    80% {color: #e800ff}
+    90% {color: #ff008b}
+    100% {color: #ff0000}
+}
+</style>
 
