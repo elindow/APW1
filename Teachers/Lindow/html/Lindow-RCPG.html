@@ -59,38 +59,11 @@ function getColorCode() {
 
    //function calls for 5 random colors
    function pickRandomColor() {
-
-      //setting variable to hex code returned from function 
-      let color = getColorCode();
-      //set background color to hex code variable
-      $("#chooseColor").css("background-color", color);
-      //inner html
-      $("#chooseColor").html(color);
-
-      color = getColorCode();
-      //set background color to hex code variable
-      $("#chooseColorTwo").css("background-color", color);
-      //inner html
-      $("#chooseColorTwo").html(color);
-
-      color = getColorCode();
-      //set background color to hex code variable
-      $("#chooseColorThree").css("background-color", color);
-      //inner html
-      $("#chooseColorThree").html(color);
-
-      color = getColorCode();
-      //set background color to hex code variable
-      $("#chooseColorFour").css("background-color", color);
-      //inner html
-      $("#chooseColorFour").html(color);
-
-      color = getColorCode();
-      //set background color to hex code variable
-      $("#chooseColorFive").css("background-color", color);
-      //inner html
-      $("#chooseColorFive").html(color);
-
+      $("#chooseColor").css("background-color", getColorCode());
+      $("#chooseColorTwo").css("background-color", getColorCode());
+      $("#chooseColorThree").css("background-color", getColorCode());
+      $("#chooseColorFour").css("background-color", getColorCode());
+      $("#chooseColorFive").css("background-color", getColorCode());
    }
 
 </script>
