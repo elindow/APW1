@@ -271,9 +271,9 @@ img.gym {
 
 img.picture {
   float: right;
-  transform: translate(-10%, -100%); 
-  width: 45%;
-  padding: 3px;
+  transform: translate(-20%, -109%); 
+  width: 46%;
+  padding: 2px;
 }
 
 img.divider {
