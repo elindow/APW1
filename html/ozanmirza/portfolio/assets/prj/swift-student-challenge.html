@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>WWDC 2021 Swift Student Challenge</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- One -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h1>WWDC 2021 Swift Student Challenge</h1>
+							<p class="major">Every year Apple hosts a huge conference called the World Wide Developer's Conference. Students of all ages are welcome to submit their Swift projects inorder to be selected for a free ticket.</p>
+							<ul class="actions stacked">
+								<li><a href="#first" class="button big wide smooth-scroll-middle">Check out journal</a></li>
+							</ul>
+						</div>
+						<div class="image" style="background-color: black;">
+							<video width="100%" height="100%" autoplay loop muted><source src="assets/img/Swift-Student-Challenge.mp4" type="video/mp4"></video>
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<div class="content">
+							<h2>The Submission</h2>
+							<p>Two years back I submitted a project about Neural Networks. It was designed to help teach the user about them through actual CoreML examples. Two years later, I feared that I forgot that basic knowledge of which I learnt about. And so, I did something great men before me have done: tried again. Only this time I decided to do something very different. My parents recently got a new iPad. And so instead of making an Xcode playground, I made a Playground Book. The difference here is that one is made on the iPad while the other is made on the computer. There are four chapters to it.<br><br>The first one is a brief overview of what it is and lets the user play around with training one. Watching its intelligence grow within seconds.<br><br>The next one is about the concept of XOR and how that is used. XOR (exclusive Or) is a logic gate that outputs 1 when exactly one of the two inputs is 1. Here, the user witnesses what kind of data gets used and how it is quickly comprehended.<br><br>The third chapter is about Epochs, Learning Rate and Activation Functions. Each concept gets their own page and builds off of each other. Epochs are essentially the number of iterations that are used for pass the training data through the network. More complex DataSets often and number of hidden layers require more epochs. Meanwhile, the learning rate determines how quickly the network changes the weights based on the loss. And lastly, the activation function defines the output of a node for an input value. It can also be used to set the value to a certain range (e.g. between 0 and 1).<br><br>The final page is just a conclusion and congratulates the user for their completion.</p>
+						</div>
+						<div class="image">
+							<img src="assets/img/PlaygroundDemo.gif" alt="" />
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>Journal</h2>
+							<p>Below is what I submitted for their questionnaires. Each had to be answered in 500 words or less which kind of sucked.</p>
+              <p><strong>List the open source software you used and explain why you used it.</strong><br></p>
+							<p>While I did not use open source "software" specifically, I did happen to use open-source data and images for the challenges within my Book. All of the credits can be found within the "Attributes" section at the end of the Book.</p>
+              <p><strong>Tell us about the features and technologies you used in your Swift playground.</strong><br></p>
+							<p>Since my Playground Book is much more visually based and focused on teaching the mechanics of Neural Networks, I was able to build it without the use of any extensive technologies.
+Let's begin with my use of the basics: Foundation, UIKit, and CoreGraphics. These libraries are seen the most within my Source Files. This is because, as I said before, the program is mostly visually based. However, when I talk about the features side of the project, the implementation of these technologies may seem more impressive. For example, my extensive application of the OOP (Object-Oriented Programming) paradigm. At the base, there are helper extensions and organizational classes, structs, etc. Then on top of that layer are some base classes (like the actual Neural Network) that then get inherited by more specialized classes such as the different ones for the UI and its various needs. That feature was definitely more on the programming side, there are a bunch of features that are also product facing. As for one that stands out on the product side I would say that the Book's use of real data (CSV values of actual Iris flowers and such) to help the user truly grasp what it means to work on Neural Networks was very helpful to the experience. I must add that while my implementation and design of the Neural Network system is a bit primitive compared to the professional ones out there, its application fits very well with this context (teaching about its mechanics).
+I used a lot of more hands-on animations such as UIBezierPath, CoreAnimation, etc. to handle animating the changes within the brain of the Neural Network. This definitely is needed as it helps to illustrate to the user a lot of the processes that get explained within the Book.
+An advanced framework that I did use is Apple's Accelerate framework for one of my "base" classes that I wrote about earlier. According to the Apple documentation, "Accelerate provides high-performance, energy-efficient computation on the CPU by leveraging its vector-processing capability." What this means is that it is the framework I need to conduct heavy math. Which heavy math? Interpolation! Within my InterpolationHelper class, all of my methods (that conduct the actual interpolation between Arrays) use this framework.
+The purpose of this playground was to teach the user the basics of Neural Networks. Basically as an introduction before all of the heavy-hitting Calculus, Linear-Algebra, Penta-byte level computers, and the other hardships that AI developers find themselves navigating through. In a world where we are moving more and more in tune with technology and Artificial Intelligence, we will all find ourselves one day living in a reality where education on this topic can be found and required at schools. Are you ready for that future?
+In the spirit of community, I made my code open-source and it can be found on GitHub (https://github.com/ozanm/WWDC-2021-Neural-Networks) along with all of my other projects (including my 4 annually previous submissions that were not so lucky with the judging process).
+</p>
+              <p><strong>Beyond WWDC21 (optional)</strong><br><i>If you've shared or considered sharing your coding knowledge and enthusiasm for computer science with others, let us know.</i></p>
+							<p>My life of programming is filled with numerous relationships and experiences. This includes environments such as my school (Trevor Day School), Nano Hacker Academy, my mentors, and just the overall community where I really feel like I fit in.
+In my school, I have known the programming department ever since middle school and because they saw through my passion they let me skip the fundamentals class my freshman year. I ended up being the youngest to have ever gotten into the advanced class my Sophomore year. I also did an independent study with the head of the CS department at my school as my mentor where I studied to take the AP Computer Science A Test (scored a 4). My sophomore year I was deemed a TA for the Intermediate class merely because of how much I helped my classmates the prior year when I took that class. I met another teacher who also acted as a mentor. I was able to seamlessly help their students with their programming issues. This teacher was actually in the Science department (physics teacher) but extensively included programming into their curriculum. They gave me copies of their personal source code of a chess game (with single-player algorithms) built with Java with a GUI to it with only two instructions: 1. Hack away and 2. Share anything that I make. On top of all of that, I made countless experiences with my peers solving bugs together, thinking logically, completing challenges, and so much other fun stuff.
+Outside of school, I found a community where I can relate very well with: Nano Hacker Academy. This is a non-profit organization run by real Software Engineers deep in the startup community who want to share their expertise with teenagers from across the city who all share that particular passion. I know that I definitely grew as a developer from my experiences here every Friday from 6:30 pm to 9:00 pm. Classes ranged from intro to Javascript to building your own startup to finding your own internships to working with KerasML in Python and so much more. It also felt nice to meet other children of my age who share the same skill level as me. Helping me to grow my community at a young age is what I hear adults value very much.
+On top of that, both my school and Nano Hacker Academy have helped us organize teams for Hackathons. I have participated in countless of those (a couple even going a full 24 hours). Hackathons have always been fun for me because it is a place where we can really push ourselves to deliver our best code and creativity while at the same time not feel insecure for our supposed lack of skill or weakness compared to our peers (of which I have plenty).
+I would like to end by adding that on top of all of these identities and skills that I may fit in with, I consider myself first and foremost a... hacker designer!
+</p>
+							<p><strong>Apps on the App Store (optional)</strong><br><i>If you have one or more apps on the App Store created entirely by you as an individual, tell us about them. This will not influence the selection process.</i></p>
+							<p>After treading through the waters of developing for iOS and Mac OS, I now find myself with more than 5 years of experience with Swift and Objective-C and with 10 apps on the App Store (7 iOS and 3 Mac OS). This is just the tip of the iceberg! Everything that I developed is listed under Aries Sciences LLC (lovingly founded by my mom so that I can have the agency to pursue my passion). The developer page with all of my apps listed can be found here: https://apps.apple.com/vn/developer/burcu-mirza/id1211518423. Unfortunately due to the word limit, I will only be able to discuss a select few here.
+I will start with the first app I ever made. It was first released in 2016 (when I was 12) and called PaintPad. The whole concept is very simple and, in essence, very childish: draw! That's it. Pick a color, draw what you want, change the color maybe change the size or opacity, and just keep on being you. I feel that this app, to me, symbolizes and is a reminder of where I started.
+My next one is called Pong. This is literally just the good ol' retro original arcade game. I have heard many times from my parent's friends about how they used to play this as a kid for such a long time. It is then where I feel an indescribable connection with that person.
+Chronologically speaking I then went on to build my first Mac app. I will admit that I tried to experiment with using some other languages in coalition with Swift. At the time, I was also well versed in basic Web paging (HTML, CSS, Javascript). And so, after building the main UI in the browser, I then went on to implementing the data handling and app containment with Swift and Xcode. Quick Weather is a status bar app that displays for you the weather at the very moment in both imperial and metric units.
+I later went on to build my first Flutter app: Sleek Weather. It is basically another version of Apple's weather app except that it is designed with some more intuitive graphics (at least in my opinion). My experience here has allowed me to transition to SwiftUI very easily.
+I followed that project with another iOS app called Helpful Chess Timer. After observing that chess players have to "hit" their timer, I decided to build and design an app where they could do that seamlessly with their phones. This project helped me figure out more of the rules for playing chess.
+I will skip to my last two apps: Dr. Foodie (iOS) and Easy Share Uploader (Mac OS). The former uses AI services and regulatory agency's APIs to help the user understand what they are consuming in the form of a "food journal." The latter (of which I have been working on for a couple of years by then) helps users upload their image assets by automatically providing them a URL for their resource.
+</p>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
