@@ -50,6 +50,11 @@ img {
 	max-height: auto;
 }
 
+h6 {
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
 /* BODY */
 .maintext {
 	padding-left: 40px;
@@ -202,7 +207,7 @@ li.nav {
 /* FOOTER */
 .site-footer {
   background-color: #5f656b;
-  padding: 45px 0px 20px 0px;
+  padding: 15pxpx 20px 30px 20px;
   font-size: 15px;
   line-height: 24px;
   color: #dcddde;
