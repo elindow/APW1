@@ -27,11 +27,11 @@
 
 .journal-entry-image {
 	width: 30%;
-	float: left;
+	float: right;
 }
 
 .journal-entry-text {
-	width: 70%;
+	width: 100%;
 }
 
 
