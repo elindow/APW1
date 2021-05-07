@@ -27,11 +27,11 @@
 
 .journal-entry-image {
 	width: 30%;
-	float: left;
+	float: right;
 }
 
 .journal-entry-text {
-	width: 70%;
+	width: 100%;
 }
 
 
@@ -48,6 +48,11 @@ body {
 img {
 	max-width: 100%;
 	max-height: auto;
+}
+
+h6 {
+  padding-top: 20px;
+  padding-bottom: 5px;
 }
 
 /* BODY */
@@ -202,7 +207,7 @@ li.nav {
 /* FOOTER */
 .site-footer {
   background-color: #5f656b;
-  padding: 45px 0px 20px 0px;
+  padding: 15pxpx 20px 30px 20px;
   font-size: 15px;
   line-height: 24px;
   color: #dcddde;
