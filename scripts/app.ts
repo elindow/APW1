@@ -1,6 +1,6 @@
 /** test of tScript*/
 
-let message: string = 'Time is Money';
+let message: string = 'Wisdom is Power';
 
 let heading = document.createElement('h1');
 heading.textContent = message;
