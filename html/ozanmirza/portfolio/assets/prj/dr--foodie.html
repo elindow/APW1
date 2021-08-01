@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Dr. Foodie</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- One -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h1>Dr. Foodie</h1>
+							<p class="major">A food journal app. Essentially, the user takes a picture of their food, and the AI guesses what they are eating along with the food's nutrition information. The user then has this data at their disposal and can do what they wish with it.</p>
+							<ul class="actions stacked">
+								<li><a href="#first" class="button big wide smooth-scroll-middle">Check out journal</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="../img/dr--foodie.png" alt="" />
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<div class="content">
+							<h2>The App's Structure</h2>
+							<p>The image that you see on the left is a screenshot of the current "storyboard" file in the Xcode project. I new from the start that I needed to make a flow that I haven't done before. That is, one with an onboarding screen, account and authentication system, a home page, and a tab controller. I tried to use much more "better practices" that I learned over the years and especially during my summer internship such as more view controllers, more objects, seperating out processes and using much more Apple provided tools, but putting my own little spin to them (animations, design, etc.). I tried using navigation controllers for sub-systems such as the login and sign up pages. As for the tab controller, I wanted to use something different yet also just as satisfying. I found this scrollable carousel made by this design company Ramotion on GitHub and implemented it into my projects, quite a few bugs have arisen because of the way it works, but I've been able to find work arounds for them.</p>
+						</div>
+						<div class="image">
+							<img src="assets/img/dr--foodie-structure.png" alt="" />
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>The AI Service and Nutrition Information Provider</h2>
+							<p>As I will explain later on in the page, I was under a strict time constraint. By the time that I was able to get the actual AI portion of the application working, I had only about 5 days left. So, unfortunately instead of being able to use MLKit and other Apple technologies, I had to succumb to using a food-recognition AI in an online API. The one that I am using right now is called Clarifai. It works really well. My mom actually attended one of their webinars. Although, I will admit that it is not perfect, and I hope that, once and if this app gains some traction, I can develop a much more optimized Neural Network or whatever would be best.<br><br>As for the nutrition information, I made sure to find another API provider that is very reliable and updates regularly. The perfect fit was with one called Nutritionix. I was very attracted to how the infromation that they provied replicated the actual label one would find in the packaging of the food product in the grocery store. Also, their documentation (a Google Sheets File) was very extensive with units and other key information.</p>
+						</div>
+						<div class="image">
+							<img src="assets/img/dr--foodie-nutrition-page.png" alt="" />
+						</div>
+					</section>
+
+				<!-- Four -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>The Congressional App Challenge</h2>
+							<p>Why and when did I start this project? Sometime in early December Mr. Golanka forwarded to the entire school an email sent by a representative from the Congressional App Challenge to the school in our area. I looked into the program and immediately jumped at the oppurtunity. I actually had this idea sometime in the middle of the summer but decided to wait for the right time to write it. The way the program works is that students from all across America could code a project and submit it to the Congressional Representative of their choosing. Luckily the representative for Trevor is also for my home so she was the obvious judge to submit to. They then judge and individually announce their winners. Due to recent events, my representative has been unable to submit her decision yet. We're required to fill out a questionnaire and submit a video. I actually just finished the video around maybe two minutes before the deadline and submitted around a second before. That would be true, however I failed to read their recent email that they extended the deadline by 3 hours.</p>
+						</div>
+						<div class="image">
+							<img src="assets/img/dr--foodie-cac.png" alt="" />
+						</div>
+					</section>
+
+				<!-- Five -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>Submitting to the App Store</h2>
+							<p>Since this is an iOS app made with the latest Swift version, and I have a developer account, I thought "hey! Why not upload it?" Actually that was my intention from the start. I will admit that the worst part of the process would be taking the screenshots because of how long they take. I first submitted it, I think, around when winter break started. However, literally an hour after that I was looking through my phone and noticed quite a few bugs, so I redacted the app, fixed them, and put in the correct build. I will admit that quite a few times, App Review found some bugs, and quite a few time, I resubmitted, and that the journey is not over. It's so close, just one last bug, but its not over yet.</p>
+						</div>
+						<div class="image">
+							<img src="assets/img/dr--foodie-appstoreconnect.png" alt="" />
+						</div>
+					</section>
+
+				<!-- Six -->
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>Journal</h2>
+							<img style="width: 75%;" src="assets/img/dr--foodie-background.png" alt="" />
+							<p>As with all my apps, I love trying to take a mouch more heavy-handed approach to its design, adding my own little spin to it and making it feel very professional. I originally started off with some more flat and cartoony assets, until my little sister showed me her idea (which I think was heavily inspired off of Whole Foods) of using studio images of, well food. And so, the main artwork for the app, is the background above. I also tried to work with transluencency (you know, UIVisualEffectView) and other UI elements of the sort. I also tried to work with shadows quite a bit. This was also my first time working with being dark and light mode concious. I made sure to make colors within the Assets.xcassets folder so that the colors could be automatically handled whenever the traitCollection changes.</p>
+              <p>I especially love it bacause of how dark it is. The only problem is that the iDevices are much more of a narrower rectangular shape while this image is the exact oppsite, so I decided to scale it so that it fits the device porportionally, and the background essentially moves from side to side repeatedly. My main font that I used was called Futura, I thought that it looked quite bold and modern. If you notice how on the Mac, all the application windows have a tiny little border with a small corner radius. I added that to my app as well. </p>
+							<p>My app uses the iCloudKit as the backend to host all of the user's data online. I will admit that I may have prematurely set it up before learning about a (much smarter) way of doing it, but once and if it gains traction I'll fix that as well. One of the bugs that App Review is finding is that "Sign in with Apple" just isn't working for them. I looked through the flow and created the proper error prompts for differing situations, but I hope that is what the problem is. Another bug that I still haven't been able to figure out is that, well the way that the app shows user's their daily "journal" is through a "UICollectionView", basically just a specialized UI class for handling the displaying of lists with some data, and a prototype view. If you remember that earlier I said that I used a specialized type of tabbar, well it works by having the different view controllers act as child view controllers inside its own UITableView (a vertical UICollectionView essentially). This is problematic because then that means that the UIViewController controlling the Journal doesn't need to render it immediately, because it's not in view. But that means that when it is in view, it wouldn't know because none of the implicit handlers get called, hence only when the user interacts with it does it display. A very interesting problem indeed. This is the last of the bugs that I needed to work on.</p>
+							<p>Update: After being interviewed by the Trevor Marketing Team, they decided to put my success with Dr. Foodie on the Trevor website and news page. I hadn't sent them the information that they needed yet because of how busy I have been. Once it is up, I will include the link to it <a href"" target="_blank">here</a>.</p>
+							<p>Update: I submitted my project to the Emoticon Virtual Hackathon and it got "accepted". The actual compeition will commence sometime around late May where the public can view and judge the projects. All of the details can be found in the email below. Here's the link to view the project: <a href="https://emoticon.mouse.org/2021/dr.-foodie">Emoti-con</a>. Please provide any opinions or upvotes if you don't mind.</p>
+							<embed src="assets/img/emoticon-email.pdf" width="100%" height="1000px" />
+						</div>
+
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

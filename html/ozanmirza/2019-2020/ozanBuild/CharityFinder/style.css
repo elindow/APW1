@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+
+html {
+  overflow: hidden;
+}
+
+body {
+  background-image: url("img/CharityBG.jpg");
+}
+
+* {
+  transition: opacity 1s, top 1s, left 1s, bottom 1s, background-color 1s;
+}
+
+label {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translateY(-50%);
+}
+
+.main_title {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  top: 0%;
+  left: 0%;
+  color: white;
+  font-size: 100px;
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.sub_title {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  top: 150px;
+  left: 0%;
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 35px;
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+}
+
+.dismiss_loading {
+  opacity: 0;
+}
+
+.start {
+  position: absolute;
+  width: 350px;
+  height: 75px;
+  top: 65%;
+  left: 50%;
+  opacity: 0;
+  margin: -75px -175px;
+  background-color: rgba(66, 244, 178, 1);
+  text-align: center;
+  vertical-align: center;
+  font-size: 30px;
+  font-family: 'Varela Round', sans-serif;
+  border-radius: 15px;
+  color: white;
+  border: none;
+  outline: none;
+  transition-delay: 1s;
+}
+
+.fadeInAndMoveUp {
+  top: 400px;
+  opacity: 1;
+}
+
+.disappear {
+  transition-delay: 0s;
+  top: -200px;
+  opacity: 0;
+}
+
+.main_list {
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  width: 80%;
+  height: 85%;
+  background-color: white;
+  border-radius: 25px;
+  border-color: lightGray;
+  border-width: 10px;
+  opacity: 0;
+}
+
+.presentList {
+  top: 7.5%;
+  opacity: 1;
+}
+
+.back {
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  background-image: url("img/Back.png");
+  outline: none;
+  border: none;
+  opacity: 0;
+}
+
+.presentBack {
+  left: 25px;
+  opacity: 1;
+}
+
+.credits {
+  position: absolute;
+  width: 150px;
+  height: 14px;
+  font-size: 14px;
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+}
+
+a {
+  color: darkGray;
+}
+
+.next {
+  position: absolute;
+  width: 250px;
+  height: 50px;
+  bottom: 0%;
+  left: 50%;
+  margin-left: -125px;
+  background-color: rgb(66, 244, 178);
+  background-image: url("img/Next.png");
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  opacity: 0;
+}
+
+.presentNext {
+  bottom: 5%;
+  opacity: 1;
+}
+
+.setter_section_title {
+  position: absolute;
+  top: 20px;
+  left: 0%;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  color: #092c3e;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 45px;
+}
+
+.range_field {
+  position: absolute;
+  top: 50%;
+  width: 200px;
+  height: 200px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  background-color: #092c3e;
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 125px;
+  color: lightGray;
+  margin-left: -100px;
+}
+
+.range_title {
+  position: absolute;
+  top: 30%;
+  width: 200px;
+  height: 25px;
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 45px;
+  margin-left: -100px;
+  color: #092c3e;
+}
+
+.setter_section {
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.present_section {
+  left: 0%;
+  opacity: 1;
+}
+
+.dismiss_section {
+  left: -100%;
+  opacity: 0;
+}
+
+.list_forms {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  width: 80%;
+  height: 60%;
+  border-radius: 20px;
+}
+
+.prefrences_back {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  background-image: url("img/Back-Section.png");
+  outline: none;
+  border: none;
+  opacity: 0;
+}
+
+.prefrences_back_true {
+  left: 20px;
+  opacity: 1;
+}
+
+.prefrences_back_false {
+  left: 0px;
+  opacity: 0;
+}
+
+/* input style */
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  visibility: hidden;
+  display: none;
+}
+
+.check {
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 36px;
+  background-color: #092c3e;
+  cursor: pointer;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: ease-in 0.5s;
+}
+
+input:checked[type="checkbox"] ~ .check {
+  background-color: #fff;
+/*   box-shadow: 0 0 0 1200px #092c3e; */
+}
+
+.check:before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+input:checked[type="checkbox"] ~ .check:before {
+  transform: translateX(-50px);
+}
+
+.check:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  right: 4px;
+  background-color: #092c3e;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transform: translateX(50px);
+  transition: all 0.5s;
+
+}
+
+input:checked[type="checkbox"] ~ .check:after {
+  transform: translateX(0px);
+}
+
+#form_section_1 {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 25%;
+  background-color: #092c3e;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+#form_section_2 {
+  position: absolute;
+  top: 25%;
+  left: 0%;
+  width: 100%;
+  height: 25%;
+  background-color: #092c3e;
+}
+
+#form_section_3 {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 100%;
+  height: 25%;
+  background-color: #092c3e;
+}
+
+#form_section_4 {
+  position: absolute;
+  top: 75%;
+  left: 0%;
+  width: 100%;
+  height: 25%;
+  background-color: #092c3e;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.forms_help {
+  position: absolute;
+  top: 50%;
+  left: 92%;
+  width: 35px;
+  height: 35px;
+  transform: translateY(-50%);
+  border: none;
+  outline: none;
+  background-color: white;
+  border-radius: 17.5px;
+  font-size: 17px;
+  font-family: 'Varela Round', sans-serif;
+  color: #092c3e;
+}
+
+.forms_title {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  width: 350px;
+  height: 35px;
+  transform: translateY(-75%);
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-size: 30px;
+  font-family: 'Varela Round', sans-serif;
+  vertical-align: center;
+}
+
+#forms_help_4 {
+  position: absolute;
+  top: 90px;
+  left: 65%;
+  background-color: #092c3e;
+  color: white;
+}
+
+.error_popup {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 350px;
+  height: 150px;
+  transform: translate(-50%);
+  background-color: #092c3e;
+  border-radius: 20px;
+  opacity: 0;
+}
+
+.error_title {
+  position: absolute;
+  top: 0%;
+  left: 10px;
+  width: 330px;
+  height: 100%;
+  text-align: center;
+  color: white;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 25px;
+}
+
+.present_error {
+  top: 35%;
+  opacity: 1;
+}
