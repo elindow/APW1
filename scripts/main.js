@@ -120,6 +120,41 @@ const MENU_BAR_SETTINGS = [
 			),
 		],
 	),
+
+	new Project(
+		"Students",
+		"The Students",
+		"The students work on bigger and challenging projects that peak their interests. In their websites, they talk about their projects for the year.",
+		[
+			new Area(
+				"Section 1- Jacob doesn't know who is in this section",
+				[
+
+					new Website("Ozan's Page", "./html/ozanmirza/portfolio/index.html"),
+					new Website("Ella's Page", "./html/Ella_page.html"),
+					new Website("Gina's Page", "./html/gina_index.html"),
+				],
+			),
+			new Area(
+				"Section 2",
+				[
+					new Website("Mikey's Page", "./html/michael.html"),
+					new Website("Hayden's Page", "./html/hayden.html"),
+					new Website("Jacob's Page", "./html/jacobweingard.html"),
+				],
+			),
+			new Area(
+				"Section 3-Jacob doesn't know who is in this section",
+				[
+
+					new Website("Nathaniel's Page", "./html/McNutt.html"),
+					new Website("Ethan's Page", "./html/Melwani.html"),
+					new Website("Charlotte's Page", "./html/charlotte.html"),
+
+				],
+			),
+		],
+	),
 	new Project(
 		"Alumni",
 		"The Alumni",
@@ -164,40 +199,6 @@ const MENU_BAR_SETTINGS = [
 					new Website("Leila's Page", "./html/leila.html"),
 				]
 			)
-		],
-	),
-	new Project(
-		"Students",
-		"The Students",
-		"The students work on bigger and challenging projects that peak their interests. In their websites, they talk about their projects for the year.",
-		[
-			new Area(
-				"Section 1- Jacob doesn't know who is in this section",
-				[
-
-					new Website("Ozan's Page", "./html/ozanmirza/portfolio/index.html"),
-					new Website("Ella's Page", "./html/Ella_page.html"),
-					new Website("Gina's Page", "./html/gina_index.html"),
-				],
-			),
-			new Area(
-				"Section 2",
-				[
-					new Website("Mikey's Page", "./html/michael.html"),
-					new Website("Hayden's Page", "./html/hayden.html"),
-					new Website("Jacob's Page", "./html/jacobweingard.html"),
-				],
-			),
-			new Area(
-				"Section 3-Jacob doesn't know who is in this section",
-				[
-
-					new Website("Nathaniel's Page", "./html/McNutt.html"),
-					new Website("Ethan's Page", "./html/Melwani.html"),
-					new Website("Charlotte's Page", "./html/charlotte.html"),
-
-				],
-			),
 		],
 	),
 ];
