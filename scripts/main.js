@@ -150,6 +150,20 @@ const MENU_BAR_SETTINGS = [
 					new Website("Danny's Page", "./html/Archives/2020/dannyFisher/danny_project/new.html"),
 				],
 			),
+			new Area(
+				"2020",
+				[
+					new Website("Andres's Page", "./html/AndresPage.html"),
+					new Website("Robert's Page", "./html/Robert.html"),
+					new Website("Jake's Page", "./html/jakehtml.html"),
+					new Website("Daniel's Page", "./html/DanielLEwis.html"),
+					new Website("Justin's Page", "./html/RomanowPage.html"),
+					new Website("Percy's Page", "./html/FleesPage.html"),
+					new Website("Goodnews's Page", "./html/goodnews.html"),
+					new Website("Archie's Page", "./html/silverstein.html"),
+					new Website("Leila's Page", "./html/leila.html"),
+				]
+			)
 		],
 	),
 	new Project(
@@ -158,13 +172,10 @@ const MENU_BAR_SETTINGS = [
 		"The students work on bigger and challenging projects that peak their interests. In their websites, they talk about their projects for the year.",
 		[
 			new Area(
-				"Section 1",
+				"Section 1- Jacob doesn't know who is in this section",
 				[
-					new Website("Andres's Page", "./html/AndresPage.html"),
+
 					new Website("Ozan's Page", "./html/ozanmirza/portfolio/index.html"),
-					new Website("Robert's Page", "./html/Robert.html"),
-					new Website("Jake's Page", "./html/jakehtml.html"),
-					new Website("Daniel's Page", "./html/DanielLEwis.html"),
 					new Website("Ella's Page", "./html/Ella_page.html"),
 					new Website("Gina's Page", "./html/gina_index.html"),
 				],
@@ -172,22 +183,19 @@ const MENU_BAR_SETTINGS = [
 			new Area(
 				"Section 2",
 				[
-					new Website("Justin's Page", "./html/RomanowPage.html"),
-					new Website("Percy's Page", "./html/FleesPage.html"),
-					new Website("Goodnews's Page", "./html/goodnews.html"),
-					new Website("Archie's Page", "./html/silverstein.html"),
-					new Website("Leila's Page", "./html/leila.html"),
+					new Website("Mikey's Page", "./html/michael.html"),
+					new Website("Hayden's Page", "./html/hayden.html"),
+					new Website("Jacob's Page", "./html/jacobweingard.html"),
 				],
 			),
 			new Area(
-				"Section 3",
+				"Section 3-Jacob doesn't know who is in this section",
 				[
-					new Website("Mikey's Page", "./html/michael.html"),
-					new Website("Hayden's Page", "./html/hayden.html"),
+
 					new Website("Nathaniel's Page", "./html/McNutt.html"),
 					new Website("Ethan's Page", "./html/Melwani.html"),
 					new Website("Charlotte's Page", "./html/charlotte.html"),
-					new Website("Jacob's Page", "./html/jacobweingard.html"),
+
 				],
 			),
 		],
