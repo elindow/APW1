@@ -120,13 +120,48 @@ const MENU_BAR_SETTINGS = [
 			),
 		],
 	),
+
+	new Project(
+		"Students",
+		"The Students",
+		"The students work on bigger and challenging projects that peak their interests. In their websites, they talk about their projects for the year.",
+		[
+			new Area(
+				"Section 1- Jacob doesn't know who is in this section",
+				[
+
+					new Website("Ozan's Page", "./html/ozanmirza/portfolio/index.html"),
+					new Website("Ella's Page", "./html/Ella_page.html"),
+					new Website("Gina's Page", "./html/gina_index.html"),
+				],
+			),
+			new Area(
+				"Section 2",
+				[
+					new Website("Mikey's Page", "./html/michael.html"),
+					new Website("Hayden's Page", "./html/hayden.html"),
+					new Website("Jacob's Page", "./html/jacobweingard.html"),
+				],
+			),
+			new Area(
+				"Section 3-Jacob doesn't know who is in this section",
+				[
+
+					new Website("Nathaniel's Page", "./html/McNutt.html"),
+					new Website("Ethan's Page", "./html/Melwani.html"),
+					new Website("Charlotte's Page", "./html/charlotte.html"),
+
+				],
+			),
+		],
+	),
 	new Project(
 		"Alumni",
 		"The Alumni",
 		"The alumni's projects are archived so that new students can see and learn from their work for inspiration.",
 		[
 			new Area(
-				"2018",
+				"2018-19",
 				[
 					new Website("Sophie's Page", "./html/archives/2019/sophieKofsky/KofskyPage.html"),
 					new Website("Bryn's Page", "./html/archives/2019/brynStecher/bstecher.html"),
@@ -141,7 +176,7 @@ const MENU_BAR_SETTINGS = [
 				],
 			),
 			new Area(
-				"2019",
+				"2019-20",
 				[
 					new Website("Owen's Page", "./html/Archives/2020/owenWiese/owen_page.html"),
 					new Website("Max's Page", "./html/Archives/2020/maxbremner/maxBremner.html"),
@@ -150,46 +185,20 @@ const MENU_BAR_SETTINGS = [
 					new Website("Danny's Page", "./html/Archives/2020/dannyFisher/danny_project/new.html"),
 				],
 			),
-		],
-	),
-	new Project(
-		"Students",
-		"The Students",
-		"The students work on bigger and challenging projects that peak their interests. In their websites, they talk about their projects for the year.",
-		[
 			new Area(
-				"Section 1",
+				"2020-21",
 				[
 					new Website("Andres's Page", "./html/AndresPage.html"),
-					new Website("Ozan's Page", "./html/ozanmirza/portfolio/index.html"),
 					new Website("Robert's Page", "./html/Robert.html"),
 					new Website("Jake's Page", "./html/jakehtml.html"),
 					new Website("Daniel's Page", "./html/DanielLEwis.html"),
-					new Website("Ella's Page", "./html/Ella_page.html"),
-					new Website("Gina's Page", "./html/gina_index.html"),
-				],
-			),
-			new Area(
-				"Section 2",
-				[
 					new Website("Justin's Page", "./html/RomanowPage.html"),
 					new Website("Percy's Page", "./html/FleesPage.html"),
 					new Website("Goodnews's Page", "./html/goodnews.html"),
 					new Website("Archie's Page", "./html/silverstein.html"),
 					new Website("Leila's Page", "./html/leila.html"),
-				],
-			),
-			new Area(
-				"Section 3",
-				[
-					new Website("Mikey's Page", "./html/michael.html"),
-					new Website("Hayden's Page", "./html/hayden.html"),
-					new Website("Nathaniel's Page", "./html/McNutt.html"),
-					new Website("Ethan's Page", "./html/Melwani.html"),
-					new Website("Charlotte's Page", "./html/charlotte.html"),
-					new Website("Jacob's Page", "./html/jacobweingard.html"),
-				],
-			),
+				]
+			)
 		],
 	),
 ];
