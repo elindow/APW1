@@ -126,7 +126,7 @@ const MENU_BAR_SETTINGS = [
 		"The alumni's projects are archived so that new students can see and learn from their work for inspiration.",
 		[
 			new Area(
-				"2018",
+				"2018-19",
 				[
 					new Website("Sophie's Page", "./html/archives/2019/sophieKofsky/KofskyPage.html"),
 					new Website("Bryn's Page", "./html/archives/2019/brynStecher/bstecher.html"),
@@ -141,7 +141,7 @@ const MENU_BAR_SETTINGS = [
 				],
 			),
 			new Area(
-				"2019",
+				"2019-20",
 				[
 					new Website("Owen's Page", "./html/Archives/2020/owenWiese/owen_page.html"),
 					new Website("Max's Page", "./html/Archives/2020/maxbremner/maxBremner.html"),
@@ -151,7 +151,7 @@ const MENU_BAR_SETTINGS = [
 				],
 			),
 			new Area(
-				"2020",
+				"2020-21",
 				[
 					new Website("Andres's Page", "./html/AndresPage.html"),
 					new Website("Robert's Page", "./html/Robert.html"),
