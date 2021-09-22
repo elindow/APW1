@@ -130,7 +130,7 @@ const MENU_BAR_SETTINGS = [
 				"Section 1- Jacob doesn't know who is in this section",
 				[
 
-					new Website("Ozan's Page", "./html/ozanmirza/portfolio/index.html"),
+					new Website("Ozan's Page", "./html/ozanmirza/2021-2022/portfolio/assets/index.html"),
 					new Website("Ella's Page", "./html/Ella_page.html"),
 					new Website("Gina's Page", "./html/gina_index.html"),
 				],
