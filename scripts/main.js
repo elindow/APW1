@@ -127,12 +127,12 @@ const MENU_BAR_SETTINGS = [
 		"The students work on bigger and challenging projects that peak their interests. In their websites, they talk about their projects for the year.",
 		[
 			new Area(
-				"Section 1- Jacob doesn't know who is in this section",
+				"Section 1",
 				[
 
 					new Website("Ozan's Page", "./html/ozanmirza/2021-2022/portfolio/assets/index.html"),
 					new Website("Ella's Page", "./html/Ella_page.html"),
-					new Website("Gina's Page", "./html/gina_index.html"),
+					new Website("Nathaniel's Page", "./html/McNutt.html"),
 				],
 			),
 			new Area(
@@ -144,13 +144,14 @@ const MENU_BAR_SETTINGS = [
 				],
 			),
 			new Area(
-				"Section 3-Jacob doesn't know who is in this section",
+				"Section 3",
 				[
-
-					new Website("Nathaniel's Page", "./html/McNutt.html"),
-					new Website("Ethan's Page", "./html/Melwani.html"),
 					new Website("Charlotte's Page", "./html/charlotte.html"),
-
+					new Website("Gina's Page", "./html/gina_index.html")
+					new Website("Alexa's Page", "./html/alexa.html")
+					new Website("Shadab's Page", "./html/shadab.html")
+					new Website("Nathan's Page", "./html/nathan.html")
+					new Website("Anna's Page", "./html/anna.html")
 				],
 			),
 		],
