@@ -127,12 +127,17 @@ const MENU_BAR_SETTINGS = [
 		"The students work on bigger and challenging projects that peak their interests. In their websites, they talk about their projects for the year.",
 		[
 			new Area(
-				"Section 1- Jacob doesn't know who is in this section",
+				"Section 1",
 				[
-
 					new Website("Ozan's Page", "./html/ozanmirza/2021-2022/portfolio/assets/index.html"),
 					new Website("Ella's Page", "./html/Ella_page.html"),
-					new Website("Gina's Page", "./html/gina_index.html"),
+					new Website("Nathaniel's Page", "./html/McNutt.html"),
+					new Website("Asher's Page", "./html/asher.html"),
+					new Website("Jared's Page", "./html/jared.html"),
+					new Website("Josie's Page", "./html/josie.html"),
+					new Website("Elisabeth's Page", "./html/elisabeth.html"),
+					new Website("Will's Page", "./html/will.html"),
+					new Website("Micheal's Page", "./html/micheal.html"),
 				],
 			),
 			new Area(
@@ -141,16 +146,19 @@ const MENU_BAR_SETTINGS = [
 					new Website("Mikey's Page", "./html/michael.html"),
 					new Website("Hayden's Page", "./html/hayden.html"),
 					new Website("Jacob's Page", "./html/jacobweingard.html"),
+					new Website("Soley's Page", "./html/soley.html"),
+					new Website("Kyle's Page", "./html/kyle.html"),
 				],
 			),
 			new Area(
-				"Section 3-Jacob doesn't know who is in this section",
+				"Section 3",
 				[
-
-					new Website("Nathaniel's Page", "./html/McNutt.html"),
-					new Website("Ethan's Page", "./html/Melwani.html"),
 					new Website("Charlotte's Page", "./html/charlotte.html"),
-
+					new Website("Gina's Page", "./html/gina_index.html"),
+					new Website("Alexa's Page", "./html/alexa.html"),
+					new Website("Shadab's Page", "./html/shadab.html"),
+					new Website("Nathan's Page", "./html/nathan.html"),
+					new Website("Anna's Page", "./html/anna.html"),
 				],
 			),
 		],
