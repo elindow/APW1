@@ -1,0 +1,112 @@
+html {
+    height: 100%;
+    font-family: 'Bodoni Moda', serif;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#background-label {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  color: gray;
+  font-size: 11px;
+  text-shadow: 2px 2px 4px gray;
+}
+
+#background-label a {
+  color: white;
+  font-size: 11px;
+  text-decoration: none;
+  text-shadow: 2px 2px 4px white;
+}
+
+.weather-information {
+  position: fixed;
+  left: 2%;
+}
+
+#header {
+  color: white;
+  font-size: 8vw;
+  text-shadow: 2px 2px 16px white;
+  margin: 20px;
+}
+
+#description {
+  color: lightgray;
+  font-size: 1.25vw;
+  font-weight: 800;
+  text-shadow: 2px 2px 8px gray;
+  margin-left: 20px;
+  margin-top: -40px;
+}
+
+#icon {
+  position: fixed;
+  right: 20%;
+  width: 60%;
+}
+
+.lds-heart {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  transform: rotate(45deg);
+  transform-origin: 40px 40px;
+}
+.lds-heart div {
+  top: 32px;
+  left: 32px;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.lds-heart div:after,
+.lds-heart div:before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: #fff;
+}
+.lds-heart div:before {
+  left: -24px;
+  border-radius: 50% 0 0 50%;
+}
+.lds-heart div:after {
+  top: -24px;
+  border-radius: 50% 50% 0 0;
+}
+@keyframes lds-heart {
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
