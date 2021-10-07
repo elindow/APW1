@@ -138,7 +138,6 @@ const MENU_BAR_SETTINGS = [
 					new Website("Nathaniel's Page", "./html/McNutt.html"),
 					new Website("Ozan's Page", "./html/ozanmirza/2021-2022/portfolio/assets/index.html"),
 					new Website("Will's Page", "./html/will.html"),
-					
 				],
 			),
 			new Area(
