@@ -1,6 +1,10 @@
 .container {
   display: flex;
 }
+.tenor-gif-embed{
+  align-self: right;
+
+}
 .grid{
   width: 200px;
   height: 400px;
