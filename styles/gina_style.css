@@ -60,6 +60,10 @@ h6 {
   padding-bottom: 5px;
 }
 
+button {
+  font-family: "Times New Roman";
+}
+
 /* BODY */
 .maintext {
 	padding-left: 40px;
@@ -137,8 +141,7 @@ li.nav {
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-  display: none;
-  position: absolute;
+  display: block;
   background-color: slategrey;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -151,7 +154,8 @@ li.nav {
   padding: 12px 0px 0px 12px;
   margin:  0px;
   text-decoration: none;
-  display: inline-block;
+  display: none;
+  position: absolute;
   float: right;
 }
 
@@ -159,13 +163,13 @@ li.nav {
 .dropdown-content a:hover {background-color: #f1f1f1}
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+.dropdown-button:hover .dropdown-content {
   display: block;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+.dropdown:hover .dropdown-button {
+  color: #474651;
 }
 
 /* SLIDE SHOW */
