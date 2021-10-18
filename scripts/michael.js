@@ -3,8 +3,8 @@ var ctx = canvas.getContext("2d");
 var ballRadius = 10;
 var x = canvas.width/2;
 var y = canvas.height-30;
-var dx = 5;
-var dy = -5;
+var dx = 6;
+var dy = -6;
 var randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
 
 function drawBall() {
