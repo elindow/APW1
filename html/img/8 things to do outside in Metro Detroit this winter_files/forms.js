@@ -1,0 +1,1 @@
+Emma.forms_1782476({"timestamp": "2020-12-09T07:40:52.714572+00:00", "aggregate": {"all": {"https://www.secondwavemedia.com": ["a8637733c5133a16e3ef35cd97a5c51a"]}, "include": {}, "exclude": {}}});

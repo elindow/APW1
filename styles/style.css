@@ -1,16 +1,19 @@
-html {
-  font-family: 'Open Sans', sans-serif;
+ {
+  font-family: 'Georgia', serif;
+  /*homage jacob*/
 }
 
 h2 {
   font-size: 30px;
   text-align: center;
   color: white;
+  font-family: 'Georgia', serif;
 }
 
 h3 {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 2.5vw;
+  /*welcome to tds programmers hub text*/
+  font-family: 'Brush Script MT', cursive;
+  font-size: 5vw;
   padding-left: 30px;
   padding-bottom: 20px;
   text-align: left;
@@ -25,7 +28,9 @@ li {
 }
 
 a {
-  color: red;
+  /*names list*/
+  color: floralwhite;
+  font-family: 'Georgia', serif;
 }
 
 .dropbtn {
@@ -36,6 +41,10 @@ a {
   transition: 0.25s;
   color: white;
   font-size: 16px;
+
+  font-family: 'Georgia', serif;
+
+  /*top right menu*/
   border: none;
   height: 100%;
 }
@@ -51,7 +60,7 @@ a {
   position: absolute;
   top: 100%;
   right: 0px;
-  background: #FF0000;
+  background: #f2b6b6;
   box-shadow: 0px 8px 16px 0px rgba(255,0,0,0.2);
   z-index: 1;
   transition: transform 0.3s;
@@ -70,14 +79,16 @@ a {
 .dropdown-title {
   color: white;
   padding: 0px 20px 0px 20px;
-  font-size: 22px;
+  font-size: 40px;
 }
 
 .dropdown-description {
-  color: white;
+  /*description dropdown menu*/
+  font-family: 'Georgia', serif;
+  color: black;
   padding: 0px 20px 10px 20px;
   width: 75%;
-  font-size: 12.5px;
+  font-size: 20 px;
   border-bottom-color: red;
   border-bottom-style: solid;
   border-bottom-width: 5px;
@@ -85,6 +96,7 @@ a {
 }
 
 .dropdown-content div {
+  font-family: 'Georgia', serif;
   float: left;
   width: 200px;
   padding-left: 20px;
@@ -92,8 +104,11 @@ a {
   padding-bottom: 20px;
 }
 
-.dropdown-content a {
-  color: white;
+.dropdown-content a {\
+  /*dropdown font color*/
+
+  color: black;
+
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -104,6 +119,7 @@ a {
 }
 
 .dropdown-content h4 {
+  font-family: 'Georgia', serif;
   color: white;
   padding: 4px 8px;
   display: block;
@@ -127,12 +143,13 @@ a {
 }
 
 h1.title {
-  color: white;
+  /*main title*/
+  color: whitesmoke;
   font-size: 6.5vw;
   width: 70%;
   padding-top: 100px;
   padding-left: 75px;
-  font-family: 'Muli', sans-serif;
+  font-family: 'monospace;', Courier New;
   animation-name: displaytitle;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
@@ -199,13 +216,13 @@ div.example iframe {
 
 div.example h1 {
   text-align: center;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'georgia', serif;
   font-size: 1.1vw;
 }
 
 div.example p {
   text-align: center;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'georgia', serif;
   font-size: 0.8vw;
 }
 
@@ -214,7 +231,7 @@ div.bio {
   top: 50%;
   left: 50%;
   /*changed the transform from -50, -50 to this*/
-  transform: translate(-30%, -20%); 
+  transform: translate(-30%, -20%);
   padding-left: 2vw;
   padding-top: 5vw;
   font-size: 0.6vw;
@@ -271,7 +288,7 @@ img.gym {
 
 img.picture {
   float: right;
-  transform: translate(-30%, -125%); 
+  transform: translate(-30%, -125%);
   width: 35%;
   padding: 2px;
 }
@@ -303,3 +320,4 @@ img.divider {
     overflow: visible;
   }
 }
+
