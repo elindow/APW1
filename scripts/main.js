@@ -134,7 +134,7 @@ const MENU_BAR_SETTINGS = [
 					new Website("Ella's Page", "./html/Ella_page.html"),
 					new Website("Jared's Page", "./html/jared.html"),
 					new Website("Josie's Page", "./html/josie.html"),
-					new Website("Micheal's Page", "./html/micheal.html"),
+					new Website("Michael's Page", "./html/pineda.html"),
 					new Website("Nathaniel's Page", "./html/McNutt.html"),
 					new Website("Ozan's Page", "./html/ozanmirza/2021-2022/portfolio/assets/index.html"),
 					new Website("Will's Page", "./html/will.html"),
@@ -148,6 +148,7 @@ const MENU_BAR_SETTINGS = [
 					new Website("Kyle's Page", "./html/kyle.html"),
 					new Website("Mikey's Page", "./html/michael.html"),
 					new Website("Soley's Page", "./html/SoleyO.html"),
+					new Website("Zach's Page", "./html/Zach_page.html")
 				],
 			),
 			new Area(
@@ -157,7 +158,7 @@ const MENU_BAR_SETTINGS = [
 					new Website("Anna's Page", "./html/anna.html"),
 					new Website("Charlotte's Page", "./html/charlotte.html"),
 					new Website("Gina's Page", "./html/gina_index.html"),
-					new Website("Nathan's Page", "./html/nathan.html"),
+					new Website("Nathan's Page", "./html/sinaiko.html"),
 					new Website("Shadab's Page", "./html/shadab.html"),
 					
 				],

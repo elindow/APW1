@@ -41,8 +41,8 @@
 
 /* GENERAL */
 h2{
-	padding-left: 50px;
-	padding-right: 50px;	
+	padding-left: 40px;
+	padding-right: 40px;	
 }
 
 body {
@@ -60,6 +60,10 @@ h6 {
   padding-bottom: 5px;
 }
 
+button {
+  font-family: "Times New Roman";
+}
+
 /* BODY */
 .maintext {
 	padding-left: 40px;
@@ -72,6 +76,7 @@ h6 {
 	background-color:#AAB7BC;
 	padding: 10px 0px 10px 20px;
 }
+
 
 ul.nav {
 	list-style-type: none;
@@ -113,25 +118,20 @@ li.nav {
 	padding-left: 0PX;
 }
 
-/* Style The Dropdown Button */
+/* Dropdown Button */
 .dropdown-button {
-  color: #000000;
-  border: none;
-  cursor: pointer;
-  background: none;
-  float: right;
-  color: #000000;
-  text-align: center;
-  text-decoration: none;
-  font-size: 20px;
+  background-color: #AAB7BC;
+  color: black;
   padding: 0px;
-  padding-right: 40px;
+  font-size: 20px;
+  border: none;
+  display: inline-block;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-  float: none;
-  position: absolute;
+  background-color: none;
+  position: relative;
   display: inline-block;
 }
 
@@ -139,24 +139,24 @@ li.nav {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: slategrey;
+  background-color: #AAB7BC;
+  min-width: 120px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  float: left;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
   color: black;
-  padding: 12px 0px 0px 12px;
-  margin:  0px;
+  padding: 12px 16px;
   text-decoration: none;
-  display: inline-block;
-  float: right;
+  display: block;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+  background-color: #beccd1;
+}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -164,9 +164,10 @@ li.nav {
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+.dropdown:hover .dropdown-button {
+  color: #474651;
 }
+
 
 /* SLIDE SHOW */
 * {box-sizing:border-box}
@@ -189,7 +190,7 @@ li.nav {
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
+  margin-top: 22px;
   padding: 16px;
   color: white;
   font-weight: bold;
@@ -267,7 +268,7 @@ li.nav {
 /* FOOTER */
 .site-footer {
   background-color: #5f656b;
-  padding: 15pxpx 20px 30px 20px;
+  padding: 15pxpx 20px 30px 0px;
   font-size: 15px;
   line-height: 24px;
   color: #dcddde;
