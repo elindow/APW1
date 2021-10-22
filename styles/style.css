@@ -41,7 +41,9 @@ a {
   transition: 0.25s;
   color: white;
   font-size: 16px;
+
   font-family: 'Georgia', serif;
+
   /*top right menu*/
   border: none;
   height: 100%;
@@ -104,7 +106,9 @@ a {
 
 .dropdown-content a {\
   /*dropdown font color*/
+
   color: black;
+
   padding: 12px 16px;
   text-decoration: none;
   display: block;
