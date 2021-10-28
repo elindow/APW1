@@ -12,7 +12,7 @@ h2 {
 
 h3 {
   /*welcome to tds programmers hub text*/
-  font-family: 'Brush Script MT', cursive;
+  font-family: 'Optima', serif;
   font-size: 5vw;
   padding-left: 30px;
   padding-bottom: 20px;
@@ -32,7 +32,7 @@ a {
   color: floralwhite;
   font-family: 'Georgia', serif;
 }
-
+/* drop down menu*/
 .dropbtn {
   background-image:linear-gradient(to bottom right, rgba(255, 255, 255, 0.2) 49.5%, transparent 50%);
   background-size: 200% 200%;
@@ -137,7 +137,7 @@ a {
 .dropdown:hover .dropdown-content {
   transform: scaleY(1);
 }
-
+/*dropdown button*/
 .dropdown:hover .dropbtn {
   background-position: top left;
 }
