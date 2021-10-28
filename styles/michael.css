@@ -12,13 +12,14 @@ p {
 
 
 canvas { 
-	position: absolute; 
+	position: absolute;
 	width: 600px; 
 	height: 400px;  
-	top: 600px; 
-    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);   
+    top: 50%;
+    margin-left: 10%;
+	padding: 5px 5px;
+    /*transform: translate(-50%, -50%); */
 }
 
 
