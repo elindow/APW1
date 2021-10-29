@@ -74,7 +74,7 @@ button {
 /* NAVAGATION BAR */
 .nav {
 	background-color:#AAB7BC;
-	padding: 10px 0px 10px 20px;
+	padding: 10px 0px 10px 10px;
 }
 
 
@@ -126,6 +126,7 @@ li.nav {
   font-size: 20px;
   border: none;
   display: inline-block;
+  text-align:  right;
 
 }
 
@@ -342,12 +343,12 @@ li.nav {
   height: 40px;
   line-height: 40px;
   margin-left: 0px;
-  margin-right: 0;
+  margin-right: 0px;
   border-radius: 100%;
   background-color: #33353d;
 }
 
 .copyright-text {
   color: #dcddde;
-  margin: 0;
+  margin: 0px;
 }
