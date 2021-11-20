@@ -2,16 +2,49 @@
 <html>
   	<head>
 		<meta charset="utf-8">
-    	<title>MR. Ageh Page</title>
+    	<title>A.A.D.A.M.</title>
     	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
     	<link href="styles/style.css" rel="stylesheet" type="text/css">
   	</head>
-	<body bgcolor = "99ff99" >
-		<h1>"here's my Project Page"</h1>
-		<p1>My Project will pertain to uncovering the secrets of facial recognition.</p1>
-
+	<body>
+		<h5><a href="asher.html">Go Home</a></h5>
+		<h1>A.A.D.A.M.</h1>
+		<br><br>
 		<div>
-			<p1>Anna and I found a way to continuously do stuff</p1>
+			<h3>What is our goal?</h3>
+			<p>This is a continuation of our project from last year in which we began to look into OpenCv and facial
+			recognition. We wanted to create a program that would run continuously in the background and immediately
+			turn off the computer as soon as it recognized an unknown face, however, we only got through the very
+			basic steps of face recognition.<br> Moving forward, we plan to finish our project and have our script
+			constantly checking to see if the person looking at the computer is the owner or not. If the user is
+			unidentified, the computer will immediately turn off.</p>
 		</div>
+		<br>
+		<br /><br />
+		<h4>11/3/2021</h4>
+		<p>Anna and I began looking into ways to allow python to shut down a Mac - or at least log out the user. This
+		proved to be harder using Apple's OS as opposed to Windows. After a lot of researching we found two methods:
+		one immediately shuts down the mac but only works through the terminal, and the other works through PyCharm and
+		initiates a warning before actually shutting down the Mac. We would like to be able to connect the code we
+		have written in PyCharm to the main terminal which we hope will immediately shut the computer down when
+		prompted.</p>
+		<br />
+		<h4>11/10/2021</h4>
+		<p>When trying to create an 'if' statement to turn the computer off, we noticed that the if statement wouldn't
+		run until after the main function had been completed (the facial recognition was ended). To solve this issue we
+		began working with threading to try and force both functions (face recognition and condition) to work simultaneously.
+		When that didn't work we tried a simple "while True" loop which worked successfully.</p>
+		<br />
+		<h4>11/15/2021</h4>
+		<p>This week we attempted to connect our work in PyCharm to the line of code that only worked in the terminal.
+		We attempted to return the terminal code in our PyCharm script and then run the file within the terminal,
+		however, this was unsuccessful. As we were wrapping up we had an idea to use the 'pyautogui' library to
+		control the computers mouse which will automatically click the confirm button when the box pops up before the
+		computer shuts down.</p>
+		<br />
+		<h4>11/18/2021</h4>
+		<p>Today we used 'pyautogui' to find the position of the "shut down" button and click it. Our final outlying
+		issue was that the program was still ineffective until somebody pressed quit. We are now in a very good position
+		where the program runs in the background without showing the camera window in the foreground.</p>
  	</body>
 </html>
