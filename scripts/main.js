@@ -47,251 +47,263 @@ Now go make some cool stuff. 👋
 */
 
 class Area {
-	constructor(title, websites) {
-		this.title = title;
-		this.websites = websites;
-	}
+  constructor(title, websites) {
+    this.title = title;
+    this.websites = websites;
+  }
 }
 
 class Website {
-	constructor(name, link) {
-		this.name = name;
-		this.link = link;
-	}
+  constructor(name, link) {
+    this.name = name;
+    this.link = link;
+  }
 }
 
 class Project {
-	constructor(name, header, description, areas) {
-		this.name = name;
-		this.header = header;
-		this.description = description;
-		this.areas = areas;
-	}
+  constructor(name, header, description, areas) {
+    this.name = name;
+    this.header = header;
+    this.description = description;
+    this.areas = areas;
+  }
 }
 
 class Example {
-	constructor(creator, description, src) {
-		this.creator = creator;
-		this.description = description;
-		this.src = src;
-	}
+  constructor(creator, description, src) {
+    this.creator = creator;
+    this.description = description;
+    this.src = src;
+  }
 }
 
 const MENU_BAR_SETTINGS = [
-	new Project( // Very useful! 😂
-		"Quick Info",
-		"How to get out of Vim",
-		"ESC:wq",
-		[
-			new Area(
-				"",
-				[
-					//new Website("Version 1.0", "./Version 1.0/index.html"),
-				]
-			),
-		]
-	),
-	new Project(
-		"Older Versions",
-		"Previous Versions",
-		"This site is also managed and maintained every year by the senior Advanced Programmers. Whenever this site has a complete update, we make sure to archive the previous versions.",
-		[
-			new Area(
-				"",
-				[
-					new Website("Version 1.0", "./Version 1.0/index.html"),
-				]
-			),
-		]
-	),
-	new Project(
-		"Teachers",
-		"The Teachers",
-		"The students look towards the teachers for for both help and knowledge that could be helpful for their projects.",
-		[
-			new Area(
-				"",
-				[
-					new Website("Mr. Golanka's Page", "./Teachers/Golanka/golanka_page.html"),
-					new Website("Mr. Lindow's Page", "./Teachers/Lindow/lindow_page.html"),
-					new Website("Mr. Rencricca's Page", "./Teachers/Rencricca/drencricca.html"),
-					//new Website("Mr. O'Malley's Page", "./Teachers/O'Malley/omalley.html"),
-				],
-			),
-		],
-	),
+  new Project( // Very useful! 😂
+    "Quick Info",
+    "How to get out of Vim",
+    "ESC:wq",
+    [
+      new Area(
+        "",
+        [
+          //new Website("Version 1.0", "./Version 1.0/index.html"),
+					new Website("Git Update Cycle","./html/Gitupdate.html"),
+        ]
+      ),
+    ]
+  ),
+  new Project(
+    "Older Versions",
+    "Previous Versions",
+    "This site is also managed and maintained every year by the senior Advanced Programmers. Whenever this site has a complete update, we make sure to archive the previous versions.",
+    [
+      new Area(
+        "",
+        [
+          new Website("Version 1.0", "./Version 1.0/index.html"),
+        ]
+      ),
+    ]
+  ),
+  new Project(
+    "Teachers",
+    "The Teachers",
+    "The students look towards the teachers for for both help and knowledge that could be helpful for their projects.",
+    [
+      new Area(
+        "",
+        [
+          new Website("Mr. Golanka's Page", "./Teachers/Golanka/golanka_page.html"),
+          new Website("Mr. Lindow's Page", "./Teachers/Lindow/lindow_page.html"),
+          new Website("Mr. Rencricca's Page", "./Teachers/Rencricca/drencricca.html"),
+          new Website("Mr. O'Malley's Page", "./Teachers/O'Malley/omalley.html"),
+        ],
+      ),
+    ],
+  ),
 
-	new Project(
-		"Students",
-		"The Students",
-		"The students work on bigger and challenging projects that peak their interests. In their websites, they talk about their projects for the year.",
-		[
-			new Area(
-				"Section 1",
-				[
-					new Website("Ozan's Page", "./html/ozanmirza/2021-2022/portfolio/assets/index.html"),
-					new Website("Ella's Page", "./html/Ella_page.html"),
-					new Website("Nathaniel's Page", "./html/McNutt.html"),
-					new Website("Asher's Page", "./html/asher.html"),
-					new Website("Jared's Page", "./html/jared.html"),
-					new Website("Josie's Page", "./html/josie.html"),
-					new Website("Elisabeth's Page", "./html/elisabeth.html"),
-					new Website("Will's Page", "./html/will.html"),
-					new Website("Michael's Page", "./html/pineda.html"),
-				],
-			),
-			new Area(
-				"Section 2",
-				[
-					new Website("Mikey's Page", "./html/michael.html"),
-					new Website("Hayden's Page", "./html/hayden.html"),
-					new Website("Jacob's Page", "./html/jacobweingard.html"),
-					new Website("Soley's Page", "./html/SoleyO.html"),
-					new Website("Kyle's Page", "./html/kyle.html"),
-				],
-			),
-			new Area(
-				"Section 3",
-				[
-					new Website("Charlotte's Page", "./html/charlotte.html"),
-					new Website("Gina's Page", "./html/gina_index.html"),
-					new Website("Alexa's Page", "./html/alexa.html"),
-					new Website("Shadab's Page", "./html/shadab.html"),
-					new Website("Nathan's Page", "./html/nathan.html"),
-					new Website("Anna's Page", "./html/anna.html"),
-				],
-			),
-		],
-	),
-	new Project(
-		"Alumni",
-		"The Alumni",
-		"The alumni's projects are archived so that new students can see and learn from their work for inspiration.",
-		[
-			new Area(
-				"2018-19",
-				[
-					new Website("Sophie's Page", "./html/archives/2019/sophieKofsky/KofskyPage.html"),
-					new Website("Bryn's Page", "./html/archives/2019/brynStecher/bstecher.html"),
-					new Website("Josh R's Page", "./html/archives/2019/joshRoss/Ross.html"),
-					new Website("Phoebe's Page", "./html/archives/2019/phoebeBrewer/brewer.html"),
-					new Website("Jason's Page", "./html/archives/2019/jasonDaniels/jdaniels.html"),
-					new Website("Sabrina's Page", "./html/archives/2019/sabrinaAlessi/sabrinacode.html"),
-					new Website("Will's Page", "./html/archives/2019/willBrooks/will_page.html"),
-					new Website("Tyler's Page", "./html/archives/2019/tylerMelwani/tyler.html"),
-					new Website("Kadhir's Page", "./html/archives/2019/kadhirPillai/kadhir_page.html"),
-					new Website("Beck's Page", "./html/archives/2019/beckSonstein/beckpage.html"),
-				],
-			),
-			new Area(
-				"2019-20",
-				[
-					new Website("Owen's Page", "./html/Archives/2020/owenWiese/owen_page.html"),
-					new Website("Max's Page", "./html/Archives/2020/maxbremner/maxBremner.html"),
-					new Website("Josh S's Page", "./html/Archives/2020/joshScreen/screen_page.html"),
-					new Website("Becky's Page", "./html/Archives/2020/beckyHershkowitz/hershkowitz_page.html"),
-					new Website("Danny's Page", "./html/Archives/2020/dannyFisher/danny_project/new.html"),
-				],
-			),
-			new Area(
-				"2020-21",
-				[
-					new Website("Andres's Page", "./html/AndresPage.html"),
-					new Website("Robert's Page", "./html/Robert.html"),
-					new Website("Jake's Page", "./html/jakehtml.html"),
-					new Website("Daniel's Page", "./html/DanielLEwis.html"),
-					new Website("Justin's Page", "./html/RomanowPage.html"),
-					new Website("Percy's Page", "./html/FleesPage.html"),
-					new Website("Goodnews's Page", "./html/goodnews.html"),
-					new Website("Archie's Page", "./html/silverstein.html"),
-					new Website("Leila's Page", "./html/leila.html"),
-				]
-			)
-		],
-	),
+  new Project(
+    "Students",
+    "The Students",
+    "The students work on bigger and challenging projects that peak their interests. In their websites, they talk about their projects for the year.",
+    [
+      new Area(
+        "Section 1",
+        [
+          new Website("Asher's Page", "./Students/AsherAgeh/html/asherageh/asher.html"),
+          new Website("Elisabeth's Page", "./Students/ElisabethHartnett/html/elisabeth.html"),
+          new Website("Ella's Page", "./Students/EllaMark/html/Ella_page.html"),
+          new Website("Jared's Page", "./Students/JaredAllen/html/jared.html"),
+          new Website("Josie's Page", "./Students/JosieBremner/html/josie.html"),
+          new Website("Michael's Page", "./Students/MichaelPineda/html/pineda.html"),
+          new Website("Nathaniel's Page", "./Students/NathanielMcNutt/html/McNutt.html"),
+          new Website("Ozan's Page", "./Students/OzanMirza/ozanmirza/2021-2022/portfolio/assets/index.html"),
+          new Website("Will's Page", "./Students/WillGriggs/html/will.html"),
+        ],
+      ),
+      new Area(
+        "Section 2",
+        [
+          new Website("Hayden's Page", "./Students/HaydenLipsky/html/hayden.html"),
+          new Website("Jacob's Page", "./Students/JacobWeingard/html/jacobweingard.html"),
+          new Website("Kyle's Page", "./Students/KyleNolan/html/kyle.html"),
+          new Website("Mikey's Page", "./Students/MichaelJacobs/html/michael.html"),
+          new Website("Soley's Page", "./Students/SoleyO/html/SoleyO.html"),
+          new Website("Zach's Page", "./Students/ZacharyBinder/html/Zach_page.html")
+        ],
+      ),
+      new Area(
+        "Section 3",
+        [
+          new Website("Alexa's Page", "./Students/AlexaKrein/html/alexa.html"),
+          new Website("Anna's Page", "./Students/AnnaRipley/html/anna.html"),
+          new Website("Charlotte's Page", "./Students/CharlotteSirota/html/charlotte.html"),
+          new Website("Gina's Page", "./Students/GinaMcKeown/html/gina_index.html"),
+          new Website("Nathan's Page", "./Students/NathanSinaiko/html/sinaiko.html"),
+          new Website("Shadab's Page", "./Students/ShadabSharif/html/shadab.html"),
+
+        ],
+      ),
+    ],
+  ),
+  new Project(
+    "Alumni",
+    "The Alumni",
+    "The alumni's projects are archived so that new students can see and learn from their work for inspiration.",
+    [
+      new Area(
+        "2018-19",
+        [
+          new Website("Beck's Page", "./html/archives/2019/beckSonstein/beckpage.html"),
+          new Website("Bryn's Page", "./html/archives/2019/brynStecher/bstecher.html"),
+          new Website("Jason's Page", "./html/archives/2019/jasonDaniels/jdaniels.html"),
+          new Website("Josh R's Page", "./html/archives/2019/joshRoss/Ross.html"),
+          new Website("Kadhir's Page", "./html/archives/2019/kadhirPillai/kadhir_page.html"),
+          new Website("Phoebe's Page", "./html/archives/2019/phoebeBrewer/brewer.html"),
+          new Website("Sabrina's Page", "./html/archives/2019/sabrinaAlessi/sabrinacode.html"),
+          new Website("Sophie's Page", "./html/archives/2019/sophieKofsky/KofskyPage.html"),
+          new Website("Tyler's Page", "./html/archives/2019/tylerMelwani/tyler.html"),
+          new Website("Will's Page", "./html/archives/2019/willBrooks/will_page.html"),
+
+
+
+        ],
+      ),
+      new Area(
+        "2019-20",
+        [
+          new Website("Becky's Page", "./html/Archives/2020/beckyHershkowitz/hershkowitz_page.html"),
+          new Website("Danny's Page", "./html/Archives/2020/dannyFisher/danny_project/new.html"),
+          new Website("Josh S's Page", "./html/Archives/2020/joshScreen/screen_page.html"),
+          new Website("Max's Page", "./html/Archives/2020/maxbremner/maxBremner.html"),
+          new Website("Owen's Page", "./html/Archives/2020/owenWiese/owen_page.html"),
+
+
+
+
+        ],
+      ),
+      new Area(
+        "2020-21",
+        [
+          new Website("Andres's Page", "./html/AndresPage.html"),
+          new Website("Archie's Page", "./html/silverstein.html"),
+          new Website("Daniel's Page", "./html/DanielLEwis.html"),
+          new Website("Goodnews's Page", "./html/goodnews.html"),
+          new Website("Jake's Page", "./html/jakehtml.html"),
+          new Website("Justin's Page", "./html/RomanowPage.html"),
+          new Website("Leila's Page", "./html/leila.html"),
+          new Website("Percy's Page", "./html/FleesPage.html"),
+          new Website("Robert's Page", "./html/Robert.html"),
+
+
+        ]
+      )
+    ],
+  ),
 ];
 
 const STUDENT_EXAMPLES_SETTINGS = [
-	new Example(
-		"Jake's Swirly Dirly",
-		"This is a really cool animation that Jake made in the P5.JS rendering library with a simple algorithim that computes color and location in a circular manner.",
-		"./html/jakehtml.html",
-	),
-	new Example(
-		"Mr. Lindow's Magic Snake",
-		"This is another really cool animation that Mr. Lindow made in the P5.JS rendering library with a bunch of complex math.",
-		"./Teachers/Lindow/html/lindowP5_page.html",
-	),
+  new Example(
+    "Jake's Swirly Dirly",
+    "This is a really cool animation that Jake made in the P5.JS rendering library with a simple algorithim that computes color and location in a circular manner.",
+    "./html/jakehtml.html",
+  ),
+  new Example(
+    "Mr. Lindow's Magic Snake",
+    "This is another really cool animation that Mr. Lindow made in the P5.JS rendering library with a bunch of complex math.",
+    "./Teachers/Lindow/html/lindowP5_page.html",
+  ),
 ];
 
 window.onload = () => {
-	MENU_BAR_SETTINGS.forEach((section) => {
-		let dropdown = document.createElement("div");
-		dropdown.classList.add("dropdown");
+  MENU_BAR_SETTINGS.forEach((section) => {
+    let dropdown = document.createElement("div");
+    dropdown.classList.add("dropdown");
 
-		let button = document.createElement("button");
-		button.classList.add("dropbtn");
-		button.innerHTML = section.name;
-		dropdown.appendChild(button);
+    let button = document.createElement("button");
+    button.classList.add("dropbtn");
+    button.innerHTML = section.name;
+    dropdown.appendChild(button);
 
-		let content = document.createElement("div");
-		content.classList.add("dropdown-content");
-		dropdown.appendChild(content);
+    let content = document.createElement("div");
+    content.classList.add("dropdown-content");
+    dropdown.appendChild(content);
 
-		let title = document.createElement("h3");
-		title.classList.add("dropdown-title");
-		title.innerHTML = section.header;
-		content.appendChild(title);
+    let title = document.createElement("h3");
+    title.classList.add("dropdown-title");
+    title.innerHTML = section.header;
+    content.appendChild(title);
 
-		let description = document.createElement("p");
-		description.classList.add("dropdown-description");
-		description.innerHTML = section.description;
-		content.appendChild(description);
+    let description = document.createElement("p");
+    description.classList.add("dropdown-description");
+    description.innerHTML = section.description;
+    content.appendChild(description);
 
-		let buffer = 0;
+    let buffer = 0;
 
-		section.areas.forEach((area) => {
-			let container = document.createElement("div");
-			container.style.padding.left = (200 * buffer) + (20 * (buffer + 1)) + "px";
-			content.appendChild(container);
+    section.areas.forEach((area) => {
+      let container = document.createElement("div");
+      container.style.padding.left = (200 * buffer) + (20 * (buffer + 1)) + "px";
+      content.appendChild(container);
 
-			if (area.title != "") {
-				let subtitle = document.createElement("h4");
-				subtitle.innerHTML = area.title;
-				container.appendChild(subtitle);
-			}
+      if (area.title != "") {
+        let subtitle = document.createElement("h4");
+        subtitle.innerHTML = area.title;
+        container.appendChild(subtitle);
+      }
 
-			area.websites.forEach((website) => {
-				let link = document.createElement("a");
-				link.innerHTML = website.name;
-				link.href = website.link;
-				link.target = "_blank";
-				container.appendChild(link);
-			});
+      area.websites.forEach((website) => {
+        let link = document.createElement("a");
+        link.innerHTML = website.name;
+        link.href = website.link;
+        link.target = "_blank";
+        container.appendChild(link);
+      });
 
-			buffer++;
-		});
+      buffer++;
+    });
 
-		content.style.width = (300 + ((100 + (17.5 * buffer)) * buffer)) + "px";
+    content.style.width = (300 + ((100 + (17.5 * buffer)) * buffer)) + "px";
 
-		document.getElementById("menu").appendChild(dropdown);
-	});
+    document.getElementById("menu").appendChild(dropdown);
+  });
 
-	STUDENT_EXAMPLES_SETTINGS.forEach((example) => {
-		let container = document.createElement("div");
-		container.classList.add("example");
-		document.getElementById("examples").appendChild(container);
+  STUDENT_EXAMPLES_SETTINGS.forEach((example) => {
+    let container = document.createElement("div");
+    container.classList.add("example");
+    document.getElementById("examples").appendChild(container);
 
-		let title = document.createElement("h1");
-		title.innerHTML = example.creator;
-		container.appendChild(title);
+    let title = document.createElement("h1");
+    title.innerHTML = example.creator;
+    container.appendChild(title);
 
-		let content = document.createElement("iframe");
-		content.src = example.src;
-		container.appendChild(content);
+    let content = document.createElement("iframe");
+    content.src = example.src;
+    container.appendChild(content);
 
-		let description = document.createElement("p");
-		description.innerHTML = example.description;
-		container.appendChild(description);
-	});
+    let description = document.createElement("p");
+    description.innerHTML = example.description;
+    container.appendChild(description);
+  });
 }
