@@ -86,8 +86,9 @@ const MENU_BAR_SETTINGS = [
       new Area(
         "",
         [
-          //new Website("Version 1.0", "./Version 1.0/index.html"),
-					new Website("Git Update Cycle","./html/Gitupdate.html"),
+          new Website("Style Guide","https://docs.google.com/document/d/1wFsB1sq4Pp8CoFx1cvgY3F0lxfPP3eNcDFi2j7_0dV0/edit?usp=sharing"),
+          new Website("Version 1.0", "./Version 1.0/index.html"),
+          new Website("Git Update Cycle","./html/Gitupdate.html"),
         ]
       ),
     ]
