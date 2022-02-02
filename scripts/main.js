@@ -86,8 +86,9 @@ const MENU_BAR_SETTINGS = [
       new Area(
         "",
         [
-          //new Website("Version 1.0", "./Version 1.0/index.html"),
-					new Website("Git Update Cycle","./html/Gitupdate.html"),
+          new Website("Style Guide","https://docs.google.com/document/d/1wFsB1sq4Pp8CoFx1cvgY3F0lxfPP3eNcDFi2j7_0dV0/edit?usp=sharing"),
+          new Website("Version 1.0", "./Version 1.0/index.html"),
+          new Website("Git Update Cycle","./html/Gitupdate.html"),
         ]
       ),
     ]
@@ -148,7 +149,7 @@ const MENU_BAR_SETTINGS = [
           new Website("Jacob's Page", "./Students/JacobWeingard/html/jacobweingard.html"),
           new Website("Kyle's Page", "./Students/KyleNolan/html/kyle.html"),
           new Website("Mikey's Page", "./Students/MichaelJacobs/html/michael.html"),
-          new Website("Soley's Page", "./Students/SoleyÓlafsdóttir/html/SoleyO.html"),
+          new Website("Soley's Page", "./Students/SoleyO/html/SoleyO.html"),
           new Website("Zach's Page", "./Students/ZacharyBinder/html/Zach_page.html")
         ],
       ),
