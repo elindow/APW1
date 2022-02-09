@@ -13,7 +13,7 @@ var sg = 0;
 var sb = 0;                   // **change** float to var
 
 function setup() {                          // **change** void setup() to function setup()
-  createCanvas(960, 480);                   // **change** size() to createCanvas()
+  createCanvas(480, 240);                   // **change** size() to createCanvas()
   strokeWeight(9);                          // strokeWeight() is the same
   stroke(255, 100);                         // stroke() is the same
   for(var i=0; i<x.length; i++) {         // initialize the array
@@ -44,11 +44,14 @@ function drawSegment(i, xin, yin) {         // **change** void drawSegment() to 
 function segment(x, y, a) {                 // **change** void segment() to function segment(), remove type declarations
   push();                            		     // pushMatrix() becomes push()
   translate(x, y);                          // translate() is the same
-  rotate(a);          
-  var c = random(255);
-    sr = c;
-    sg = c/2;
-    sb = c/4;
+  rotate(a);        
+  base = 128;  
+  var c1 = base*2+random(base);
+  var c2 = base+random(base);
+  var c3 = random(base);
+    sr = c1;
+    sg = c2;
+    sb = c3;
     stroke(sr,sg,sb);                         // rotate() is the same
     line(0, 0, segLength, 0);                // line() is the same
   pop();                              		// popMatrix() becomes pop()
