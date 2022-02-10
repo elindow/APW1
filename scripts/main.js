@@ -86,8 +86,9 @@ const MENU_BAR_SETTINGS = [
       new Area(
         "",
         [
-          //new Website("Version 1.0", "./Version 1.0/index.html"),
-					new Website("Git Update Cycle","./html/Gitupdate.html"),
+          new Website("Style Guide","https://docs.google.com/document/d/1wFsB1sq4Pp8CoFx1cvgY3F0lxfPP3eNcDFi2j7_0dV0/edit?usp=sharing"),
+          new Website("Version 1.0", "./Version 1.0/index.html"),
+          new Website("Git Update Cycle","./html/Gitupdate.html"),
         ]
       ),
     ]
@@ -149,16 +150,17 @@ const MENU_BAR_SETTINGS = [
           new Website("Kyle's Page", "./Students/KyleNolan/html/kyle.html"),
           new Website("Mikey's Page", "./Students/MichaelJacobs/html/michael.html"),
           new Website("Soley's Page", "./Students/SoleyO/html/SoleyO.html"),
-          new Website("Zach's Page", "./Students/ZacharyBinder/html/Zach_page.html")
+          new Website("Zach's Page", "./Students/ZacharyBinder/html/Zach_page.html"),
+          new Website("Eva's Page", "./Students/EvaOsborne/html/evao_index.html")
         ],
       ),
       new Area(
         "Section 3",
         [
           new Website("Alexa's Page", "./Students/AlexaKrein/html/alexa.html"),
-          new Website("Anna's Page", "./Students/AnnaRipley/html/anna.html"),
-          new Website("Charlotte's Page", "./Students/CharlotteSirota/html/charlotte.html"),
-          new Website("Gina's Page", "./Students/GinaMcKeown/html/gina_index.html"),
+          new Website("Anna's Page", "./Students/AnnaRipley/html/annar_index.html"),
+          new Website("Charlotte's Page", "./Students/CharlotteSirota/html/charlottes_index.html"),
+          new Website("Gina's Page", "./Students/GinaMcKeown/html/ginam_index.html"),
           new Website("Nathan's Page", "./Students/NathanSinaiko/html/sinaiko.html"),
           new Website("Shadab's Page", "./Students/ShadabSharif/html/shadab.html"),
 
