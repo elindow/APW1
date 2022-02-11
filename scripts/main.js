@@ -158,8 +158,8 @@ const MENU_BAR_SETTINGS = [
         "Section 3",
         [
           new Website("Alexa's Page", "./Students/AlexaKrein/html/alexa.html"),
-          new Website("Anna's Page", "./Students/AnnaRipley/html/anna.html"),
-          new Website("Charlotte's Page", "./Students/CharlotteSirota/html/charlotte.html"),
+          new Website("Anna's Page", "./Students/AnnaRipley/html/annar_index.html"),
+          new Website("Charlotte's Page", "./Students/CharlotteSirota/html/charlottes_index.html"),
           new Website("Gina's Page", "./Students/GinaMcKeown/html/ginam_index.html"),
           new Website("Nathan's Page", "./Students/NathanSinaiko/html/sinaiko.html"),
           new Website("Shadab's Page", "./Students/ShadabSharif/html/shadab.html"),
