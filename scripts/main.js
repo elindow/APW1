@@ -133,7 +133,7 @@ const MENU_BAR_SETTINGS = [
         [
           new Website("Asher's Page", "./Students/AsherAgeh/html/asherageh/asher.html"),
           new Website("Elisabeth's Page", "./Students/ElisabethHartnett/html/elisabeth.html"),
-          new Website("Ella's Page", "./Students/EllaMark/html/Ella_page.html"),
+          new Website("Ella's Page", "./Students/EllaMark/html/ellam_index.html"),
           new Website("Jared's Page", "./Students/JaredAllen/html/jared.html"),
           new Website("Josie's Page", "./Students/JosieBremner/html/josieb_index.html"),
           new Website("Michael's Page", "./Students/MichaelPineda/html/pineda.html"),
