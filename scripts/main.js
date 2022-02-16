@@ -149,7 +149,7 @@ const MENU_BAR_SETTINGS = [
           new Website("Jacob's Page", "./Students/JacobWeingard/html/jacobweingard.html"),
           new Website("Kyle's Page", "./Students/KyleNolan/html/kyle.html"),
           new Website("Mikey's Page", "./Students/MichaelJacobs/html/michaelj_index.html"),
-          new Website("Soley's Page", "./Students/SoleyO/html/SoleyO.html"),
+          new Website("Soley's Page", "./Students/SoleyO/html/soleyo_index.html"),
           new Website("Zach's Page", "./Students/ZacharyBinder/html/Zach_page.html"),
           new Website("Eva's Page", "./Students/EvaOsborne/html/evao_index.html")
         ],
@@ -157,7 +157,7 @@ const MENU_BAR_SETTINGS = [
       new Area(
         "Section 3",
         [
-          new Website("Alexa's Page", "./Students/AlexaKrein/html/alexa.html"),
+          new Website("Alexa's Page", "./Students/AlexaKrein/html/alexak_index.html"),
           new Website("Anna's Page", "./Students/AnnaRipley/html/annar_index.html"),
           new Website("Charlotte's Page", "./Students/CharlotteSirota/html/charlottes_index.html"),
           new Website("Gina's Page", "./Students/GinaMcKeown/html/ginam_index.html"),
