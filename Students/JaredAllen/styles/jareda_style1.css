@@ -1,0 +1,141 @@
+
+
+/* *{
+	margin: 0;
+	padding: 0;
+} */
+
+
+body{
+	background-color: #f4f4f4;
+	color: #555555;
+
+	font-family: Courier, monospace;
+	font-size: 12px;
+	font-weight: normal;
+	/*same as above */
+	font: normal 16px Courier, monospace;
+
+	line-height: 1.6em;
+
+
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover{
+	color: red;
+}
+
+a:active {
+	color: green;
+}
+
+/* a:visited {
+	color: black;
+} */
+
+ .container{
+ 	width: 80%;
+ 	margin: auto;
+
+ }
+
+.box-1{
+	background-color: #333333;
+	color: #ffffff;
+
+	border-right: 5px red solid;
+	border-left: 5px red solid;
+	border-left: 5px red solid;
+	border-right: 5px red solid;
+	/* same as above */
+	border: 5px red solid;
+
+	border-width: 3px;
+	border-bottom-width: 10px;
+	border-top-style: dotted;
+
+	border:  5px red solid;
+
+	padding: 20px;
+
+	margin: 20px 0;
+
+
+}
+
+
+.box-1 h1{
+	font-family: Tahoma;
+	font-weight: 800;
+	font-style: italic;
+	text-decoration: underline;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	word-spacing: 1em;
+
+}
+
+
+.box-2 {
+	border: 3px dotted gray;
+	padding: 20px;
+	margin: 20px 0;
+
+}
+
+.categories{
+	border: 1px gray solid;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.categories h2{
+	text-align: center;
+}
+
+.categories ul{
+	list-style: square;
+
+}
+
+.categories li {
+	padding-bottom: 8px;
+	border-bottom: dotted 1px #333;
+	list-style-image: url('../images/galaxy.jpeg');
+}
+
+.myform {
+	padding: 20px;
+
+}
+
+.my-form .form-group {
+	padding-bottom: 15px;
+}
+
+.my-form label{
+	display: block;
+}
+
+.my-form input [type="text"], .my-form textarea{
+	padding: 8px;
+	width: 100%;
+}
+
+.my-form input [type="submit"]{
+	background-color: darkgray;
+	color: #fff;
+	padding: 10px 15px;
+	border: 0;
+}
+
+ 
+
+
+
+
