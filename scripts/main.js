@@ -146,7 +146,7 @@ const MENU_BAR_SETTINGS = [
         "Section 2",
         [
           new Website("Hayden's Page", "./Students/HaydenLipsky/html/hayden.html"),
-          new Website("Jacob's Page", "./Students/JacobWeingard/html/jacobweingard.html"),
+          new Website("Jacob's Page", "./Students/JacobWeingard/html/jacobw_index.html"),
           new Website("Kyle's Page", "./Students/KyleNolan/html/kyle.html"),
           new Website("Mikey's Page", "./Students/MichaelJacobs/html/michaelj_index.html"),
           new Website("Soley's Page", "./Students/SoleyO/html/soleyo_index.html"),
