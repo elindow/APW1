@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Z.O.E. Project</title>
+</head>
+<body>
+    <table style="align: center" border="2">
+          <tr>
+              <td><a href="ashera_index.html">Home</a></td>
+              <td><a href="ashera_facerecognition.html">Face Recognition</a></td>
+              <td><a href="ashera_nlpresearch.html">Natural Language Processing</a></td>
+              <td><a href="ashera_machinelearning.html">Machine Learning</a></td>
+              <td><a href="ashera_datavisualization.html">Data Visualization</a></td>
+              <td>Z.O.E.</td>
+              <td><a href="ashera_simonproject.xhtml">S.I.M.O.N.</a></td>
+              <td><a href="ashera_camproject.html">C.A.M.</a></td>
+              <td><a href="ashera_chatbotsresearch.html">ChatBots</a></td>
+              <td><a href="ashera_htmlprogress.html">HTML</a></td>
+          </tr>
+      </table>
+<h1 style="text-align: center">Z.O.E.</h1>
+<h2>Overview</h2>
+<p>I created the Zoom Operation Expert (Z.O.E) during the Covid-19 pandemic. I found it somewhat tedious searching
+for zoom links to different classes for 9 hours a day, so I created a program which would automatically sign me into
+classes on time.</p>
+<br />
+<h2>Creation</h2>
+<p>I had a few ideas on what the best way to create this program was; I knew that I needed to give the program
+access to my calendar. I ended up inputting my full schedule into a CSV file which the program would read (this took a
+while with a 10-day schedule). Within the main class of the program I created variable names for each item in the CSV
+file that leads to the corresponding zoom link.</p>
+<h2>Features</h2>
+<h3>Interaction</h3>
+<p>There were two main bases of interaction with this program: text based and speech based.</p>
+<p>When the program first starts, the user is prompted to input which day's schedule is required. After this is
+supplied the program will sign in to classes on time throughout the day and quit once the day is over.</p>
+<p>The speech based interaction uses the computer's microphone to listen to a set of specific requests: "Mute mic",
+"Un mute mic", "Tun on video", "Turn off video", and "End call".</p>
+<h3>Extra Feature</h3>
+<p>Finally, I noticed that sometimes I was being sent zoom links within emails when teachers were trying to set up meetings.
+I used my knowledge with reading emails, "regex", and "natural language processing" to read emails, filter out any unnecessary text,
+and extract a zoom link and a time. This process signs in to the meeting at the given time.</p>
+</body>
+</html>

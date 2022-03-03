@@ -131,10 +131,10 @@ const MENU_BAR_SETTINGS = [
       new Area(
         "Section 1",
         [
-          new Website("Asher's Page", "./Students/AsherAgeh/html/asherageh/asher.html"),
-          new Website("Elisabeth's Page", "./Students/ElisabethHartnett/html/elisabeth.html"),
+          new Website("Asher's Page", "./Students/AsherAgeh/html/ashera_index.html"),
+          new Website("Elisabeth's Page", "./Students/ElisabethHartnett/html/elisabethh_index.html"),
           new Website("Ella's Page", "./Students/EllaMark/html/ellam_index.html"),
-          new Website("Jared's Page", "./Students/JaredAllen/html/jared.html"),
+          new Website("Jared's Page", "./Students/JaredAllen/html/jareda_index.html"),
           new Website("Josie's Page", "./Students/JosieBremner/html/josieb_index.html"),
           new Website("Michael's Page", "./Students/MichaelPineda/html/michaelp_index.html"),
           new Website("Nathaniel's Page", "./Students/NathanielMcNutt/html/nmcnutt_index.html"),
@@ -161,8 +161,8 @@ const MENU_BAR_SETTINGS = [
           new Website("Anna's Page", "./Students/AnnaRipley/html/annar_index.html"),
           new Website("Charlotte's Page", "./Students/CharlotteSirota/html/charlottes_index.html"),
           new Website("Gina's Page", "./Students/GinaMcKeown/html/ginam_index.html"),
-          new Website("Nathan's Page", "./Students/NathanSinaiko/html/NathanS_MainPage.html"),
-          new Website("Shadab's Page", "./Students/ShadabSharif/html/shadabs_main.html"),
+          new Website("Nathan's Page", "./Students/NathanSinaiko/html/nathans_index.html"),
+          new Website("Shadab's Page", "./Students/ShadabSharif/html/shadabs_index.html"),
 
         ],
       ),
