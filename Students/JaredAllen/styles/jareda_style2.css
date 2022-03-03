@@ -12,6 +12,7 @@ body{
 	width:  80%;
 	margin: auto;
 	overflow: hidden;
+
 }
 
 ul{
@@ -89,5 +90,10 @@ header a:hover{
 		color: #ffffff;
 		background-color: #000000;
 		text-align: center;
+	}
+
+	#paragraph {
+		margin-left: 10px;
+		margin-right: 10px;
 	}
 
