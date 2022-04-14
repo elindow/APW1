@@ -1,0 +1,99 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: white;
+	line-height: 1.25;
+	padding: 0;
+	margin: 0;
+	background-color: #3a3b3c;
+}
+
+.container{
+	width:  80%;
+	margin: auto;
+	overflow: hidden;
+
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+header{
+	  background: #000000;
+	  color: #ffffff;
+	  padding-top: 30px ;
+	  min-height: 70px;
+	  border-bottom: #ffffff 3px solid;
+}
+
+header a{
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+header ul{
+	margin: 0;
+	padding: 0;
+}
+
+header li{
+	float: center;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+
+header #menu{
+	 float: left;
+}
+
+header #menu h1{
+	margin: 0;
+} 
+
+header nav{
+	float: right;
+	margin-top: 10px;
+}
+
+header .glow, header .current a {
+	color:  #008080;
+	font-weight: bold;
+}
+
+header a:hover{
+	color: #3a3b3c;
+	font-weight: bold;
+}
+
+	#mainimage {
+		min-height: 820px;
+		text-align: center;
+		color: white;
+		background: url("../images/jareda_techphoto2.jpeg") no-repeat -300px -120px;
+	}
+
+	#mainimage h1{
+		font-size: 55px;
+		margin-top: 350px;
+		margin-bottom: 10px;
+	}
+
+	footer{
+		padding: 20px;
+		margin-top: 20px;
+		color: #ffffff;
+		background-color: #000000;
+		text-align: center;
+	}
+
+	#paragraph {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
