@@ -1,6 +1,6 @@
 /** test of tScript*/
 
-let message: string = 'Wisdom is Power';
+let message: string = 'Wisdom Power Be';
 
 let heading = document.createElement('h1');
 heading.textContent = message;
