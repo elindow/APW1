@@ -1,8 +1,8 @@
-/* this is a comment in a css file*/
+/* this is a comment in a css file, follows c/c++ standard for multiline comments */
 
 /* the block below assigns the font to all p objects */
 p {
-	font-family:  fantasy;
+	font-family: Garamond;
 
 }
 
@@ -18,6 +18,6 @@ p {
 
 /* the . adds this attribute to a class called 'wan'  */ 
 .wan {
-  font-family: garamond;  /* this will override the assignment to the p object */
+  font-family: Arial;  /* this will override the assignment to the p object */
   background-color: yellow;
 }
