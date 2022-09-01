@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+		<meta charset="utf-8">
+    	<title>Golanka PHP Testing Page</title>
+    	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    	<link href="./styles/golanka_style.css" rel="stylesheet" type="text/css">
+  	</head>
+	<body bgcolor = "1010FF" >
+		<h1>Nothing really to see here, yet.</h1>
+
+    <p>Trying a bit of PHP:</p>
+
+    <?php
+      echo "Hello World";
+    ?>
+
+    
+        <p><form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+  Name: <input type="text" name="fname">
+  <input type="submit">
+</form>
+</p>
+
+
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // collect value of input field
+    $name = htmlspecialchars($_REQUEST['fname']);
+    if (empty($name)) {
+        echo "Name is empty";
+    } else {
+        echo $name;
+    }
+}
+?>
+
+        
+ 	</body>
+</html>
