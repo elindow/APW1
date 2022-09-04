@@ -1,67 +1,73 @@
-<!DOCTYPE html>
-<html>
-  	<head>
-		<meta charset="utf-8">
-    <script src="./scripts/golanka.js"></script>
+<!DOCTYPE html> <!-- Not necessary usually but a good idea to start all html code this way -->
+<html lang="en">  <!-- pages will usually work without these two lines but best practice would suggest they be added -->
+
+<html> <!-- Opening tag--closes all the way at the end of the file -->
+  	<head> <!-- header tag. things like the title and links to css/javascript sources -->
+		<meta charset="utf-8"> <!-- defines character set to be used, optional, but not using it could cause potential issues in complex pages -->
+        <script src="./scripts/golanka.js"></script> <!-- Sets location of external JavaScript code -->
     	<title>Mr. Golanka's Page</title>
-    	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-    	<link href="./styles/golanka_style.css" rel="stylesheet" type="text/css">
+    	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"> <!-- location of font definitions (google is common) -->
+    	<link href="./styles/golanka_style.css" rel="stylesheet" type="text/css"> <!-- sets location of style sheet -->
   	</head>
-	<body onLoad = "init()" bgcolor = "82F6F2" >
-		<h1>Welcome to my wonderful page. I hope you enjoy it! ("Wonderful" is sarcastic btw.)</h1>
+	<body onLoad = "init()" bgcolor = "82F6F2" >  <!-- body of page--what you can see. init() is a function in the js file. bgcolor is the background color -->
 
-        <p><img src = "./images/git.jpg" alt = "git the joke?" style="width:220px;height:319px;"</p>
+		<h1>This "heading" is made using the h1 tag. Usually means big text, but can be changed with css.</h1>
 
-		<p><b>I set up a static web site on Githb here:</b></p>
-		<ol start='1'> <!-- ordered numerical list -->
-      		<li>This is a link to the site: "<a href="https://sgolanka.github.io/AudioStuff/">Golanka's Audio Stuff</a>"</li>
-                <!-- "to open use </ and to close /?>. to create hyperlink after quote use braket" -->
-    	</ol>
+        <p> <!--use paragraph tags to add blank lines before and after-->
+            <img src = "./images/git.jpg" alt = "git the joke?" style="width:19.3em;height:28em;"> 
+        </p>
+        <h2 id = "ctr">Scroll down for some active content.</h2>  <!-- id used for applying css -->
+		<p>
+            <h2>I set up a static web site on Githb a while ago.</h2>
+      		This is a link to the site: "<a href="https://sgolanka.github.io/AudioStuff/">Golanka's Audio Stuff</a>"
+        </p>
 
-        <p><a href = "golanka_php_testing_page.html">Another page. I'm using this one to try out some PHP.</a></p>
+        <p>Thoughts about APW1 requirements this year:</p>
+        <ol start='1'> <!-- ordered numerical list -->
+            <li>This is the largest section we've had.</li>
+            <li>We want this to work like an authentic programming shop.</li>
+            <li>Students will work in teams.</li>
+            <li>The first part of the year will be dedicated to moderninzing and maintaining our web site.</li>
+            <li>Instead of 1 project per term, students will start a project in the Fall and finish it just before Spring Break.</li>
+        </ol>
 
-        <p>Thoughts about APW1 requirements going forward:</p>
-        <ul>
-            <li>Weekly updates: no more than 1 in a row that say "too busy" or equivalent</li>
-            <li>Teach backs must include code samples or other actual "products"</li>
-            <li>Code projects must be maintained on Github - monthly checks?</li>
-        </ul>
-
-        
-
-<p><b>Using Processing:</b></p>
-		<ol type='I'> <!-- ordered letter list -->
-      		<li>My presentations for class: (links not updated in a while)</li>
+        <p>
+            <b>Using Processing: My presentations for class (links not updated in a while):</b>
+        </p>
+		<ul> <!-- unordered list -->
           <li><a href="https://drive.google.com/open?id=0BxTQa4A74Ro6b0UzcjlzWkRVZGs">Unit 1</a></li>
           <li><a href="https://drive.google.com/open?id=0BxTQa4A74Ro6cmVKaDBHOVRQUkk">Unit 2</a></li>
           <li><a href="https://drive.google.com/open?id=0BxTQa4A74Ro6Sl94WFYzNmw1MVk">Unit 3</a></li>
           <li><a href="https://drive.google.com/open?id=0BxTQa4A74Ro6SE04Uk1ib0VpeVE">Unit 4</a></li>
           <li><a href="https://drive.google.com/open?id=0BxTQa4A74Ro6b0JoRUxJVG5PVWc">Unit 5</a></li>
           <li><a href="https://drive.google.com/open?id=1yXur8GMLOeQaLlddX3fS1vIS7Z9yNvCK">Unit 6</a></li>
-    	</ol>
-
-        <p>Using JavaScript (code in html file) to recursively sum lists of numbers:</p>
-        <script type="text/javascript">
-            //recursively sum numbers in an array
-            function sum(numbers){
-               if(numbers.length === 0){ //base case
-                return 0;
-               } else {                  //recursive case
-                let head = numbers[0];
-                let tail = numbers.slice(1, numbers.length);
-                return head + sum(tail);
-               }
-            }
-            let nums = [1, 2, 3, 4, 5];
-            document.write('The sum of ' + nums + ' is ' + sum(nums) + '<br />');
-            nums = [5, 2, 4, 8];
-            document.write('The sum of ' + nums + ' is ' + sum(nums) + '<br />');
-            nums = [1, 10, 100, 1000];
-            document.write('The sum of ' + nums + ' is ' + sum(nums) + '<br />');
-        </script>
+    	</ul>
+        <div id = "box">  <!-- id used for applying css -->
+            <p>
+                Using JavaScript with code in the html file to recursively sum lists of numbers:
+            </p>
+            <script type="text/javascript">
+                //recursively sum numbers in an array
+                function sum(numbers){
+                   if(numbers.length === 0){ //base case
+                    return 0;
+                   } else {                  //recursive case
+                    let head = numbers[0];
+                    let tail = numbers.slice(1, numbers.length);
+                    return head + sum(tail);
+                   }
+                }
+                let nums = [1, 2, 3, 4, 5];
+                document.write('The sum of ' + nums + ' is ' + sum(nums) + '<br />');
+                nums = [5, 2, 4, 8];
+                document.write('The sum of ' + nums + ' is ' + sum(nums) + '<br />');
+                nums = [1, 10, 100, 1000];
+                document.write('The sum of ' + nums + ' is ' + sum(nums) + '<br />');
+            </script>
+        </div>
 
       <p>Look! A bouncing ball!!! (using JavaScript with code in another file)</p>
 
-      <canvas id = "myCanvas" width = "500"  height="400"></canvas>
+      <canvas id = "myCanvas" width = "500"  height="400">This browswer doesn't support the canvas element. Sorry :(</canvas>
  	</body>
 </html>
