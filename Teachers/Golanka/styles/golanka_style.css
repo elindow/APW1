@@ -34,13 +34,17 @@ canvas {
     padding: 0;
     margin: auto;
     display: block;
-    /*width: 800px;*/
 }
 
 
 
 #ctr{ /*# means id--find the elements in the html file with this id*/
   text-align: center;
+}
+
+#gitimage{
+  width:19.3em;
+  height:28em;
 }
 
 #box {

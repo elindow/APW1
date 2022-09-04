@@ -7,7 +7,6 @@ var dy=5;
 
   function init(){
   	context = myCanvas.getContext('2d');
-  	// context.fillStyle = "red";
     context.fillRect(0, 0, myCanvas.width, myCanvas.height);
   	setInterval(draw,10);
   }
@@ -15,7 +14,6 @@ var dy=5;
   function draw(){
   	context.fillStyle = "red";
   	context.fillRect(0,0,500,400);
-  	// context.clearRect(0,0,500,400);
     context.beginPath();
 		context.fillStyle="#0000ff";
 		// Draws a circle of radius 20 at the coordinates 100,100 on the canvas
@@ -28,3 +26,5 @@ var dy=5;
 		x+=dx;
 		y+=dy;
   }
+
+
