@@ -5,7 +5,8 @@
   	<head> <!-- header tag. things like the title and links to css/javascript sources -->
 		<meta charset="utf-8"> <!-- defines character set to be used, optional, but not using it could cause potential issues in complex pages -->
         <script src="./scripts/golanka.js"></script> <!-- Sets location of external JavaScript code -->
-    	<title>Mr. Golanka's Page</title>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>   <!-- loads jquery API library --->
+        <title>Mr. Golanka's Page</title>
     	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"> <!-- location of font definitions (google is common) -->
     	<link href="./styles/golanka_style.css" rel="stylesheet" type="text/css"> <!-- sets location of style sheet -->
   	</head>
@@ -14,7 +15,7 @@
 		<h1>This "heading" is made using the h1 tag. Usually means big text, but can be changed with css.</h1>
 
         <p> <!--use paragraph tags to add blank lines before and after-->
-            <img src = "./images/git.jpg" alt = "git the joke?" style="width:19.3em;height:28em;"> 
+            <img src = "./images/git.jpg" alt = "git the joke?" id = "gitimage"> 
         </p>
         <h2 id = "ctr">Scroll down for some active content.</h2>  <!-- id used for applying css -->
 		<p>
@@ -45,9 +46,13 @@
         <div id = "box">  <!-- id used for applying css -->
             <p>
                 Using JavaScript with code in the html file to recursively sum lists of numbers:
+                <p id= "results"></p>
             </p>
+            
             <script type="text/javascript">
+               
                 //recursively sum numbers in an array
+                //recursion is not the way to do this! a simple loop is more efficient.
                 function sum(numbers){
                    if(numbers.length === 0){ //base case
                     return 0;
