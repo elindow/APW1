@@ -7,7 +7,7 @@
     	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
     	<link href="./styles/golanka_style.css" rel="stylesheet" type="text/css">
   	</head>
-	<body onLoad = "init()" bgcolor = "99ff99" >
+	<body onLoad = "init()" bgcolor = "82F6F2" >
 		<h1>Welcome to my wonderful page. I hope you enjoy it! ("Wonderful" is sarcastic btw.)</h1>
 
         <p><img src = "./images/git.jpg" alt = "git the joke?" style="width:220px;height:319px;"</p>
@@ -40,7 +40,27 @@
           <li><a href="https://drive.google.com/open?id=1yXur8GMLOeQaLlddX3fS1vIS7Z9yNvCK">Unit 6</a></li>
     	</ol>
 
-      <p>Look! A bouncing ball!!! (using JavaScript)</p>
+        <p>Using JavaScript (code in html file) to recursively sum lists of numbers:</p>
+        <script type="text/javascript">
+            //recursively sum numbers in an array
+            function sum(numbers){
+               if(numbers.length === 0){ //base case
+                return 0;
+               } else {                  //recursive case
+                let head = numbers[0];
+                let tail = numbers.slice(1, numbers.length);
+                return head + sum(tail);
+               }
+            }
+            let nums = [1, 2, 3, 4, 5];
+            document.write('The sum of ' + nums + ' is ' + sum(nums) + '<br />');
+            nums = [5, 2, 4, 8];
+            document.write('The sum of ' + nums + ' is ' + sum(nums) + '<br />');
+            nums = [1, 10, 100, 1000];
+            document.write('The sum of ' + nums + ' is ' + sum(nums) + '<br />');
+        </script>
+
+      <p>Look! A bouncing ball!!! (using JavaScript with code in another file)</p>
 
       <canvas id = "myCanvas" width = "500"  height="400"></canvas>
  	</body>
