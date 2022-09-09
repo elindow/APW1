@@ -38,22 +38,23 @@ nav {
 }
 
 .trevor-logo {
-	position: relative;
+	position: absolute;
 	top: 10px;
 	left: 10px;
 	width: 10%;
 }
 
 .page-title {
-	position: relative;
-	left: 200px;
-	top: -45px;
+	position: absolute;
+	left: 12.5%;
+    top: 10px;
+    margin-top: 0px;
 }
 
 .box {
-	margin-left: 1%;
-	margin-top: 4%;
-	position: relative;
+    top: 7%;
+    left: 1%;
+	position: absolute;
 	width: 11.5em;
 	background-color:  #f7f7f7;
 	padding:  8;
@@ -66,15 +67,16 @@ nav {
 .wan {
 	position: absolute;
   	background-color: green;
-	left: 240px;
+	left: 13%;
 	top: 10.5%;
 }
 
 .home-link {
-	position: relative;
-	top: -95px;
-	left: 90%;
+	position: absolute;
+	top: 10px;
+	right: 0.5%;
 	width: 10%;
+    margin: 0px;
 }
 
 .home-link a {
@@ -88,8 +90,9 @@ nav {
 }
 
 .button {
-	position: relative;
-	top: -135px;
+	position: absolute;
+    margin: 0px;
+	top: 10px;
 	left: 82%;
 	width: 7%;
 }
