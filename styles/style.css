@@ -1,7 +1,7 @@
- {
+/* {
   font-family: 'Georgia', serif;
-  /*homage jacob*/
-}
+  homage jacob
+} */
 
 h2 {
   font-size: 30px;
@@ -104,7 +104,7 @@ a {
   padding-bottom: 20px;
 }
 
-.dropdown-content a {\
+.dropdown-content a {
   /*dropdown font color*/
 
   color: black;
@@ -199,8 +199,8 @@ div.main {
 
 div.examples {
   position: absolute;
-  width: 100%;
-  top: calc(100% + 500px);
+  width: 99%;
+  top: calc(100% + 700px);
 }
 
 div.example {
@@ -298,6 +298,13 @@ img.divider {
   position: relative;
   left: 0px;
   bottom: -5px;
+}
+
+img.divider2 {
+  width: 100%;
+  position: relative;
+  left: 0px;
+  bottom: -250px;
 }
 
 @keyframes displaytitle {

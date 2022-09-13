@@ -127,6 +127,7 @@ const MENU_BAR_SETTINGS = [
     "Students",
     "The Students",
     "The students work on bigger and challenging projects that peak their interests. In their websites, they talk about their projects for the year.",
+    // Sorted in groups of 4 by last name alphabetically
     [
       new Area(
         "",
@@ -160,8 +161,8 @@ const MENU_BAR_SETTINGS = [
         [
           new Website("Leon's Page", "./Students/LeonSchaumann/html/leons_index.html"),
           new Website("Shadab's Page", "./Students/ShadabSharif/html/shadabs_index.html"),
-          new Website("", ""),
-          new Website("", ""),
+          new Website("Nathan's Page", "./Students/NathanSinaiko/html/nathans_index.html"),
+          new Website("Ithan's Page", "./Students/IthanZaslow/html/ithanz_index.html"),
         ],
       ),
     ],
