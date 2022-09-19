@@ -185,9 +185,6 @@ const MENU_BAR_SETTINGS = [
           new Website("Sophie's Page", "./html/archives/2019/sophieKofsky/KofskyPage.html"),
           new Website("Tyler's Page", "./html/archives/2019/tylerMelwani/tyler.html"),
           new Website("Will's Page", "./html/archives/2019/willBrooks/will_page.html"),
-
-
-
         ],
       ),
       new Area(
@@ -198,10 +195,6 @@ const MENU_BAR_SETTINGS = [
           new Website("Josh S's Page", "./html/Archives/2020/joshScreen/screen_page.html"),
           new Website("Max's Page", "./html/Archives/2020/maxbremner/maxBremner.html"),
           new Website("Owen's Page", "./html/Archives/2020/owenWiese/owen_page.html"),
-
-
-
-
         ],
       ),
       new Area(
