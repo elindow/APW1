@@ -127,43 +127,42 @@ const MENU_BAR_SETTINGS = [
     "Students",
     "The Students",
     "The students work on bigger and challenging projects that peak their interests. In their websites, they talk about their projects for the year.",
+    // Sorted in groups of 4 by first name alphabetically
     [
       new Area(
-        "Section 1",
+        "",
         [
-          new Website("Asher's Page", "./Students/AsherAgeh/html/ashera_index.html"),
-          new Website("Elisabeth's Page", "./Students/ElisabethHartnett/html/elisabethh_index.html"),
-          new Website("Ella's Page", "./Students/EllaMark/html/ellam_index.html"),
-          new Website("Jared's Page", "./Students/JaredAllen/html/jareda_index.html"),
-          new Website("Josie's Page", "./Students/JosieBremner/html/josieb_index.html"),
-          new Website("Michael's Page", "./Students/MichaelPineda/html/michaelp_index.html"),
-          new Website("Nathaniel's Page", "./Students/NathanielMcNutt/html/nmcnutt_index.html"),
-          new Website("Ozan's Page", "./Students/OzanMirza/ozanmirza/2021-2022/portfolio/assets/index.html"),
-          new Website("Will's Page", "./Students/WillGriggs/html/willg_homepage.html"),
-        ],
-      ),
-      new Area(
-        "Section 2",
-        [
-          new Website("Hayden's Page", "./Students/HaydenLipsky/html/haydenl_index.html"),
-          new Website("Jacob's Page", "./Students/JacobWeingard/html/jacobw_index.html"),
-          new Website("Kyle's Page", "./Students/KyleNolan/html/kyle.html"),
-          new Website("Mikey's Page", "./Students/MichaelJacobs/html/michaelj_index.html"),
-          new Website("Soley's Page", "./Students/SoleyO/html/soleyo_index.html"),
-          new Website("Zach's Page", "./Students/ZacharyBinder/html/Zach_page.html"),
-          new Website("Eva's Page", "./Students/EvaOsborne/html/evao_index.html")
-        ],
-      ),
-      new Area(
-        "Section 3",
-        [
+          new Website("Alara's Page", "./Students/AlaraMirza/html/alaram_index.html"),
           new Website("Alexa's Page", "./Students/AlexaKrein/html/alexak_index.html"),
-          new Website("Anna's Page", "./Students/AnnaRipley/html/annar_index.html"),
-          new Website("Charlotte's Page", "./Students/CharlotteSirota/html/charlottes_index.html"),
-          new Website("Gina's Page", "./Students/GinaMcKeown/html/ginam_index.html"),
+          new Website("Andrew's Page", "./Students/AndrewDowney/html/andrewd_index.html"),
+          new Website("Brandon's Page", "./Students/BrandonLioudis/html/brandonl_index.html"),
+        ],
+        ),
+        new Area(
+        "",
+        [
+          new Website("Camille's Page", "./Students/CamilleLuriel/html/camillel_index.html"),
+          new Website("Genevieve's Page", "./Students/GenevievePace/html/genevievep_index.html"),
+          new Website("Ithan's Page", "./Students/IthanZaslow/html/ithanz_index.html"),
+          new Website("Josie's Page", "./Students/JosieBremner/html/josieb_index.html"),
+        ],
+        ),
+        new Area(
+        "",
+        [
+          new Website("Krish's Page", "./Students/KrishDasani/html/krishd_index.html"),
+          new Website("Leon's Page", "./Students/LeonSchaumann/html/leons_index.html"),
+          new Website("Michael's Page", "./Students/MichaelPineda/html/michaelp_index.html"),
+          new Website("Mikail's Page", "./Students/MikailGhani/html/mikailg_index.html"),
+        ],
+        ),
+          new Area(
+        "",
+        [
           new Website("Nathan's Page", "./Students/NathanSinaiko/html/nathans_index.html"),
           new Website("Shadab's Page", "./Students/ShadabSharif/html/shadabs_index.html"),
-
+          new Website("Talia's Page", "./Students/TaliaJanevski/html/taliaj_index.html"),
+          new Website("Will's Page", "./Students/WillGriggs/html/willg_index.html"),
         ],
       ),
     ],
@@ -219,6 +218,26 @@ const MENU_BAR_SETTINGS = [
           new Website("Robert's Page", "./html/Robert.html"),
 
 
+        ]
+      ),
+      new Area(
+        "2021-22",
+        [
+          new Website("Anna's Page", "./Students/AnnaRipley/html/annar_index.html"),
+          new Website("Asher's Page", "./Students/AsherAgeh/html/ashera_index.html"),
+          new Website("Charlotte's Page", "./Students/CharlotteSirota/html/charlottes_index.html"),
+          new Website("Elisabeth's Page", "./Students/ElisabethHartnett/html/elisabethh_index.html"),
+          new Website("Ella's Page", "./Students/EllaMark/html/ellam_index.html"),
+          new Website("Gina's Page", "./Students/GinaMcKeown/html/ginam_index.html"),
+          new Website("Hayden's Page", "./Students/HaydenLipsky/html/haydenl_index.html"),
+          new Website("Jacob's Page", "./Students/JacobWeingard/html/jacobw_index.html"),
+          new Website("Jared's Page", "./Students/JaredAllen/html/jareda_index.html"),
+          new Website("Kyle's Page", "./Students/KyleNolan/html/kyle.html"),
+          new Website("Mikey's Page", "./Students/MichaelJacobs/html/michaelj_index.html"),
+          new Website("Nathaniel's Page", "./Students/NathanielMcNutt/html/nmcnutt_index.html"),
+          new Website("Ozan's Page", "./Students/OzanMirza/ozanmirza/2021-2022/portfolio/assets/index.html"),
+          new Website("Soley's Page", "./Students/SoleyO/html/soleyo_index.html"),
+          new Website("Zach's Page", "./Students/ZacharyBinder/html/Zach_page.html"),
         ]
       )
     ],
