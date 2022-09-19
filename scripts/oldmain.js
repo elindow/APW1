@@ -182,17 +182,11 @@ const MENU_BAR_SETTINGS = [
 				"Section 3",
 				[
 					new Website("Mikey's Page", ".html/michael.html"),
-<<<<<<< HEAD
 					new Website("Hayden's Page", "Hayden.html/"),
 					new Website("Nathaniel's Page", "McNutt.html/"),
 					new Website("Ethan's Page", "./html/Melwani.html"),
 					new Website("Charlotte's Page", "charlotte.html/"),
 					new Website("Jacob's Page", ".html/jacobweingard.html"),
-=======
-					new Website("Hayden's Page", ""),
-					new Website("Charlotte's Page", ""),
-					new Website("Nathaniel's Page", "")
->>>>>>> d61b3d8a1da9210c8f6b214d45410dfb234ecf25
 				],
 			),
 		],
