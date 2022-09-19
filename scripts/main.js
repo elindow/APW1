@@ -127,7 +127,7 @@ const MENU_BAR_SETTINGS = [
     "Students",
     "The Students",
     "The students work on bigger and challenging projects that peak their interests. In their websites, they talk about their projects for the year.",
-    // Sorted in groups of 4 by last name alphabetically
+    // Sorted in groups of 4 by first name alphabetically
     [
       new Area(
         "",
