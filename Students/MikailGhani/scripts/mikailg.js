@@ -9,12 +9,22 @@ $(document).ready(function () {  										 	// jQuery will wait until DOM is re
   // # at front of object indicates id, function to be called comes after . 
 
   $("#MButton1").click(function () {
-    for (var i = 5; i > 3; i = i + 1) { console.log(i); }
+    var bomb =confirm("Are you sure you wanna hit this button buddy")
+    if (bomb){
+      for (var i = 5; i > 3; i = i + 1) { console.log(i); }
+    }
   });
 
   $("#MButton2").click(function () {
     $("#MButton2").html("You clicked the correct button!")
 
+  });
+  
+  $("#MButton3").click(function () {
+    var bomb =confirm("Are you sure you wanna hit this button buddy")
+    if (bomb){
+      openTab()
+    }
   });
   
 });
