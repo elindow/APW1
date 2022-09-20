@@ -70,10 +70,11 @@ class Project {
 }
 
 class Example {
-  constructor(creator, description, src) {
+  constructor(creator, description, src, id) {
     this.creator = creator;
     this.description = description;
     this.src = src;
+    this.id = id; // id is used to be able to further change css based on specific examples
   }
 }
 
@@ -242,11 +243,13 @@ const STUDENT_EXAMPLES_SETTINGS = [
     "Jake's Swirly Dirly",
     "This is a really cool animation that Jake made in the P5.JS rendering library with a simple algorithim that computes color and location in a circular manner.",
     "./html/jakehtml.html",
+    "jake",
   ),
   new Example(
     "Mr. Lindow's Magic Snake",
     "This is another really cool animation that Mr. Lindow made in the P5.JS rendering library with a bunch of complex math.",
     "./Teachers/Lindow/html/lindowP5_page.html",
+    "lindow",
   ),
 ];
 
@@ -306,6 +309,7 @@ window.onload = () => {
   STUDENT_EXAMPLES_SETTINGS.forEach((example) => {
     let container = document.createElement("div");
     container.classList.add("example");
+    container.id = example.id;
     document.getElementById("examples").appendChild(container);
 
     let title = document.createElement("h1");
