@@ -2,7 +2,7 @@
 
 /* the block below assigns the font to all p objects */
 p {
-	font-family: Garamond;
+	font-family: Verdana;
 
 }
 
@@ -16,8 +16,17 @@ p {
 	border-width:  8px ;
 }
 
+
+#circle {
+  width: 110px;
+  height: 110px;
+  background: red;
+ 	border:1px blueviolet;
+  border-radius: 50%;
+}
+
 /* the . adds this attribute to a class called 'wan'  */ 
 .wan {
-  font-family: Arial;  /* this will override the assignment to the p object */
-  background-color: yellow;
+  font-family: Helvetica;  /* this will override the assignment to the p object */
+  background-color: darkcyan;
 }
