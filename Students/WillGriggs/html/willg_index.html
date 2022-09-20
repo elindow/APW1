@@ -1,0 +1,180 @@
+<!DOCTYPE html> <!-- Tells the website it's in html --> 
+<html>
+
+<head>
+	<meta charset="utf-8"> <!-- translates letters, numbers, and symbols into computer bytes -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Makes website fit on all devices -->
+	<title>Will's Website</title>
+	<link href="../styles/willg.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+	<hr>
+
+	<h1>This is <b> Will's </b> page</h1>
+
+	<hr>
+
+	<A HREF = "willg_projectPage.html">Project Page Link</A>
+
+	<hr>
+
+	Below are some random things I did while learning how to code some html
+
+	<hr>
+
+
+	<h2>Testing Headers</h2>
+	<h3>Testing Headers</h3>
+	<h4>Testing Headers</h4>
+	<h5>Testing Headers</h5>
+	<h6>Testing Headers</h6>
+
+	<hr>
+
+	<p>
+		This is the first paragraph. It can be seperated with the p tag. Typing in a new p tag will add a break between this first paragraph and the second paragraph. I'm typing random nonsense to make this paragraph long enough to see the break between them.
+	</p>
+	<p>
+		This is the second paragraph. Notice how there was a break before it? That's because I used the p tag to seperate them both. I have run out of things to say in this paragraph already...
+	</p>
+
+	<hr>
+
+	I<br>can<br>add<br>spaces<br>with<br>the<br><br>break<br><br>tag
+
+	<hr>
+
+	Text can be <b>bold,</b> <i>in italics,</i> <u>underlined,</u> <em>emphasized,</em> <strong> and strong</strong>
+
+	<hr>
+
+	This link leads to the <i>League of Legends</i> homepage<br>
+	<a href="https://www.leagueoflegends.com/en-us/" target="_blank">LoL Homepage</a>
+	<!-- href stands for hypertext reference. It should be set to the website link -->
+
+	<hr>
+
+	<img src="https://static.wikia.nocookie.net/leagueoflegends/images/9/96/Ezreal_NottinghamSkin_old.jpg/revision/latest/scale-to-width-down/250?cb=20200817155125" border="10">
+	<!-- src stands for source. Should be set to the image link -->
+
+	<hr>
+
+	A list of League of Legends characters: 
+	<ul>
+		<li>Ezreal</li>
+		<li>Lillia</li>
+		<li>Riven</li>
+		<li>Annie</li>
+		<li>Pyke</li>
+	</ul>
+	A list of League of Legends characters in <b>alphabetical</b> order:
+	<ol>
+		<li>Annie</li>
+		<li>Ezreal</li>
+		<li>Lillia</li>
+		<li>Pyke</li>
+		<li>Riven</li>
+	</ol>
+	Different roles in League and what champs play them:
+	<ol>
+		<li>Bottom Lane
+			<ul>
+				<li>Ezreal</li>
+				<Li>Lucian</Li>
+				<li>Kalista</li>
+			</ul>
+		</li>
+		<li>Support
+			<ul>
+				<li>Soraka</li>
+				<li>Thresh</li>
+				<li>Rakan</li>
+			</ul>
+		</li>
+		<li>Middle Lane
+			<ul>
+				<li>Pyke</li>
+				<li>Lillia</li>
+				<li>Mordekaiser</li>
+			</ul>
+		</li>
+		<li>Jungle
+			<ul>
+				<li>Nunu & Willump</li>
+				<li>Elise</li>
+				<li>Karthus</li>
+			</ul>
+		</li>
+		<li>Top Lane
+			<ul>
+				<li>Riven</li>
+				<li>Fiora</li>
+				<li>Camille</li>
+			</ul>
+		</li>
+	</ol>
+
+	<hr>
+
+	<table border="1" cellpadding="10" cellspacing="0">
+		<tr>
+			<th> </th>
+			<th>Lillia</th>
+			<th>Riven</th>
+			<th>Pyke</th>
+			<th>Ezreal</th>
+			<th>Diana</th>
+			<th>Annie</th>
+			<th>Vex</th>
+		</tr>
+		<tr>
+			<td>Broken?</td>
+			<td>No</td>
+			<td>Yes</td>
+			<td>No</td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>Yes</td>
+			<td>Yes</td>
+		</tr>
+	</table>
+
+	<hr>
+	Press the button? <br>
+	<button type="button"><img onclick= "alert('You pressed the button')" src="https://images-na.ssl-images-amazon.com/images/I/61QKhYL+eCL.png" height="100" width="100"> </button>
+
+	<hr>
+
+	<p id="redText" onclick="colorChangeRed()">Click me!</p>
+
+	<script>
+		function colorChangeRed() {
+  		document.getElementById("redText").style.color = "red";
+		}
+	</script>
+
+	<p onclick="colorChangeBack()">Click to go back to normal</p>
+
+	<script>
+		function colorChangeBack() {
+  		document.getElementById("redText").style.color = "black";
+		}
+	</script>
+
+
+	<p id="jQdemo"></p>  
+	<p><button id='MButton1'>New Style </button></p>	
+	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="../scripts/willg.js"></script>  
+
+
+	<img id = "pyke" src="../images/pykeLeague.jpg">
+
+</body>
+
+</html>
