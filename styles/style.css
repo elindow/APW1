@@ -214,6 +214,19 @@ div.example iframe {
   height: 300px;
 }
 
+#jake.example iframe {
+  height: 1490px;
+}
+
+#lindow.example iframe {
+  height: 340px;
+}
+
+#lindow.example {
+  position: relative;
+  top: -1165px;
+}
+
 div.example h1 {
   text-align: center;
   font-family: 'georgia', serif;
@@ -304,7 +317,7 @@ img.divider2 {
   width: 100%;
   position: relative;
   left: 0px;
-  bottom: -250px;
+  bottom: -30vh;
 }
 
 @keyframes displaytitle {
