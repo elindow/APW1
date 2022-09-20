@@ -16,12 +16,13 @@ p {
 	border-width:  8px ;
 }
 
-#triangle-up {
-  width: .3em;
-  height: 0.1em;
-  border-left: 8px purple;
-  border-right: 8px purple;
-  border-bottom: 8px purple;
+
+#circle {
+  width: 110px;
+  height: 110px;
+  background: red;
+ 	border:1px blueviolet;
+  border-radius: 50%;
 }
 
 /* the . adds this attribute to a class called 'wan'  */ 
