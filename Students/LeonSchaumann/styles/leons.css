@@ -41,7 +41,10 @@ nav {
 	position: absolute;
 	top: 10px;
 	left: 10px;
-	width: 10%;
+	width: 11.5%;
+    height: 30px;
+    object-fit: cover;
+    object-position: 0px -60px;
 }
 
 .page-title {
@@ -231,6 +234,8 @@ nav {
 
 .original-link {
 	position: absolute;
-	bottom: -8%;
-	left: 25%;
+	bottom: -7%;
+	left: 19%;
+    width: 100%;
+    margin: 0px;
 }
