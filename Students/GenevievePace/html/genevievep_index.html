@@ -1,0 +1,36 @@
+<!DOCTYPE html>	   <!-- comments in html blocks use this awkward structure -->
+<html lang="en">  <!-- pages will usually work without these two lines but best practice would suggest they be added -->
+  	<head>										<!-- 'head' is for stuff you set up before you start actually displaying things on the page itself -->
+		<meta charset="utf-8">					<!-- defines character set to be used, optional, but not using it could cause potential issues in complex pages -->
+    	<title>Worker Sampling</title>		<!-- the title text will appear on the tab for this page at the top of the browser -->
+    	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"> <!-- loads a specific font file from google directory into this page -->
+    	<link href="../styles/genevievep.css" rel="stylesheet" type="text/css">  	<!-- links to a file for storing specific css style information for this page -->
+  	</head>
+
+  	<body>	<!-- your html goes in this block  -->
+
+  	<img src="../images/230_worker_crowd.gif">   <!-- this could change to link to your image in your images folder -->
+
+  	<h2>They are gathered in one place.</h2>
+  
+  	<p style id="box"> Someone should check up on them. There's one, lets ask it.</p>		<!-- example using id defined object from css file linked to above -->
+
+  	<img src="../images/230_worker_back.png">
+
+  	<p style id="box"> Hey you! How are you doing?</p>		
+
+  	<img id="theWorker" src="../images/230_worker.gif">
+
+  	<p id="jQdemo"></p>  <!--- the content of this line starts as blank but is created dynamically once javeScript/JQuery starts -->
+
+  	<span style class="wan"><font color="#ffffff">Hmm... Something's wrong. Click below to make him suffer more.</font></span> 	<!-- example using class defined in css file linked to above -->
+
+	<p><button id='MButton1'onclick= "document.getElementById('theWorker').src='../images/230_worker_55499045.gif'"> Misery Button </button></p>	<!--- creates an html object with an id that can be referenced in the jQuery/javaScript file (new thing taken from here https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb) -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>    <!-- loads jquery API library --->
+  	<script src="../scripts/genevievep.js"></script>   <!-- loads js file from 'scrips' directory into this page -->
+
+  	<p><a href="https://angusnicneven.com/Terminal_230_Box_Facility_Entrance">(images stolen from this lovely place)</a></p>  <!-- link back to home page, note has to move back 3 folders to get to root for the site -->
+  	
+  	</body>
+</html>
