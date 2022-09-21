@@ -4,5 +4,5 @@ document.body.appendChild(img)
 
 var button = document.createElement("button")
 button.innerText = "testing"
-button.addEventListener("click", alert("Button Clicked"))
 document.body.appendChild(button)
+button.addEventListener("click", alert("Button Clicked"))
