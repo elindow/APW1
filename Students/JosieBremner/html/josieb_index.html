@@ -5,11 +5,20 @@
     <script src="./scripts/golanka.js"></script>
     	<title>Josie Page</title>
     	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-    	<link href="styles/style.css" rel="stylesheet" type="text/css">
+    	<link href="../styles/josieb.css" rel="stylesheet" type="text/css">
+
+    	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>    <!-- loads jquery API library
+          from Google Hosted Libraries CDN -->
+  
+    <script src="../scripts/josieb.js"></script>   <!-- loads js file from 'scrips' directory into this page -->
+
+
+
+
   	</head>
 	<body onLoad = "init()" bgcolor = "ffb6c1" >
 		<h1>Welcome to my amazing page. Enjoy the content! I hope it's fun. Thanks, Josie Bremner)</h1>
-
+		<p><img id="puppypic" src = "../images/puppies-cover.jpeg"></p>
 		<p><b>Here is a website of puppies:</b></p>
 		<ol start='1'> <!-- ordered numerical list -->
       		<li>This is a link to the site: "<a href="https://www.goodhousekeeping.com/life/pets/g4531/cutest-dog-breeds/">A cute page!</a>"</li>
@@ -19,7 +28,7 @@
         <p><a href= "josieb_project.html"> Here is my project page</a></p>
 
 
-      <p><button type="button">Click Me!</button></p>
+      <p><button id="LButton1" type="button">Click Me!</button></p>
 
       <canvas id = "myCanvas" width = "500"  height="400"></canvas>
  	</body>

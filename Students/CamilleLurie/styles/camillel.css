@@ -1,0 +1,46 @@
+/* this is a comment in a css file, follows c/c++ standard for multiline comments */
+
+/*google fonts import*/
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Telugu&display=swap" rel="stylesheet">
+
+/* the block below assigns the font to all p objects */
+p {
+
+}
+body {
+  background-color: #f5f4e6;
+
+}
+
+
+.ahh {
+	font-family: "Tiro Telugu", serif;
+	text-align: center;
+}
+/* the # means 'box' is a unique id  that adds all of these attributes*/
+#box {
+	width: 5em;
+	background-color:  lightskyblue;
+	padding:  8;
+	border-style: solid;
+	border-color: darkblue;
+	border-width:  8px ;
+}
+
+
+img  {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+}
+
+
+/* the . adds this attribute to a class called 'wan'  */ 
+.wan {
+  font-family: Arial;  /* this will override the assignment to the p object */
+  background-color: yellow;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>	   <!-- comments in html blocks use this awkward structure -->
+<html lang="en">  <!-- pages will usually work without these two lines but best practice would suggest they be added -->
+
+  	<head>										<!-- 'head' is for stuff you set up before you start actually displaying things on the page itself -->
+		<meta charset="utf-8">					<!-- defines character set to be used, optional, but not using it could cause potential issues in complex pages -->
+    	<title>Camille's Page</title>		<!-- the title text will appear on the tab for this page at the top of the browser -->
+    	<link href="https://fonts.googleapis.com/css2?family=Tiro+Telugu&display=swap" rel="stylesheet">
+    	<link href="../styles/camillel.css" rel="stylesheet" type="text/css">  	<!-- links to a file for storing specific css style information for this page -->
+
+  	</head>
+
+  	<body>	<!-- your html goes in this block  -->
+
+		
+  	<h2 class="ahh">What's she listening to?</h2>
+  
+  	<p style id="box"> Hi There - I'm in a box</p>		<!-- example using id defined object from css file linked to above -->
+
+  	<span style class="wan"> Hi There - I'm on a yellow background</span> 	<!-- example using class defined in css file linked to above -->
+
+	<p id="jQdemo"></p>  <!--- the content of this line starts as blank but is created dynamically once javeScript/JQuery starts -->
+	<p><button id='MButton1'>Play/Pause </button></p>	<!--- creates an html object with an id that can be referenced in the jQuery/javaScript file -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>    <!-- loads jquery API library --->
+  	<script src="../scripts/camillel.js"></script>   <!-- loads js file from 'scrips' directory into this page -->
+
+  	<img src="../images/image1.PNG" style id ="frogtoad">   <!-- this could change to link to your image in your images folder -->
+
+  	<p><a href="../../../index.html">APW Home</a></p>  <!-- link back to home page, note has to move back 3 folders to get to root for the site -->
+  	
+  	</body>
+</html>

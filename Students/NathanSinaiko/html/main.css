@@ -1,0 +1,32 @@
+#myDIV {
+  width: 3100px;
+  height:  2200px;
+  background: red;
+  animation: mymove 10s infinite;
+}
+@keyframes mymove {
+  from {background-color: red;}
+  to {background-color: blue;}
+  }
+
+.btn {
+  position: absolute;
+  top: 20px;
+  left: 250px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  color: var(--btnFontColor);
+  background-color: var(--btnBg);
+}
+
+.light-theme {
+  color: #000000;
+  background: #ffffff;
+}
+
+.dark-theme {
+ color: #ffffff;
+  background: #000000;
+}
