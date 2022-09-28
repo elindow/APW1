@@ -227,6 +227,16 @@ div.example iframe {
   top: -1165px;
 }
 
+#leon.example iframe {
+  height: 600px;
+}
+
+#leon.example {
+  position: relative;
+  top: -1165px;
+  left: 745px;
+}
+
 div.example h1 {
   text-align: center;
   font-family: 'georgia', serif;

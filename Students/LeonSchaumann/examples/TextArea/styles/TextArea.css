@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f7f7f7;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.texteditor {
+    display: flex;
+    position: absolute;
+	background-color: #c9c9c9;
+    top: 55%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    height: 75vh;
+    width: 65vw;
+    border: 2.5px solid #36323a;
+    border-radius: 10px;
+}
+
+.textfield {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    background-color: #c9c9c9;
+    color: #000000;
+    border: none;
+    outline: none;
+    resize: none;
+    width: 95%;
+    height: 95%;
+    left: 2.5%;
+    top: 2.5%;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    font-smooth: always;
+    caret-color: #000000;
+    padding-right: 10px;
+    transition-duration: 0.25s;
+}
+
+.textfield::-webkit-input-placeholder {
+    color: #000000;
+}
+
+.textfield::-webkit-scrollbar {
+    width: 12px;
+}
+
+.textfield::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px     rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+
+.textfield::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px     rgba(0,0,0,0.5); 
+}
+
+.cursor {
+    transition: all 80ms;
+}
+
+.upload {
+    position: absolute;
+    color: black;
+    width: 80px;
+    height: 80px;
+    left: 8vw;
+    top: 30vh;
+    background-color: #f3f3f3;
+    border: 3px solid #c9c9c9;
+    border-radius: 100px;
+    transition-duration: 0.25s;
+}
+
+.upload:hover {
+    border: 3px solid #000000;
+    box-shadow: 1px 5px 5px 2px rgba(0, 0, 0, .2);
+}
+
+.download {
+    position: absolute;
+    color: black;
+    width: 80px;
+    height: 80px;
+    left: 8vw;
+    top: 60vh;
+    background-color: #f3f3f3;
+    border: 3px solid #c9c9c9;
+    border-radius: 100px;
+    transition-duration: 0.25s;
+}
+
+.download:hover {
+    border: 3px solid #000000;
+    box-shadow: 1px 5px 5px 2px rgba(0, 0, 0, .2);
+}
+
+.upload-file {
+    display: none;
+}
+
+.download-file {
+    display: none;
+}
+
+.material-icons-outlined.md-60 {
+    position: relative;
+    font-size: 60px;
+    left: 13%;
+    top: 10%;
+}
+
+.wordCount {
+    position: absolute;
+    color: black;
+    background-color: #f3f3f3;
+    border: 3px solid #c9c9c9;
+    border-radius: 40px;
+    width: 150px;
+    height: 40px;
+    top: 8vh;
+    left: 66vw;
+    transition-duration: 0.25s;
+    font-size: 25px;
+}
+
+.wordCount span {
+    position: relative;
+    left: 0.5vw;
+	top: 0.5vh;
+}
+
+.wordCount .wordCountNumClass {
+    position: relative;
+    top: -0.05vh;
+    /* left: 0vw; */
+}
+
+.textarea-js-link {
+    position: absolute;
+    left: 25%;
+}
