@@ -1,0 +1,36 @@
+<!DOCTYPE html>	   <!-- comments in html blocks use this awkward structure -->
+<html lang="en">  <!-- pages will usually work without these two lines but best practice would suggest they be added -->
+
+  	<head>										<!-- 'head' is for stuff you set up before you start actually displaying things on the page itself -->
+		<meta charset="utf-8">					<!-- defines character set to be used, optional, but not using it could cause potential issues in complex pages -->
+    	<center> <title>CHALLENGER DEEP</title>	</center>	<!-- the title text will appear on the tab for this page at the top of the browser -->
+    	
+    	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> <!-- I attemped to add a favicon, but it didn't work for reasons I do not know
+
+    	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"> loads a specific font file from google directory into this page -->
+    	<link href="../styles/taliaj.css" rel="stylesheet" type="text/css">  	<!-- links to a file for storing specific css style information for this page -->
+  	</head>
+
+  	<body>	<!-- your html goes in this block  -->
+
+  	<img id= "Taru" src="../images/lightmode.png" style="width:90%">   <!-- this could change to link to your image in your images folder -->
+
+  	<h2>CHALLENGER DEEP'S Official Webpage</h2>
+  
+  	<p style id="box"> Taru (Short for Hotaru) is the lead gutiarist and co singer of the splatoon 3 fan band CHALLENGER DEEP, their design is based off of a firefly squid (hotaru means firefly in japanesse). However their outfit design is based on a vampire squid</p>		<!-- example using id defined object 
+  	from css file linked to above -->
+  	<table style="background-color:#33475b">
+
+
+  	<center style class="wan"> Hello there - Of course I know him, he's me - Obi Wan</span> 	<!-- example using class defined in css file linked to above -->
+
+	<p id="jQdemo"></p>  <!--- the content of this line starts as blank but is created dynamically once javeScript/JQuery starts -->
+	<p><button id='MButton1'>darkmode</button></p>	<!--- creates an html object with an id that can be referenced in the jQuery/javaScript file -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>    <!-- loads jquery API library --->
+  	<script src="../scripts/taliaj.js"></script>   <!-- loads js file from 'scrips' directory into this page -->
+
+  	<p><a href="https://www.youtube.com/watch?v=hX-nt1KoYeM" target="_blank" rel="noopener noreferrer">A video about Firefly Squids </a></p>  <!-- link back to home page, note has to move back 3 folders to get to root for the site -->
+  	
+  	</body>
+</html>
