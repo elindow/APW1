@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/TextArea.css">
+    <title>Text Area Example</title>
+</head>
+<body>
+    <script src="../scripts/TextArea.js"></script>
+    <div class="wordCount">
+        <span class="material-icons-outlined md-30"> subject </span>
+        <span class="wordCountNumClass" id="wordCountNum">0</span>
+    </div>
+    
+    <label class="upload">
+        <span class="material-icons-outlined md-60"> file_upload </span>
+        <input
+            type="file"
+            accept=".txt"
+            class="upload-file"
+            id="uploadFile"
+            onchange="upload()"
+        />
+    </label>
+    <label class="download">
+        <button class="download-file" onclick="save()"></button>
+        <span class="material-icons-outlined md-60"> file_download </span>
+    </label>
+
+    <div class="texteditor">
+        <textarea
+            class="textfield"
+            id="textfield"
+            name="name"
+            placeholder="   start typing..."
+            onselect="countSelection()"
+        ></textarea>
+    </div>
+
+    <p class="textarea-js-link">Click <a href="../scripts/TextArea.js" target="_blank">here</a> to see the fully commented JS used</p>
+
+    <script>
+        indent();
+        countWords();
+    </script>
+</body>
+</html>

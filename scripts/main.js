@@ -251,6 +251,12 @@ const STUDENT_EXAMPLES_SETTINGS = [
     "./Teachers/Lindow/html/lindowP5_page.html",
     "lindow",
   ),
+  new Example(
+    "Leon's Text Area",
+    "This is a really cool text area that Leon made with a lot of functionality brought by native JavaScript.",
+    "./Students/LeonSchaumann/examples/TextArea/html/TextArea.html",
+    "leon",
+  )
 ];
 
 window.onload = () => {
