@@ -6,14 +6,21 @@ p {
 
 }
 
+h2 {
+	color: blueviolet;
+}
+
 /* the # means 'box' is a unique id  that adds all of these attributes*/
 #box {
-	width: 5em;
+	width: 10em;
+	height:  10em;
 	background-color:  lightskyblue;
 	padding:  8;
 	border-style: solid;
 	border-color: darkblue;
 	border-width:  8px ;
+	border-radius:  50%;
+	text-align:  center;
 }
 
 /* the . adds this attribute to a class called 'wan'  */ 
