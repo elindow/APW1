@@ -251,6 +251,12 @@ const STUDENT_EXAMPLES_SETTINGS = [
     "./Teachers/Lindow/html/lindowP5_page.html",
     "lindow",
   ),
+  new Example( // This is so that Leon's example doesn't have to be manually moved to the right side
+    "",        // Any examples added with the ID of filler won't be displayed but will still be rendered
+    "",
+    "",
+    "filler",
+  ),
   new Example(
     "Leon's Text Area",
     "This is a really cool text area that Leon made with a lot of functionality brought by native JavaScript.",
