@@ -1,6 +1,10 @@
 /* this is a comment in a css file, follows c/c++ standard for multiline comments */
 
 /* the block below assigns the font to all p objects */
+body {
+  background-color: Orange;
+}
+
 p {
 	font-family: Garamond;
 
@@ -21,6 +25,7 @@ h2 {
 	border-width:  8px ;
 	border-radius:  50%;
 	text-align:  center;
+	
 }
 
 /* the . adds this attribute to a class called 'wan'  */ 
