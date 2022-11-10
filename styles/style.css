@@ -204,7 +204,7 @@ div.examples {
 }
 
 div.example {
-  display: inline-block;
+  display: inline-grid;
   padding: 20px;
   width: 45%;
 }
@@ -222,10 +222,10 @@ div.example iframe {
   height: 340px;
 }
 
-#lindow.example {
+/* #lindow.example {
   position: relative;
   top: -1165px;
-}
+} */
 
 #leon.example iframe {
   height: 600px;
@@ -234,7 +234,11 @@ div.example iframe {
 #leon.example {
   position: relative;
   top: -1165px;
-  left: 745px;
+  /* left: 46.5vw; */
+}
+
+#filler.example {
+  visibility: hidden;
 }
 
 div.example h1 {
@@ -290,6 +294,13 @@ div.bio p {
   font-size: 15px;
 }
 
+#footer2 {
+  position: absolute;
+  top: 130%;
+  left: 0px;
+  width: 100%;
+}
+
 img.backdrop {
   position: absolute;
   top: 0px;
@@ -327,7 +338,6 @@ img.divider2 {
   width: 100%;
   position: relative;
   left: 0px;
-  bottom: -30vh;
 }
 
 @keyframes displaytitle {

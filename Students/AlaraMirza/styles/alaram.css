@@ -1,19 +1,31 @@
 /* this is a comment in a css file, follows c/c++ standard for multiline comments */
 
 /* the block below assigns the font to all p objects */
+body {
+  background-color: Orange;
+}
+
 p {
 	font-family: Garamond;
 
 }
 
+h2 {
+	color: blueviolet;
+}
+
 /* the # means 'box' is a unique id  that adds all of these attributes*/
 #box {
-	width: 5em;
+	width: 10em;
+	height:  10em;
 	background-color:  lightskyblue;
 	padding:  8;
 	border-style: solid;
 	border-color: darkblue;
 	border-width:  8px ;
+	border-radius:  50%;
+	text-align:  center;
+	
 }
 
 /* the . adds this attribute to a class called 'wan'  */ 
