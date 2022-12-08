@@ -1,0 +1,371 @@
+/* 
+Theme Name: 
+Theme URI: 
+Description: Barebones stylesheet.
+Version: 1.0
+Author: Matt Brett
+Author URL: http://mattbrett.com
+Released: 05/28/07
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -   */
+
+h1, h2, h3, p ,ol, ul, form /* Remove Once Values Are Set */ {
+	margin: 0 0 15px 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;	
+	font: small "Trebuchet MS", Arial, Verdana, sans-serif;
+	color: #;
+	text-align: center;
+}
+
+/* @group header */
+
+/* HEADER
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+#header {
+	
+}
+
+#header-inner {
+	width: px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#logo {	position: relative;	float: left;	display: inline;	width: px;	height: px;	margin: 0;	padding: 0;	font-size: 1.5em;	font-weight: normal;	overflow: hidden;}#logo span {	position: absolute;	width: 100%;	height: 100%;	background: url("images/logo.jpg") no-repeat 0 0;}#logo a {	text-decoration: none;}
+
+#nav {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#nav li {
+	margin: 0 10px 0 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#nav li a:link, #nav li a:visited, #nav li a:active {
+	color: #;
+	text-decoration: underline;
+}
+
+#nav li a:hover {
+	color: #;
+	text-decoration: none;
+}
+
+
+
+/* @end */
+
+/* @group Nav */
+
+/* NAV
+This nav uses the CSS sprite technique.  Delete if unecessary.
+More info: http://alistapart.com/articles/sprites
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+#nav {
+	width: px;
+	height: px;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#nav li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#nav a {
+	float: left;
+	height: 0;
+	margin: 0;
+	padding: px 0 0 0;
+	overflow: hidden;
+}
+
+#nav-home a {
+	width: px;
+	background: url("images/nav.gif") no-repeat 0 0;
+}
+
+#nav-home a:hover {
+	background: url("images/nav.gif") no-repeat 0 -px;
+}
+
+/* @end */
+
+#mid {
+	
+}
+
+#mid-inner {
+	width: px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+/* @group content */
+
+/* CONTENT
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+#content {
+	float: left;
+	display: inline;
+	width: px;
+}
+
+#content h2 {
+	margin: 0 0 1.2em 0;
+	padding: 0;
+	font-size: em;
+	font-weight: normal;
+	color: #;
+}
+
+#content h2 a:link, #content h2 a:visited, #content h2 a:active {
+	color: #;
+	text-decoration: none;
+	border-bottom: 1px solid #;
+}
+
+#content h2 a:hover {
+	color: #;
+	text-decoration: none;
+	border-bottom: 1px solid #;
+}
+
+#content h3 {
+	margin: 0 0 1.3em 0;
+	padding: 0;
+	font-size: em;
+	font-weight: normal;
+	color: #;
+}
+
+#content h3 a:link, #content h3 a:visited, #content h3 a:active {
+	color: #;
+	text-decoration: none;
+	border-bottom: 1px solid #;
+}
+
+#content h3 a:hover {
+	color: #;
+	text-decoration: none;
+	border-bottom: 1px solid #;
+}
+
+#content p {
+	margin: 0 0 1.5em 0;
+	padding: 0;
+	font-size: em;
+	font-weight: normal;
+	color: #;
+	line-height: 1.5em;
+}
+
+#content p a:link, #content p a:visited, #content p a:active, #content li a:link, #content li a:visited, #content li a:active {
+	color: #;
+	text-decoration: none;
+	border-bottom: 1px solid #;
+}
+
+#content p a:hover, #content li a:hover {
+	color: #;
+	text-decoration: none;
+	border-bottom: 1px solid #;
+}
+
+#content ul {
+	margin: 0 0 15px 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#content ul li {
+	margin: 0 0 5px 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+/* @end */
+
+/* @group sidebar */
+
+/* SIDEBAR
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+#sidebar {
+	float: right;
+	display: inline;
+	width: px;	
+}
+
+#sidebar h2 {
+	margin: 0 0 1.2em 0;
+	padding: 0;
+	font-size: em;
+	font-weight: normal;
+	color: #;
+}
+
+#sidebar h2 a:link, #sidebar h2 a:visited, #sidebar h2 a:active {
+	color: #;
+	text-decoration: none;
+	border-bottom: 1px solid #;
+}
+
+#sidebar h2 a:hover {
+	color: #;
+	text-decoration: none;
+	border-bottom: 1px solid #;
+}
+
+#sidebar h3 {
+	margin: 0 0 1.3em 0;
+	padding: 0;
+	font-size: em;
+	font-weight: normal;
+	color: #;
+}
+
+#sidebar h3 a:link, #sidebar h3 a:visited, #sidebar h3 a:active {
+	color: #;
+	text-decoration: none;
+	border-bottom: 1px solid #;
+}
+
+#sidebar h3 a:hover {
+	color: #;
+	text-decoration: none;
+	border-bottom: 1px solid #;
+}
+
+#sidebar p {
+	margin: 0 0 1.5em 0;
+	padding: 0;
+	font-size: em;
+	font-weight: normal;
+	color: #;
+	line-height: 1.5em;
+}
+
+#sidebar p a:link, #sidebar p a:visited, #sidebar p a:active, #sidebar li a:link, #sidebar li a:visited, #sidebar li a:active {
+	color: #;
+	text-decoration: none;
+	border-bottom: 1px solid #;
+}
+
+#sidebar p a:hover, #sidebar li a:hover {
+	color: #;
+	text-decoration: none;
+	border-bottom: 1px solid #;
+}
+
+#sidebar ul {
+	margin: 0 0 15px 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#sidebar ul li {
+	margin: 0 0 5px 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+/* @end */
+
+/* @group footer */
+
+/* FOOTER
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+#footer {
+	
+}
+
+#footer-inner {
+	width: px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#footer p {
+	margin: 0;
+	padding: 0;
+	font-size: .95em;
+	font-weight: normal;
+	color: #;
+}
+
+#footer p a:link, #footer p a:visited, #footer p a:active, #footer li a:link, #footer li a:visited, #footer li a:active {
+	color: #;
+	text-decoration: none;
+	border-bottom: 1px solid #;
+}
+
+#footer p a:hover, #footer li a:hover {
+	color: #;
+	text-decoration: none;
+	border-bottom: 1px solid #;
+}
+
+#footer ul {
+	margin: 0 0 10px 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#footer ul li {
+	display: inline;
+	margin: 0 5px 0 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: .95em;
+	color: #;
+}
+
+/* @end */
+
+/* @group miscellaneous */
+
+/* MISCELLANEOUS
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+.clearer {
+	clear: both;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+}
+
+.feed {
+	padding: 0 0 0 15px;
+	background: url("images/icon-feed.png") no-repeat 0 50%;
+}
+
+.valid {
+	padding: 0 0 0 15px;
+	background: url("images/icon-tick.png") no-repeat 0 50%;
+}
+
+img {
+	border: none;
+}
+
+img a:hover {
+	margin-bottom: -5px;
+}
+
+/* @end */
