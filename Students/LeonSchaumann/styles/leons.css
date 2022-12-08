@@ -35,6 +35,7 @@ nav {
 	background-color: #c9c9c9;
 	box-shadow: 1px 10px 10px 2px rgba(0, 0, 0, 0.2);
 	margin-bottom: 2.5vh;
+    z-index: -1;
 }
 
 .trevor-logo {
