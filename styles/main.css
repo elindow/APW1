@@ -1,0 +1,87 @@
+/* {
+  font-family: 'Georgia', serif;
+  homage jacob
+} */
+h1.title {
+  /*main title*/
+  color: ivory;
+  font-size: 6.5vw;
+  width: 70%;
+  padding-top: 100px;
+  padding-left: 75px;
+  font-family: 'arial;', Courier New;
+  animation-name: displaytitle;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  overflow: hidden;
+}
+h2 {
+  font-size: 30px;
+  text-align: center;
+  color: Ivory;
+  font-family: 'sans-serif', serif;
+}
+
+h3 {
+  /*welcome to tds programmers hub text*/
+  font-family: 'sans-serif', serif;
+  font-size: 5vw;
+  padding-left: 30px;
+  padding-bottom: 40px;
+  text-align: left;
+  color: maroon;
+}
+
+li {
+  color: FireBrick;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+  color:black;
+}
+
+a {
+  /*names list*/
+  color: ivory;
+  font-family: 'sans-serif', serif;
+}
+
+div.heading {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 0px;
+  left: 5%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: auto;
+}
+
+div.menu {
+  position: absolute;
+  top: 5%;
+  right: 0%;
+  width: 30%;
+  height: 50px;
+  border-bottom-color: rgb(128, 0 , 0);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-right-radius: 1px;
+  border-bottom-left-radius: 1px;
+  display: inline-flex;
+  animation-name: displaymenu;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  overflow: hidden;
+}
+
+div.main {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 100%;
+  height: 750px;
+  background-color: ivory;
+}

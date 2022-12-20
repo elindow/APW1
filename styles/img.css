@@ -1,0 +1,106 @@
+div.bio {
+  /* position: absolute; */
+  top: 50%;
+  left: 50%;
+  /*changed the transform from -50, -50 to this*/
+  transform: translate(-30%, -20%);
+  padding-left: 2vw;
+  padding-top: 5vw;
+  font-size: 0.6vw;
+}
+
+div.bio p {
+  width: 25%;
+  margin: auto;
+  text-align: center;
+  font-size: 1vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  font-weight: bold;
+  border-width: 5px;
+  border-color: firebrick;
+  border-style: solid;
+}
+
+div.bio a {
+  color: maroon;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+#footer p {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  color: Ivory;
+  font-size: 15px;
+}
+
+img.backdrop {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+}
+
+img.logo {
+  width: 250px;
+  padding: 45px 0px 0px 45px;
+}
+
+img.gym {
+  position: absolute;
+  width: 100%;
+}
+
+img.picture {
+  float: right;
+  transform: translate(-50%, -120%);
+  width: 30%;
+  padding: 2px;
+  border: solid firebrick 5px;
+}
+
+img.divider {
+  width: 100%;
+  position: relative;
+  left: 0px;
+  bottom: -5px;
+}
+
+img.divider2 {
+  width: 100%;
+  position: relative;
+  left: 0px;
+  /* bottom: -30vh; */
+}
+
+@keyframes displaytitle {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes displaymenu {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+  to {
+    width: 30%;
+    opacity: 1;
+    overflow: visible;
+  }
+}

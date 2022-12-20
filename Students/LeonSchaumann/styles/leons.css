@@ -35,6 +35,7 @@ nav {
 	background-color: #c9c9c9;
 	box-shadow: 1px 10px 10px 2px rgba(0, 0, 0, 0.2);
 	margin-bottom: 2.5vh;
+    z-index: -1;
 }
 
 .trevor-logo {
@@ -90,6 +91,24 @@ nav {
 
 .home-link a:hover {
 	color: rgb(226, 16, 16)
+}
+
+.project-link {
+    position: absolute;
+    top: 10px;
+    right: 15.5%;
+    width: 10%;
+    margin: 0px;
+}
+
+.project-link a {
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.25s;
+}
+
+.project-link a:hover {
+    color: rgb(226, 16, 16)
 }
 
 .button {

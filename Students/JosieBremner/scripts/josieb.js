@@ -10,7 +10,7 @@ $(document).ready(function() {  										 	// jQuery will wait until DOM is rea
     																	  	// # at front of object indicates id, function to be called comes after . 
 
     $("#LButton1").click(function() {  										// assign click() function to button using button id
-		alert("Lindow button clicked");										// call alert just for testing purposes
+		alert("Josie button clicked");										// call alert just for testing purposes
 		$("#LButton1").html("I was clicked");								// change the button lable, or do whatever you want
 	});																		// note how much cleaner the code is compared to below
 
