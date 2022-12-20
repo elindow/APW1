@@ -1,0 +1,55 @@
+div.examples {
+  position: absolute;
+  width: 99%;
+  top: calc(100% + 700px);
+}
+
+div.example {
+  display: inline-grid;
+  padding: 20px;
+  width: 45%;
+}
+
+div.example iframe {
+  width: 100%;
+  height: 300px;
+}
+
+#jake.example iframe {
+  height: 1490px;
+}
+
+#lindow.example iframe {
+  height: 340px;
+}
+
+/* #lindow.example {
+  position: relative;
+  top: -1165px;
+} */
+
+#leon.example iframe {
+  height: 600px;
+}
+
+#leon.example {
+  position: relative;
+  top: -1165px;
+  /* left: 46.5vw; */
+}
+
+#filler.example {
+  visibility: hidden;
+}
+
+div.example h1 {
+  text-align: center;
+  font-family: 'georgia', serif;
+  font-size: 1.1vw;
+}
+
+div.example p {
+  text-align: center;
+  font-family: 'georgia', serif;
+  font-size: 0.8vw;
+}

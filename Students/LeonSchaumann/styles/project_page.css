@@ -1,0 +1,33 @@
+.project-items {
+    position: absolute;
+    top: 200px;
+}
+
+.paragraph-writing {
+    text-align: left;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    text-indent: 5vw;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(0, 1, 15);
+    position: relative;
+    top: 60px;
+}
+
+.entry-date {
+    text-align: left;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    line-height: 30px;
+    color: rgb(0, 1, 15);
+    position: relative;
+    top: 100px;
+}
+
+nav {
+    position: relative;
+}
