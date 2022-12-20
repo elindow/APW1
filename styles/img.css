@@ -24,6 +24,10 @@ div.bio p {
   border-style: solid;
 }
 
+div.bio a {
+  color: maroon;
+}
+
 #footer {
   position: absolute;
   bottom: 0px;
@@ -60,9 +64,10 @@ img.gym {
 
 img.picture {
   float: right;
-  transform: translate(-30%, -125%);
-  width: 35%;
+  transform: translate(-50%, -120%);
+  width: 30%;
   padding: 2px;
+  border: solid firebrick 5px;
 }
 
 img.divider {
@@ -76,7 +81,7 @@ img.divider2 {
   width: 100%;
   position: relative;
   left: 0px;
-  bottom: -30vh;
+  /* bottom: -30vh; */
 }
 
 @keyframes displaytitle {

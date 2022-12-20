@@ -1,11 +1,11 @@
 div.examples {
-    position: absolute;
+  position: absolute;
   width: 99%;
   top: calc(100% + 700px);
 }
 
 div.example {
-  display: inline-block;
+  display: inline-grid;
   padding: 20px;
   width: 45%;
 }
@@ -23,10 +23,10 @@ div.example iframe {
   height: 340px;
 }
 
-#lindow.example {
+/* #lindow.example {
   position: relative;
   top: -1165px;
-}
+} */
 
 #leon.example iframe {
   height: 600px;
@@ -35,17 +35,21 @@ div.example iframe {
 #leon.example {
   position: relative;
   top: -1165px;
-  left: 745px;
+  /* left: 46.5vw; */
+}
+
+#filler.example {
+  visibility: hidden;
 }
 
 div.example h1 {
   text-align: center;
-  font-family: 'sans-serif', serif;
+  font-family: 'georgia', serif;
   font-size: 1.1vw;
 }
 
 div.example p {
   text-align: center;
-  font-family: 'sans-serif', serif;
+  font-family: 'georgia', serif;
   font-size: 0.8vw;
 }
