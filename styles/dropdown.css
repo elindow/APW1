@@ -87,7 +87,7 @@
 
 .dropdown-content h4 {
   font-family: 'sans-serif', serif;
-  color: Ivory;
+  color: maroon;
   padding: 4px 8px;
   display: block;
   border-bottom-color: maroon;
@@ -95,6 +95,15 @@
   border-bottom-width: 10px;
   font-size: 25px;
   font-weight: bold;
+}
+
+.dropdown-link {
+  border-radius: 5px;
+}
+
+.dropdown-link:hover {
+  background: maroon;
+  color: ivory;
 }
 
 .dropdown-content a:hover {
