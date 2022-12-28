@@ -304,6 +304,7 @@ window.onload = () => {
 
       area.websites.forEach((website) => {
         let link = document.createElement("a");
+        link.classList.add("dropdown-link");
         link.innerHTML = website.name;
         link.href = website.link;
         link.target = "_blank";
