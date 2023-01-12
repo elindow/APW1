@@ -31,3 +31,10 @@
 nav {
     position: relative;
 }
+
+.journal-image {
+    margin-top: 5vh;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    width: 800px;
+}
